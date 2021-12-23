@@ -13,6 +13,8 @@ class RootCoordinator: CoordinatorProtocol {
     var childCoordinators = [CoordinatorProtocol]()    
     var navigationController: UINavigationController
     
+    var scene: RootScene? = nil
+    
     //variable load Module1ScreenObserver -- viewmodel will do .send() on this when required
     
     init(navigationController: UINavigationController) {
@@ -21,6 +23,7 @@ class RootCoordinator: CoordinatorProtocol {
     
     func start() {
         let scene = RootScene.makeScene(coordinator: self)
+        self.scene = scene
         navigationController.pushViewController(scene.viewController, animated: true)
     }
 

@@ -8,13 +8,17 @@
 import UIKit
 
 //class RootViewController: BaseViewController<RootViewModel>, NibProtocol {
-class RootViewController: BaseViewController, NibableProtocol {
+class RootViewController: BaseViewController<RootViewModel>, NibableProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    override func configure(viewModel: RootViewModel) {
+        
+        // actually configure it
+    }
 
 }
 

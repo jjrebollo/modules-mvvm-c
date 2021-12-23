@@ -22,7 +22,8 @@
 		0DD2A903276B60E00048782A /* NibableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A902276B60E00048782A /* NibableProtocol.swift */; };
 		0DD2A905276B62A60048782A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2A904276B62A60048782A /* RootViewController.xib */; };
 		0DD2A907276B65FE0048782A /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A906276B65FE0048782A /* RootCoordinator.swift */; };
-		0DD2A9092771FBEB0048782A /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9082771FBEB0048782A /* Scene.swift */; };
+		0DD2A9092771FBEB0048782A /* ScenableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9082771FBEB0048782A /* ScenableProtocol.swift */; };
+		0DD2A90D27749E1D0048782A /* RootScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A90C27749E1D0048782A /* RootScene.swift */; };
 		19B7B8474FC622C1D4B38422 /* Pods_ReferenceArchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDD7751B3349EDD711CCB68 /* Pods_ReferenceArchUITests.framework */; };
 		5A998E2192C145F0E03F0290 /* Pods_ReferenceArch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BF803107DBF6376D30F53A /* Pods_ReferenceArch.framework */; };
 		AE92A8E0FF664C30BF2757EC /* Pods_ReferenceArchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */; };
@@ -95,7 +96,8 @@
 		0DD2A902276B60E00048782A /* NibableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibableProtocol.swift; sourceTree = "<group>"; };
 		0DD2A904276B62A60048782A /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		0DD2A906276B65FE0048782A /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
-		0DD2A9082771FBEB0048782A /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		0DD2A9082771FBEB0048782A /* ScenableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenableProtocol.swift; sourceTree = "<group>"; };
+		0DD2A90C27749E1D0048782A /* RootScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScene.swift; sourceTree = "<group>"; };
 		10EC282335FDD3D219698E68 /* Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArch-ReferenceArchUITests/Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReferenceArchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BD20BA4DE562DD4B585CD9 /* Pods-ReferenceArchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArchUITests.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArchUITests/Pods-ReferenceArchUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,7 +176,8 @@
 				0DD2A902276B60E00048782A /* NibableProtocol.swift */,
 				0DD2A904276B62A60048782A /* RootViewController.xib */,
 				0DD2A906276B65FE0048782A /* RootCoordinator.swift */,
-				0DD2A9082771FBEB0048782A /* Scene.swift */,
+				0DD2A9082771FBEB0048782A /* ScenableProtocol.swift */,
+				0DD2A90C27749E1D0048782A /* RootScene.swift */,
 			);
 			path = ReferenceArch;
 			sourceTree = "<group>";
@@ -216,8 +219,16 @@
 		0DD2A90A27738B190048782A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0DD2A90B27749DD30048782A /* Protocols */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		0DD2A90B27749DD30048782A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		8298D6663BA8D9C90B69E21B /* Pods */ = {
@@ -497,7 +508,8 @@
 				0DD2A8FF276B5F9B0048782A /* CoordinatorProtocol.swift in Sources */,
 				0D0075252769F8A900D9D531 /* AppDelegate.swift in Sources */,
 				0D0075272769F8A900D9D531 /* SceneDelegate.swift in Sources */,
-				0DD2A9092771FBEB0048782A /* Scene.swift in Sources */,
+				0DD2A9092771FBEB0048782A /* ScenableProtocol.swift in Sources */,
+				0DD2A90D27749E1D0048782A /* RootScene.swift in Sources */,
 				0DD2A903276B60E00048782A /* NibableProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
