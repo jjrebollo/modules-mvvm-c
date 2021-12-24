@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D0075252769F8A900D9D531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0075242769F8A900D9D531 /* AppDelegate.swift */; };
-		0D0075272769F8A900D9D531 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0075262769F8A900D9D531 /* SceneDelegate.swift */; };
 		0D0075292769F8A900D9D531 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0075282769F8A900D9D531 /* RootViewController.swift */; };
 		0D00752C2769F8A900D9D531 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D00752A2769F8A900D9D531 /* Main.storyboard */; };
 		0D00752E2769F8B300D9D531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D00752D2769F8B300D9D531 /* Assets.xcassets */; };
@@ -24,6 +23,13 @@
 		0DD2A907276B65FE0048782A /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A906276B65FE0048782A /* RootCoordinator.swift */; };
 		0DD2A9092771FBEB0048782A /* ScenableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9082771FBEB0048782A /* ScenableProtocol.swift */; };
 		0DD2A90D27749E1D0048782A /* RootScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A90C27749E1D0048782A /* RootScene.swift */; };
+		0DD2A90F2775B0710048782A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A90E2775B0710048782A /* BaseViewModel.swift */; };
+		0DD2A9112775B09A0048782A /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9102775B09A0048782A /* RootViewModel.swift */; };
+		0DD2A9132775B0CA0048782A /* RootUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9122775B0CA0048782A /* RootUseCase.swift */; };
+		0DD2A9152775B0E60048782A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9142775B0E60048782A /* BaseViewController.swift */; };
+		0DD2A9172775B10A0048782A /* CollaboratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9162775B10A0048782A /* CollaboratorProtocol.swift */; };
+		0DD2A9192775B1260048782A /* RootRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9182775B1260048782A /* RootRepository.swift */; };
+		0DD2A91B2775B13F0048782A /* RootService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A91A2775B13F0048782A /* RootService.swift */; };
 		19B7B8474FC622C1D4B38422 /* Pods_ReferenceArchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDD7751B3349EDD711CCB68 /* Pods_ReferenceArchUITests.framework */; };
 		5A998E2192C145F0E03F0290 /* Pods_ReferenceArch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BF803107DBF6376D30F53A /* Pods_ReferenceArch.framework */; };
 		AE92A8E0FF664C30BF2757EC /* Pods_ReferenceArchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */; };
@@ -79,7 +85,6 @@
 		0663E5B5F42BF11ED8A541D3 /* Pods-ReferenceArchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArchTests.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArchTests/Pods-ReferenceArchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0D0075212769F8A900D9D531 /* ReferenceArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReferenceArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0075242769F8A900D9D531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D0075262769F8A900D9D531 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0D0075282769F8A900D9D531 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		0D00752B2769F8A900D9D531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D00752D2769F8B300D9D531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +103,13 @@
 		0DD2A906276B65FE0048782A /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		0DD2A9082771FBEB0048782A /* ScenableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenableProtocol.swift; sourceTree = "<group>"; };
 		0DD2A90C27749E1D0048782A /* RootScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScene.swift; sourceTree = "<group>"; };
+		0DD2A90E2775B0710048782A /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		0DD2A9102775B09A0048782A /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		0DD2A9122775B0CA0048782A /* RootUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootUseCase.swift; sourceTree = "<group>"; };
+		0DD2A9142775B0E60048782A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0DD2A9162775B10A0048782A /* CollaboratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaboratorProtocol.swift; sourceTree = "<group>"; };
+		0DD2A9182775B1260048782A /* RootRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRepository.swift; sourceTree = "<group>"; };
+		0DD2A91A2775B13F0048782A /* RootService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootService.swift; sourceTree = "<group>"; };
 		10EC282335FDD3D219698E68 /* Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArch-ReferenceArchUITests/Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReferenceArchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BD20BA4DE562DD4B585CD9 /* Pods-ReferenceArchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArchUITests.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArchUITests/Pods-ReferenceArchUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,21 +175,14 @@
 		0D0075232769F8A900D9D531 /* ReferenceArch */ = {
 			isa = PBXGroup;
 			children = (
+				0DD2A91D2775B19E0048782A /* Scenes */,
 				0DD2A90A27738B190048782A /* Shared */,
 				0D0075242769F8A900D9D531 /* AppDelegate.swift */,
 				0D00759E276A080D00D9D531 /* ReferenceArchDummy.swift */,
-				0D0075262769F8A900D9D531 /* SceneDelegate.swift */,
-				0D0075282769F8A900D9D531 /* RootViewController.swift */,
 				0D00752A2769F8A900D9D531 /* Main.storyboard */,
 				0D00752D2769F8B300D9D531 /* Assets.xcassets */,
 				0D00752F2769F8B300D9D531 /* LaunchScreen.storyboard */,
 				0D0075322769F8B300D9D531 /* Info.plist */,
-				0DD2A8FE276B5F9B0048782A /* CoordinatorProtocol.swift */,
-				0DD2A902276B60E00048782A /* NibableProtocol.swift */,
-				0DD2A904276B62A60048782A /* RootViewController.xib */,
-				0DD2A906276B65FE0048782A /* RootCoordinator.swift */,
-				0DD2A9082771FBEB0048782A /* ScenableProtocol.swift */,
-				0DD2A90C27749E1D0048782A /* RootScene.swift */,
 			);
 			path = ReferenceArch;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 		0DD2A90A27738B190048782A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0DD2A91C2775B15D0048782A /* BaseClasses */,
 				0DD2A90B27749DD30048782A /* Protocols */,
 			);
 			path = Shared;
@@ -227,8 +233,52 @@
 		0DD2A90B27749DD30048782A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				0DD2A8FE276B5F9B0048782A /* CoordinatorProtocol.swift */,
+				0DD2A902276B60E00048782A /* NibableProtocol.swift */,
+				0DD2A9082771FBEB0048782A /* ScenableProtocol.swift */,
+				0DD2A9162775B10A0048782A /* CollaboratorProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0DD2A91C2775B15D0048782A /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				0DD2A90E2775B0710048782A /* BaseViewModel.swift */,
+				0DD2A9142775B0E60048782A /* BaseViewController.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		0DD2A91D2775B19E0048782A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0DD2A91E2775B1A70048782A /* Root */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0DD2A91E2775B1A70048782A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0DD2A91F2775B1D70048782A /* ViewController */,
+				0DD2A9102775B09A0048782A /* RootViewModel.swift */,
+				0DD2A9122775B0CA0048782A /* RootUseCase.swift */,
+				0DD2A9182775B1260048782A /* RootRepository.swift */,
+				0DD2A91A2775B13F0048782A /* RootService.swift */,
+				0DD2A906276B65FE0048782A /* RootCoordinator.swift */,
+				0DD2A90C27749E1D0048782A /* RootScene.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		0DD2A91F2775B1D70048782A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0D0075282769F8A900D9D531 /* RootViewController.swift */,
+				0DD2A904276B62A60048782A /* RootViewController.xib */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		8298D6663BA8D9C90B69E21B /* Pods */ = {
@@ -502,13 +552,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD2A9152775B0E60048782A /* BaseViewController.swift in Sources */,
+				0DD2A91B2775B13F0048782A /* RootService.swift in Sources */,
+				0DD2A9192775B1260048782A /* RootRepository.swift in Sources */,
 				0D00759F276A080D00D9D531 /* ReferenceArchDummy.swift in Sources */,
+				0DD2A90F2775B0710048782A /* BaseViewModel.swift in Sources */,
 				0DD2A907276B65FE0048782A /* RootCoordinator.swift in Sources */,
 				0D0075292769F8A900D9D531 /* RootViewController.swift in Sources */,
 				0DD2A8FF276B5F9B0048782A /* CoordinatorProtocol.swift in Sources */,
+				0DD2A9132775B0CA0048782A /* RootUseCase.swift in Sources */,
 				0D0075252769F8A900D9D531 /* AppDelegate.swift in Sources */,
-				0D0075272769F8A900D9D531 /* SceneDelegate.swift in Sources */,
+				0DD2A9172775B10A0048782A /* CollaboratorProtocol.swift in Sources */,
 				0DD2A9092771FBEB0048782A /* ScenableProtocol.swift in Sources */,
+				0DD2A9112775B09A0048782A /* RootViewModel.swift in Sources */,
 				0DD2A90D27749E1D0048782A /* RootScene.swift in Sources */,
 				0DD2A903276B60E00048782A /* NibableProtocol.swift in Sources */,
 			);
