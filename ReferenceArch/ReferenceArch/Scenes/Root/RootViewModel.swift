@@ -6,13 +6,56 @@
 //
 
 import Foundation
+import Combine
 
-class RootViewModel: BaseViewModel {
+class RootViewModel: BaseViewModel<RootCoordinator> {
     let rootUseCase: RootUseCase
     
-    init(coordinator: CoordinatorProtocol, rootUseCase: RootUseCase) {
+    let moduleWithUIButtonSubject = PassthroughSubject<Void, Never>()
+    let moduleWithoutUIButtonSubject = PassthroughSubject<Void, Never>()
+    private var cancellableBag = Set<AnyCancellable>()
+
+    
+    weak var viewController: RootViewController? {
+        didSet {
+            guard let viewController = viewController else { return }
+            setupViewControllerObservers(for: viewController)
+        }
+    }
+    
+    init(coordinator: RootCoordinator, rootUseCase: RootUseCase) {
         self.rootUseCase = rootUseCase
         
         super.init(coordinator: coordinator)
+    }
+    
+    override func setupCoordinatorObservers(for: RootCoordinator) {
+        moduleWithUIButtonSubject
+            .bind(to: coordinator.moduleWithUIButtonSubject)
+            .store(in: &cancellableBag)
+    }
+    
+    func setupViewControllerObservers(for: RootViewController) {
+        // necessary??
+    }
+    
+}
+
+// viewmodel should observe viewcontroller events
+// add extension from here https://betterprogramming.pub/observe-uibutton-events-using-combine-in-swift-5-63c1a4e0a0c1
+
+
+extension PassthroughSubject {
+    func bind(to publisher: PassthroughSubject) -> AnyCancellable {
+        
+//        self.handleEvents { output in
+//            publisher.send(subscription: output)
+//        }
+        
+        return self.sink { error in
+            return
+        } receiveValue: { output in
+            publisher.send(output)
+        }
     }
 }

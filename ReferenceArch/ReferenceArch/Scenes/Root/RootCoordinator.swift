@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Combine
 
 class RootCoordinator: CoordinatorProtocol {
 
@@ -15,7 +16,7 @@ class RootCoordinator: CoordinatorProtocol {
     
     var scene: RootScene? = nil
     
-    //variable load Module1ScreenObserver -- viewmodel will do .send() on this when required
+    let moduleWithUIButtonSubject = PassthroughSubject<Void, Never>()
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController

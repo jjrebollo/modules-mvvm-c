@@ -5,31 +5,71 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+            <connections>
+                <outlet property="goToModuleWithUIButton" destination="grZ-jI-JWA" id="n1O-w4-eCU"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <viewController nibName="ViewController1" id="GC7-DG-FuR" customClass="RootViewController" customModule="ReferenceArch" customModuleProvider="target">
             <view key="view" contentMode="scaleToFill" id="44l-Wr-hdn">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ViewController1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4A-29-eWE">
-                        <rect key="frame" x="147" y="438" width="120" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4A-29-eWE">
+                        <rect key="frame" x="147" y="437.5" width="120" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grZ-jI-JWA">
+                        <rect key="frame" x="127" y="94" width="160" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="jew-56-0i2"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Go to module with UI">
+                            <backgroundConfiguration key="background">
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </backgroundConfiguration>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="moduleWithUIButtonTouched:" destination="-1" eventType="touchUpInside" id="oLy-kg-ZOo"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <viewLayoutGuide key="safeArea" id="9wg-iN-Afa"/>
                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                <constraints>
+                    <constraint firstItem="grZ-jI-JWA" firstAttribute="top" secondItem="9wg-iN-Afa" secondAttribute="top" constant="50" id="BvH-D6-1Qm"/>
+                    <constraint firstItem="F4A-29-eWE" firstAttribute="centerX" secondItem="44l-Wr-hdn" secondAttribute="centerX" id="VvL-fE-Xxh"/>
+                    <constraint firstItem="F4A-29-eWE" firstAttribute="centerY" secondItem="44l-Wr-hdn" secondAttribute="centerY" id="cyO-oo-D7x"/>
+                    <constraint firstItem="grZ-jI-JWA" firstAttribute="centerX" secondItem="44l-Wr-hdn" secondAttribute="centerX" id="zxt-SG-BLL"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="-61" y="-106"/>
         </viewController>
+        <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="oNE-sj-iff">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <menu key="menu" id="opu-nm-aH5">
+                <children>
+                    <command title="Item 1" id="SXJ-T5-Pcf"/>
+                    <command title="Item 2" id="7IG-k5-EdE"/>
+                </children>
+            </menu>
+            <state key="normal" title="Button"/>
+            <point key="canvasLocation" x="49" y="250"/>
+        </button>
     </objects>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
