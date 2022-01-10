@@ -11,21 +11,26 @@ import Combine
 
 class RootCoordinator: CoordinatorProtocol {
 
-    var childCoordinators = [CoordinatorProtocol]()    
-    var navigationController: UINavigationController
+    // Coordinators declaration
+    var navigationController: BaseNavigationController
     
     var scene: RootScene? = nil
     
     let moduleWithUIButtonSubject = PassthroughSubject<Void, Never>()
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: BaseNavigationController) {
         self.navigationController = navigationController
+        
+        configureObservables()
     }
     
     func start() {
-        let scene = RootScene.makeScene(coordinator: self)
+        guard let scene = RootScene.makeScene(coordinator: self) else { return }
         self.scene = scene
         navigationController.pushViewController(scene.viewController, animated: true)
     }
 
+    func configureObservables() {
+        // observe moduleWithUIButtonSubject and create the new coordinator + start it
+    }
 }

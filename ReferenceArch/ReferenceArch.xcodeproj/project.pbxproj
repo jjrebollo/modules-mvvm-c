@@ -17,6 +17,8 @@
 		0D0075482769F8B500D9D531 /* ReferenceArchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0075472769F8B500D9D531 /* ReferenceArchUITestsLaunchTests.swift */; };
 		0D00759F276A080D00D9D531 /* ReferenceArchDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D00759E276A080D00D9D531 /* ReferenceArchDummy.swift */; };
 		0D0075AB276A09BC00D9D531 /* Module1.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0D0075A8276A097300D9D531 /* Module1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0D044433278C9F7700684F7A /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044432278C9F7700684F7A /* BaseCoordinator.swift */; };
+		0D044435278C9F9800684F7A /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044434278C9F9800684F7A /* BaseNavigationController.swift */; };
 		0DD2A8FF276B5F9B0048782A /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A8FE276B5F9B0048782A /* CoordinatorProtocol.swift */; };
 		0DD2A903276B60E00048782A /* NibableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A902276B60E00048782A /* NibableProtocol.swift */; };
 		0DD2A905276B62A60048782A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2A904276B62A60048782A /* RootViewController.xib */; };
@@ -64,6 +66,20 @@
 			remoteGlobalIDString = 0D00758C276A02DE00D9D531;
 			remoteInfo = Module1Tests;
 		};
+		0D04442C2775F31800684F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0444272775F31800684F7A /* BaseModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0D04440C2775F21200684F7A;
+			remoteInfo = BaseModule;
+		};
+		0D04442E2775F31800684F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0444272775F31800684F7A /* BaseModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0D0444162775F21300684F7A;
+			remoteInfo = BaseModuleTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -97,6 +113,9 @@
 		0D0075472769F8B500D9D531 /* ReferenceArchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceArchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0D00759E276A080D00D9D531 /* ReferenceArchDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceArchDummy.swift; sourceTree = "<group>"; };
 		0D0075A2276A097300D9D531 /* Module1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Module1.xcodeproj; path = ../../Module1/Module1.xcodeproj; sourceTree = "<group>"; };
+		0D0444272775F31800684F7A /* BaseModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaseModule.xcodeproj; path = ../../BaseModule/BaseModule.xcodeproj; sourceTree = "<group>"; };
+		0D044432278C9F7700684F7A /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		0D044434278C9F9800684F7A /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0DD2A8FE276B5F9B0048782A /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		0DD2A902276B60E00048782A /* NibableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibableProtocol.swift; sourceTree = "<group>"; };
 		0DD2A904276B62A60048782A /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
@@ -207,6 +226,7 @@
 		0D0075A1276A094800D9D531 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				0D0444272775F31800684F7A /* BaseModule.xcodeproj */,
 				0D0075A2276A097300D9D531 /* Module1.xcodeproj */,
 			);
 			path = Dependencies;
@@ -217,6 +237,15 @@
 			children = (
 				0D0075A8276A097300D9D531 /* Module1.framework */,
 				0D0075AA276A097300D9D531 /* Module1Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D0444282775F31800684F7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D04442D2775F31800684F7A /* BaseModule.framework */,
+				0D04442F2775F31800684F7A /* BaseModuleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,6 +275,8 @@
 			children = (
 				0DD2A90E2775B0710048782A /* BaseViewModel.swift */,
 				0DD2A9142775B0E60048782A /* BaseViewController.swift */,
+				0D044432278C9F7700684F7A /* BaseCoordinator.swift */,
+				0D044434278C9F9800684F7A /* BaseNavigationController.swift */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -403,6 +434,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 0D0444282775F31800684F7A /* Products */;
+					ProjectRef = 0D0444272775F31800684F7A /* BaseModule.xcodeproj */;
+				},
+				{
 					ProductGroup = 0D0075A3276A097300D9D531 /* Products */;
 					ProjectRef = 0D0075A2276A097300D9D531 /* Module1.xcodeproj */;
 				},
@@ -429,6 +464,20 @@
 			fileType = wrapper.cfbundle;
 			path = Module1Tests.xctest;
 			remoteRef = 0D0075A9276A097300D9D531 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0D04442D2775F31800684F7A /* BaseModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BaseModule.framework;
+			remoteRef = 0D04442C2775F31800684F7A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0D04442F2775F31800684F7A /* BaseModuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BaseModuleTests.xctest;
+			remoteRef = 0D04442E2775F31800684F7A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -566,7 +615,9 @@
 				0DD2A9092771FBEB0048782A /* ScenableProtocol.swift in Sources */,
 				0DD2A9112775B09A0048782A /* RootViewModel.swift in Sources */,
 				0DD2A90D27749E1D0048782A /* RootScene.swift in Sources */,
+				0D044435278C9F9800684F7A /* BaseNavigationController.swift in Sources */,
 				0DD2A903276B60E00048782A /* NibableProtocol.swift in Sources */,
+				0D044433278C9F7700684F7A /* BaseCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

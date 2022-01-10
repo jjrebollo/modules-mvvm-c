@@ -47,3 +47,22 @@ target 'Module1' do
   end
 
 end
+
+
+# Base Module
+
+def baseModule_pods
+  pod 'RxSwift'
+end
+
+target 'BaseModule' do
+  
+  project 'BaseModule/BaseModule.xcodeproj'
+  baseModule_pods
+
+  target 'BaseModuleTests' do
+    inherit! :search_paths
+    
+  end
+
+end

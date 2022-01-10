@@ -8,18 +8,10 @@
 import UIKit
 import Combine
 
-//class RootViewController: BaseViewController<RootViewModel>, NibProtocol {
 class RootViewController: BaseViewController<RootViewModel>, NibableProtocol {
     
-    @IBOutlet weak var goToModuleWithUIButton: UIButton!
-    
-//    var goToModuleWithUIButtonPublisher: AnyPublisher<Void, Never> {
-//        get {
-//            goToModuleWithUIButton.publisher.eraseToAnyPublisher()
-//        }
-//    }
-    
-    
+//    @IBOutlet weak var goToModuleWithUIButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

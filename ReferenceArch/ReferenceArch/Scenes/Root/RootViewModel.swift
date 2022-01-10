@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class RootViewModel: BaseViewModel<RootCoordinator> {
+class RootViewModel: BaseViewModel {
     let rootUseCase: RootUseCase
     
     let moduleWithUIButtonSubject = PassthroughSubject<Void, Never>()
@@ -29,7 +29,7 @@ class RootViewModel: BaseViewModel<RootCoordinator> {
         super.init(coordinator: coordinator)
     }
     
-    override func setupCoordinatorObservers(for: RootCoordinator) {
+    func setupCoordinatorObservers(for coordinator: RootCoordinator) {
         moduleWithUIButtonSubject
             .bind(to: coordinator.moduleWithUIButtonSubject)
             .store(in: &cancellableBag)

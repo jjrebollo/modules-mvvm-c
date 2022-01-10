@@ -9,11 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
-            <connections>
-                <outlet property="goToModuleWithUIButton" destination="grZ-jI-JWA" id="n1O-w4-eCU"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <viewController nibName="ViewController1" id="GC7-DG-FuR" customClass="RootViewController" customModule="ReferenceArch" customModuleProvider="target">
             <view key="view" contentMode="scaleToFill" id="44l-Wr-hdn">

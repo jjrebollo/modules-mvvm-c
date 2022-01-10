@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let navController = UINavigationController()
+        let navController = BaseNavigationController()
         
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = .purple

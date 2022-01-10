@@ -8,7 +8,10 @@
 import Foundation
 
 struct RootScene: ScenableProtocol {
-    static func makeScene(coordinator: CoordinatorProtocol) -> RootScene {
+    static func makeScene(coordinator: CoordinatorProtocol) -> RootScene? {
+        
+        guard let coordinator = coordinator as? RootCoordinator else { return nil }
+        
         let service = RootService()
         let repository = RootRepository(service: service)
         let useCase = RootUseCase(collaborator: repository)
