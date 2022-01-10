@@ -7,6 +7,6 @@
 
 import UIKit
 
-protocol ScenableProtocol {
+public protocol ScenableProtocol {
     static func makeScene(coordinator: CoordinatorProtocol) -> Self?
 }

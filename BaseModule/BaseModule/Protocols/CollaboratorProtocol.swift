@@ -7,4 +7,4 @@
 
 import Foundation
 
-protocol CollaboratorProtocol {}
+public protocol CollaboratorProtocol {}

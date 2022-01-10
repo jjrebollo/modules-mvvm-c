@@ -7,10 +7,14 @@
 
 import UIKit
 import Combine
+import BaseModule
 
 class RootViewController: BaseViewController<RootViewModel>, NibableProtocol {
     
 //    @IBOutlet weak var goToModuleWithUIButton: UIButton!
+    
+    let moduleWithUIButtonTouchedSubject = PassthroughSubject<Void, Never>()
+    private var cancellableBag = Set<AnyCancellable>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,12 +22,13 @@ class RootViewController: BaseViewController<RootViewModel>, NibableProtocol {
     }
 
     override func configure(viewModel: RootViewModel) {
-//        goToModuleWithUIButton.publisher.
-        // actually configure it
+        moduleWithUIButtonTouchedSubject
+            .bind(to: viewModel.moduleWithUIButtonSubject)
+            .store(in: &cancellableBag)
     }
 
     @IBAction func moduleWithUIButtonTouched(_ sender: Any) {
-        self.viewModel?.moduleWithUIButtonSubject.send()
+        moduleWithUIButtonTouchedSubject.send()
     }
 }
 

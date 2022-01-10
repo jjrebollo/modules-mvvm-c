@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import BaseModule
 
 struct RootScene: ScenableProtocol {
     static func makeScene(coordinator: CoordinatorProtocol) -> RootScene? {

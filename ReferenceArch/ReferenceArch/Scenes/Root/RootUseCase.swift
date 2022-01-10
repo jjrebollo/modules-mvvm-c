@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import BaseModule
 
 class RootUseCase {
     let reposiroty: CollaboratorProtocol

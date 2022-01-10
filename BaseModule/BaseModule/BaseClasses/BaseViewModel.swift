@@ -7,10 +7,10 @@
 
 import Foundation
 
-class BaseViewModel {
+open class BaseViewModel {
     let coordinator: CoordinatorProtocol
     
-    init(coordinator: CoordinatorProtocol) {
+    public init(coordinator: CoordinatorProtocol) {
         self.coordinator = coordinator
     }
 }

@@ -17,22 +17,15 @@
 		0D0075482769F8B500D9D531 /* ReferenceArchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0075472769F8B500D9D531 /* ReferenceArchUITestsLaunchTests.swift */; };
 		0D00759F276A080D00D9D531 /* ReferenceArchDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D00759E276A080D00D9D531 /* ReferenceArchDummy.swift */; };
 		0D0075AB276A09BC00D9D531 /* Module1.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0D0075A8276A097300D9D531 /* Module1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0D044433278C9F7700684F7A /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044432278C9F7700684F7A /* BaseCoordinator.swift */; };
-		0D044435278C9F9800684F7A /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044434278C9F9800684F7A /* BaseNavigationController.swift */; };
-		0D044436278CA09A00684F7A /* BaseModule.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0D04442D2775F31800684F7A /* BaseModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0DD2A8FF276B5F9B0048782A /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A8FE276B5F9B0048782A /* CoordinatorProtocol.swift */; };
-		0DD2A903276B60E00048782A /* NibableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A902276B60E00048782A /* NibableProtocol.swift */; };
 		0DD2A905276B62A60048782A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2A904276B62A60048782A /* RootViewController.xib */; };
 		0DD2A907276B65FE0048782A /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A906276B65FE0048782A /* RootCoordinator.swift */; };
-		0DD2A9092771FBEB0048782A /* ScenableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9082771FBEB0048782A /* ScenableProtocol.swift */; };
 		0DD2A90D27749E1D0048782A /* RootScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A90C27749E1D0048782A /* RootScene.swift */; };
-		0DD2A90F2775B0710048782A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A90E2775B0710048782A /* BaseViewModel.swift */; };
 		0DD2A9112775B09A0048782A /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9102775B09A0048782A /* RootViewModel.swift */; };
 		0DD2A9132775B0CA0048782A /* RootUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9122775B0CA0048782A /* RootUseCase.swift */; };
-		0DD2A9152775B0E60048782A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9142775B0E60048782A /* BaseViewController.swift */; };
-		0DD2A9172775B10A0048782A /* CollaboratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9162775B10A0048782A /* CollaboratorProtocol.swift */; };
 		0DD2A9192775B1260048782A /* RootRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A9182775B1260048782A /* RootRepository.swift */; };
 		0DD2A91B2775B13F0048782A /* RootService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A91A2775B13F0048782A /* RootService.swift */; };
+		0DE2990F278CA86000FC4793 /* BaseModule.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0D04442D2775F31800684F7A /* BaseModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0DE29913278CADD600FC4793 /* PassthroughSubject+bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29912278CADD600FC4793 /* PassthroughSubject+bind.swift */; };
 		19B7B8474FC622C1D4B38422 /* Pods_ReferenceArchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDD7751B3349EDD711CCB68 /* Pods_ReferenceArchUITests.framework */; };
 		5A998E2192C145F0E03F0290 /* Pods_ReferenceArch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BF803107DBF6376D30F53A /* Pods_ReferenceArch.framework */; };
 		AE92A8E0FF664C30BF2757EC /* Pods_ReferenceArchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */; };
@@ -90,8 +83,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0D044436278CA09A00684F7A /* BaseModule.framework in Copy Modules */,
 				0D0075AB276A09BC00D9D531 /* Module1.framework in Copy Modules */,
+				0DE2990F278CA86000FC4793 /* BaseModule.framework in Copy Modules */,
 			);
 			name = "Copy Modules";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,21 +109,14 @@
 		0D00759E276A080D00D9D531 /* ReferenceArchDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceArchDummy.swift; sourceTree = "<group>"; };
 		0D0075A2276A097300D9D531 /* Module1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Module1.xcodeproj; path = ../../Module1/Module1.xcodeproj; sourceTree = "<group>"; };
 		0D0444272775F31800684F7A /* BaseModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaseModule.xcodeproj; path = ../../BaseModule/BaseModule.xcodeproj; sourceTree = "<group>"; };
-		0D044432278C9F7700684F7A /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
-		0D044434278C9F9800684F7A /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		0DD2A8FE276B5F9B0048782A /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
-		0DD2A902276B60E00048782A /* NibableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibableProtocol.swift; sourceTree = "<group>"; };
 		0DD2A904276B62A60048782A /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		0DD2A906276B65FE0048782A /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
-		0DD2A9082771FBEB0048782A /* ScenableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenableProtocol.swift; sourceTree = "<group>"; };
 		0DD2A90C27749E1D0048782A /* RootScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScene.swift; sourceTree = "<group>"; };
-		0DD2A90E2775B0710048782A /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		0DD2A9102775B09A0048782A /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		0DD2A9122775B0CA0048782A /* RootUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootUseCase.swift; sourceTree = "<group>"; };
-		0DD2A9142775B0E60048782A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		0DD2A9162775B10A0048782A /* CollaboratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaboratorProtocol.swift; sourceTree = "<group>"; };
 		0DD2A9182775B1260048782A /* RootRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRepository.swift; sourceTree = "<group>"; };
 		0DD2A91A2775B13F0048782A /* RootService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootService.swift; sourceTree = "<group>"; };
+		0DE29912278CADD600FC4793 /* PassthroughSubject+bind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PassthroughSubject+bind.swift"; sourceTree = "<group>"; };
 		10EC282335FDD3D219698E68 /* Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArch-ReferenceArchUITests/Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReferenceArchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BD20BA4DE562DD4B585CD9 /* Pods-ReferenceArchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArchUITests.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArchUITests/Pods-ReferenceArchUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,8 +182,8 @@
 		0D0075232769F8A900D9D531 /* ReferenceArch */ = {
 			isa = PBXGroup;
 			children = (
+				0DE29910278CADB000FC4793 /* Extensions */,
 				0DD2A91D2775B19E0048782A /* Scenes */,
-				0DD2A90A27738B190048782A /* Shared */,
 				0D0075242769F8A900D9D531 /* AppDelegate.swift */,
 				0D00759E276A080D00D9D531 /* ReferenceArchDummy.swift */,
 				0D00752A2769F8A900D9D531 /* Main.storyboard */,
@@ -252,37 +238,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0DD2A90A27738B190048782A /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				0DD2A91C2775B15D0048782A /* BaseClasses */,
-				0DD2A90B27749DD30048782A /* Protocols */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		0DD2A90B27749DD30048782A /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				0DD2A8FE276B5F9B0048782A /* CoordinatorProtocol.swift */,
-				0DD2A902276B60E00048782A /* NibableProtocol.swift */,
-				0DD2A9082771FBEB0048782A /* ScenableProtocol.swift */,
-				0DD2A9162775B10A0048782A /* CollaboratorProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		0DD2A91C2775B15D0048782A /* BaseClasses */ = {
-			isa = PBXGroup;
-			children = (
-				0DD2A90E2775B0710048782A /* BaseViewModel.swift */,
-				0DD2A9142775B0E60048782A /* BaseViewController.swift */,
-				0D044432278C9F7700684F7A /* BaseCoordinator.swift */,
-				0D044434278C9F9800684F7A /* BaseNavigationController.swift */,
-			);
-			path = BaseClasses;
-			sourceTree = "<group>";
-		};
 		0DD2A91D2775B19E0048782A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +267,22 @@
 				0DD2A904276B62A60048782A /* RootViewController.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0DE29910278CADB000FC4793 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0DE29911278CADB800FC4793 /* Combine */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0DE29911278CADB800FC4793 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				0DE29912278CADD600FC4793 /* PassthroughSubject+bind.swift */,
+			);
+			path = Combine;
 			sourceTree = "<group>";
 		};
 		8298D6663BA8D9C90B69E21B /* Pods */ = {
@@ -603,23 +574,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DD2A9152775B0E60048782A /* BaseViewController.swift in Sources */,
 				0DD2A91B2775B13F0048782A /* RootService.swift in Sources */,
 				0DD2A9192775B1260048782A /* RootRepository.swift in Sources */,
 				0D00759F276A080D00D9D531 /* ReferenceArchDummy.swift in Sources */,
-				0DD2A90F2775B0710048782A /* BaseViewModel.swift in Sources */,
 				0DD2A907276B65FE0048782A /* RootCoordinator.swift in Sources */,
+				0DE29913278CADD600FC4793 /* PassthroughSubject+bind.swift in Sources */,
 				0D0075292769F8A900D9D531 /* RootViewController.swift in Sources */,
-				0DD2A8FF276B5F9B0048782A /* CoordinatorProtocol.swift in Sources */,
 				0DD2A9132775B0CA0048782A /* RootUseCase.swift in Sources */,
 				0D0075252769F8A900D9D531 /* AppDelegate.swift in Sources */,
-				0DD2A9172775B10A0048782A /* CollaboratorProtocol.swift in Sources */,
-				0DD2A9092771FBEB0048782A /* ScenableProtocol.swift in Sources */,
 				0DD2A9112775B09A0048782A /* RootViewModel.swift in Sources */,
 				0DD2A90D27749E1D0048782A /* RootScene.swift in Sources */,
-				0D044435278C9F9800684F7A /* BaseNavigationController.swift in Sources */,
-				0DD2A903276B60E00048782A /* NibableProtocol.swift in Sources */,
-				0D044433278C9F7700684F7A /* BaseCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

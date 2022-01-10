@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import BaseModule
 
 class RootRepository: CollaboratorProtocol {
     var service: RootService

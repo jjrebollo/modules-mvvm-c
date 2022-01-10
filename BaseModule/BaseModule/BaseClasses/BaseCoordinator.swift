@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BaseCoordinator<T:BaseNavigationController>: CoordinatorProtocol {
+open class BaseCoordinator<T:BaseNavigationController>: CoordinatorProtocol {
     
     var navigationController: T
     
@@ -15,6 +15,6 @@ class BaseCoordinator<T:BaseNavigationController>: CoordinatorProtocol {
         self.navigationController = navigationController
     }
     
-    func start() {}
+    public func start() {}
 
 }

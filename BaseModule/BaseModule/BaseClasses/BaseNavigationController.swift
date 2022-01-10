@@ -7,4 +7,4 @@
 
 import UIKit
 
-class BaseNavigationController: UINavigationController {}
+open class BaseNavigationController: UINavigationController {}

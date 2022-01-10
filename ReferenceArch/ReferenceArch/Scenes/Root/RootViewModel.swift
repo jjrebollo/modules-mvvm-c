@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import BaseModule
 
 class RootViewModel: BaseViewModel {
     let rootUseCase: RootUseCase
@@ -43,19 +44,3 @@ class RootViewModel: BaseViewModel {
 
 // viewmodel should observe viewcontroller events
 // add extension from here https://betterprogramming.pub/observe-uibutton-events-using-combine-in-swift-5-63c1a4e0a0c1
-
-
-extension PassthroughSubject {
-    func bind(to publisher: PassthroughSubject) -> AnyCancellable {
-        
-//        self.handleEvents { output in
-//            publisher.send(subscription: output)
-//        }
-        
-        return self.sink { error in
-            return
-        } receiveValue: { output in
-            publisher.send(output)
-        }
-    }
-}

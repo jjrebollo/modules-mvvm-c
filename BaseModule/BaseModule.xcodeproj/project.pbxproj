@@ -11,6 +11,14 @@
 		0D0444172775F21300684F7A /* BaseModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D04440C2775F21200684F7A /* BaseModule.framework */; };
 		0D04441C2775F21400684F7A /* BaseModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04441B2775F21400684F7A /* BaseModuleTests.swift */; };
 		0D04441D2775F21400684F7A /* BaseModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D04440F2775F21200684F7A /* BaseModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D044459278CA26800684F7A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044450278CA26800684F7A /* BaseViewController.swift */; };
+		0D04445A278CA26800684F7A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044451278CA26800684F7A /* BaseViewModel.swift */; };
+		0D04445B278CA26800684F7A /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044452278CA26800684F7A /* BaseNavigationController.swift */; };
+		0D04445C278CA26800684F7A /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044453278CA26800684F7A /* BaseCoordinator.swift */; };
+		0D04445D278CA26800684F7A /* NibableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044455278CA26800684F7A /* NibableProtocol.swift */; };
+		0D04445E278CA26800684F7A /* CollaboratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044456278CA26800684F7A /* CollaboratorProtocol.swift */; };
+		0D04445F278CA26800684F7A /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044457278CA26800684F7A /* CoordinatorProtocol.swift */; };
+		0D044460278CA26800684F7A /* ScenableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044458278CA26800684F7A /* ScenableProtocol.swift */; };
 		1435A42B1E0BC3221DE30181 /* Pods_BaseModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E286C98FBB0236E1834418E8 /* Pods_BaseModuleTests.framework */; };
 		9C0919CC71767409ACC485C9 /* Pods_BaseModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EABC42B1460CCA99B1E703 /* Pods_BaseModule.framework */; };
 /* End PBXBuildFile section */
@@ -31,6 +39,14 @@
 		0D0444102775F21200684F7A /* BaseModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = BaseModule.docc; sourceTree = "<group>"; };
 		0D0444162775F21300684F7A /* BaseModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D04441B2775F21400684F7A /* BaseModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModuleTests.swift; sourceTree = "<group>"; };
+		0D044450278CA26800684F7A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0D044451278CA26800684F7A /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		0D044452278CA26800684F7A /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		0D044453278CA26800684F7A /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		0D044455278CA26800684F7A /* NibableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibableProtocol.swift; sourceTree = "<group>"; };
+		0D044456278CA26800684F7A /* CollaboratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollaboratorProtocol.swift; sourceTree = "<group>"; };
+		0D044457278CA26800684F7A /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		0D044458278CA26800684F7A /* ScenableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScenableProtocol.swift; sourceTree = "<group>"; };
 		23A2F85CEC88B07501A9C3E0 /* Pods-BaseModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseModule.release.xcconfig"; path = "Target Support Files/Pods-BaseModule/Pods-BaseModule.release.xcconfig"; sourceTree = "<group>"; };
 		5F53CD8D9A8E24E232424C78 /* Pods-BaseModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-BaseModuleTests/Pods-BaseModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6875B224463C15E8E153F28E /* Pods-BaseModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseModule.debug.xcconfig"; path = "Target Support Files/Pods-BaseModule/Pods-BaseModule.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +99,8 @@
 		0D04440E2775F21200684F7A /* BaseModule */ = {
 			isa = PBXGroup;
 			children = (
+				0D04444F278CA26800684F7A /* BaseClasses */,
+				0D044454278CA26800684F7A /* Protocols */,
 				0D04440F2775F21200684F7A /* BaseModule.h */,
 				0D0444102775F21200684F7A /* BaseModule.docc */,
 			);
@@ -95,6 +113,28 @@
 				0D04441B2775F21400684F7A /* BaseModuleTests.swift */,
 			);
 			path = BaseModuleTests;
+			sourceTree = "<group>";
+		};
+		0D04444F278CA26800684F7A /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				0D044450278CA26800684F7A /* BaseViewController.swift */,
+				0D044451278CA26800684F7A /* BaseViewModel.swift */,
+				0D044452278CA26800684F7A /* BaseNavigationController.swift */,
+				0D044453278CA26800684F7A /* BaseCoordinator.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		0D044454278CA26800684F7A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0D044455278CA26800684F7A /* NibableProtocol.swift */,
+				0D044456278CA26800684F7A /* CollaboratorProtocol.swift */,
+				0D044457278CA26800684F7A /* CoordinatorProtocol.swift */,
+				0D044458278CA26800684F7A /* ScenableProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		1ABD537ECBC386E18719D66E /* Pods */ = {
@@ -276,7 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D04445C278CA26800684F7A /* BaseCoordinator.swift in Sources */,
+				0D044460278CA26800684F7A /* ScenableProtocol.swift in Sources */,
+				0D04445B278CA26800684F7A /* BaseNavigationController.swift in Sources */,
+				0D04445F278CA26800684F7A /* CoordinatorProtocol.swift in Sources */,
+				0D04445E278CA26800684F7A /* CollaboratorProtocol.swift in Sources */,
 				0D0444112775F21200684F7A /* BaseModule.docc in Sources */,
+				0D044459278CA26800684F7A /* BaseViewController.swift in Sources */,
+				0D04445A278CA26800684F7A /* BaseViewModel.swift in Sources */,
+				0D04445D278CA26800684F7A /* NibableProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.waynebent.BaseModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,6 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.waynebent.BaseModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -481,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5F53CD8D9A8E24E232424C78 /* Pods-BaseModuleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -502,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD87869843955F6A8D699FB8 /* Pods-BaseModuleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

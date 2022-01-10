@@ -7,14 +7,14 @@
 
 import UIKit
 
-class BaseViewController<T:BaseViewModel>: UIViewController {
+open class BaseViewController<T:BaseViewModel>: UIViewController {
     
     private(set) var viewModel: T? = nil
     
-    func setViewModel(viewModel: T) {
+    public func setViewModel(viewModel: T) {
         self.viewModel = viewModel
         configure(viewModel: viewModel)
     }
     
-    func configure(viewModel: T) {}
+    open func configure(viewModel: T) {}
 }
