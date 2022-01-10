@@ -19,6 +19,7 @@
 		0D0075AB276A09BC00D9D531 /* Module1.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0D0075A8276A097300D9D531 /* Module1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0D044433278C9F7700684F7A /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044432278C9F7700684F7A /* BaseCoordinator.swift */; };
 		0D044435278C9F9800684F7A /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044434278C9F9800684F7A /* BaseNavigationController.swift */; };
+		0D044436278CA09A00684F7A /* BaseModule.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0D04442D2775F31800684F7A /* BaseModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0DD2A8FF276B5F9B0048782A /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A8FE276B5F9B0048782A /* CoordinatorProtocol.swift */; };
 		0DD2A903276B60E00048782A /* NibableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A902276B60E00048782A /* NibableProtocol.swift */; };
 		0DD2A905276B62A60048782A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2A904276B62A60048782A /* RootViewController.xib */; };
@@ -89,6 +90,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0D044436278CA09A00684F7A /* BaseModule.framework in Copy Modules */,
 				0D0075AB276A09BC00D9D531 /* Module1.framework in Copy Modules */,
 			);
 			name = "Copy Modules";
