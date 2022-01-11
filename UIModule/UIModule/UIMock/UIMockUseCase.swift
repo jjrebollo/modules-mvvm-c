@@ -1,14 +1,14 @@
 //
-//  ___FILENAME___
-//  ___PROJECTNAME___
+//  UIMockUseCase.swift
+//  UIModule
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Created by Juan Jose Rebollo on 11/01/2022.
 //
 
 import Foundation
 import BaseModule
 
-extension ___VARIABLE_sceneName:identifier___ {
+extension UIMock {
 
     // UseCase1 class name should be renamed to a proper name
     final class UseCase1 {

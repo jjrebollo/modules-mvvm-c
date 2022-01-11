@@ -11,6 +11,7 @@
 		0DE29951278D83DC00FC4793 /* UIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29946278D83DB00FC4793 /* UIModule.framework */; };
 		0DE29956278D83DC00FC4793 /* UIModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29955278D83DC00FC4793 /* UIModuleTests.swift */; };
 		0DE29957278D83DC00FC4793 /* UIModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE29949278D83DB00FC4793 /* UIModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DE29976278DD70400FC4793 /* UIMock in Resources */ = {isa = PBXBuildFile; fileRef = 0DE29975278DD70400FC4793 /* UIMock */; };
 		7DE7430721059BFC38A2EC04 /* Pods_UIModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152FB4031EBF3B80AE9F2AB7 /* Pods_UIModuleTests.framework */; };
 		B9E61BA4C1BD05FFE5893979 /* Pods_UIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588171813AAFBCB107CDEA9 /* Pods_UIModule.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		0DE2994A278D83DB00FC4793 /* UIModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UIModule.docc; sourceTree = "<group>"; };
 		0DE29950278D83DC00FC4793 /* UIModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE29955278D83DC00FC4793 /* UIModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModuleTests.swift; sourceTree = "<group>"; };
+		0DE29975278DD70400FC4793 /* UIMock */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIMock; sourceTree = "<group>"; };
 		152FB4031EBF3B80AE9F2AB7 /* Pods_UIModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		380E077041DB89B2DB893289 /* Pods-UIModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIModule.release.xcconfig"; path = "Target Support Files/Pods-UIModule/Pods-UIModule.release.xcconfig"; sourceTree = "<group>"; };
 		7F1C1184ECDFEB3B04804B6A /* Pods-UIModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIModuleTests.release.xcconfig"; path = "Target Support Files/Pods-UIModuleTests/Pods-UIModuleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				0DE29949278D83DB00FC4793 /* UIModule.h */,
 				0DE2994A278D83DB00FC4793 /* UIModule.docc */,
+				0DE29975278DD70400FC4793 /* UIMock */,
 			);
 			path = UIModule;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE29976278DD70400FC4793 /* UIMock in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

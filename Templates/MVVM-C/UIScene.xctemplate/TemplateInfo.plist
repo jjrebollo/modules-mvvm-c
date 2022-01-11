@@ -34,13 +34,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Controller</string>
+			<string>___VARIABLE_sceneName:identifier___ViewModel</string>
 			<key>Description</key>
-			<string>The controller name</string>
+			<string>The view model name</string>
 			<key>Identifier</key>
-			<string>controllerName</string>
+			<string>viewModelName</string>
 			<key>Name</key>
-			<string>Controller Name:</string>
+			<string>View Model Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -48,13 +48,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___ControllerProtocol</string>
+			<string>___VARIABLE_sceneName:identifier___UseCase</string>
 			<key>Description</key>
-			<string>The controller protocol name</string>
+			<string>The use case name</string>
 			<key>Identifier</key>
-			<string>controllerProtocolName</string>
+			<string>useCaseName</string>
 			<key>Name</key>
-			<string>Controller Protocol Name:</string>
+			<string>Use case Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -62,13 +62,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___UIController</string>
+			<string>___VARIABLE_sceneName:identifier___Collaborator</string>
 			<key>Description</key>
-			<string>The UI Controller name</string>
+			<string>The Collaborator name</string>
 			<key>Identifier</key>
-			<string>uicontrollerName</string>
+			<string>collaboratorName</string>
 			<key>Name</key>
-			<string>UIController Name:</string>
+			<string>Collaborator Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -76,13 +76,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___UIControllerProtocol</string>
+			<string>___VARIABLE_sceneName:identifier___Service</string>
 			<key>Description</key>
-			<string>The UI Controller protocol name</string>
+			<string>The Service name</string>
 			<key>Identifier</key>
-			<string>uicontrollerProtocolName</string>
+			<string>serviceName</string>
 			<key>Name</key>
-			<string>UIController Protocol Name:</string>
+			<string>Service Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -90,13 +90,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___View</string>
+			<string>___VARIABLE_sceneName:identifier___Coordinator</string>
 			<key>Description</key>
-			<string>The view file name</string>
+			<string>The Coordinator name</string>
 			<key>Identifier</key>
-			<string>viewName</string>
+			<string>coordinatorName</string>
 			<key>Name</key>
-			<string>View Name:</string>
+			<string>Coordinator Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>

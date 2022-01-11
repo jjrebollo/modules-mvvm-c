@@ -1,8 +1,8 @@
 //
-//  ___FILENAME___
-//  ___PROJECTNAME___
+//  UIMockViewModel.swift
+//  UIModule
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Created by Juan Jose Rebollo on 11/01/2022.
 //
 
 import Foundation
@@ -10,13 +10,13 @@ import Combine
 import BaseModule
 
 extension Root {
-    final class ViewModel: BaseViewModel<___VARIABLE_sceneName:identifier___ViewController> {
+    final class ViewModel: BaseViewModel<UIMockViewController> {
         let rootUseCase: UseCase1
         
         private var cancellableBag = Set<AnyCancellable>()
 
         
-        weak var viewController: ___VARIABLE_sceneName:identifier___ViewController? {
+        weak var viewController: UIMockViewController? {
             didSet {
                 guard let viewController = viewController else { return }
                 setupViewControllerObservers(for: viewController)

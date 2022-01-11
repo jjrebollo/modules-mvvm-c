@@ -3,32 +3,27 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import Foundation
 import BaseModule
 
-struct RootScene: ScenableProtocol {
-    static func makeScene(coordinator: CoordinatorProtocol) -> RootScene? {
-        
-        guard let coordinator = coordinator as? RootCoordinator else { return nil }
-        
-        let service = RootService()
-        let repository = RootRepository(service: service)
-        let useCase = RootUseCase(collaborator: repository)
-        let viewModel = RootViewModel(coordinator: coordinator, rootUseCase: useCase)
-        let viewController = RootViewController.instantiate()
-        viewController.setViewModel(viewModel: viewModel)
-        
-        return Self(viewModel: viewModel, viewController: viewController)
-    }
+struct ___VARIABLE_sceneName:identifier___ {}
 
-    let viewModel: RootViewModel
-    let viewController: RootViewController
-
-    init(viewModel: RootViewModel, viewController: RootViewController) {
-        self.viewModel = viewModel
-        self.viewController = viewController
+extension ___VARIABLE_sceneName:identifier___: ScenableProtocol {
+    
+    static func makeScene(coordinator: CoordinatorProtocol) -> Scene<___VARIABLE_sceneName:identifier___ViewController>? {
+        
+        guard let coordinator = coordinator as? Coordinator else { return nil }
+        
+        let service = Service()
+        let repository = Repository(service: service)
+        let useCase = UseCase1(collaborator: repository)
+        let viewModel = ViewModel(coordinator: coordinator, rootUseCase: useCase)
+        let nibName = ___VARIABLE_sceneName:identifier___ViewController.Constants.Nib
+        let viewController = ___VARIABLE_sceneName:identifier___ViewController.instantiate(nibName: nibName)
+        viewModel.setViewController(viewController: viewController)
+        
+        return Scene(viewController: viewController)
     }
 }

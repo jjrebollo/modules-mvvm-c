@@ -1,15 +1,15 @@
 //
-//  ___FILENAME___
-//  ___PROJECTNAME___
+//  UIMockCollaborator.swift
+//  UIModule
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Created by Juan Jose Rebollo on 11/01/2022.
+//  Copyright (c) 2022 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import Foundation
 import BaseModule
 
-extension ___VARIABLE_sceneName:identifier___ {
+extension UIMock {
     final class Repository: CollaboratorProtocol {
         var service: Service
         

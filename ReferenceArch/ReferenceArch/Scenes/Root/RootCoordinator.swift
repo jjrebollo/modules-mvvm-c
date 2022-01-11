@@ -8,11 +8,14 @@
 import BaseModule
 import UIKit
 import Combine
+import UIModule
 
 extension Root {
     final class Coordinator: CoordinatorProtocol {
 
         // Coordinators declaration
+//        var uiMockCoordinator: UIMock
+        
         var navigationController: BaseNavigationController
         
         var scene: Scene<RootViewController>? = nil
@@ -33,6 +36,12 @@ extension Root {
 
         func configureObservables() {
             // observe moduleWithUIButtonSubject and create the new coordinator + start it
+            
+//            let coordinator = UIMock.Coordinator(navigationController: navigationController)
+//            self.coordinator = coordinator
+//            self.coordinator?.start()
+            
+            
         }
     }
 }

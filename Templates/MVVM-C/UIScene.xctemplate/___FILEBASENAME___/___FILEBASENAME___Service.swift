@@ -3,9 +3,10 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import Foundation
 
-class RootService {}
+extension ___VARIABLE_sceneName:identifier___ {
+    final class Service {}
+}

@@ -1,18 +1,18 @@
 //
-//  ___FILENAME___
-//  ___PROJECTNAME___
+//  UIMockViewController.swift
+//  UIModule
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Created by Juan Jose Rebollo on 11/01/2022.
 //
 
 import UIKit
 import Combine
 import BaseModule
 
-final class ___VARIABLE_sceneName:identifier___ViewController: BaseViewController, NibableProtocol {
+final class UIMockViewController: BaseViewController, NibableProtocol {
     
     struct Constants {
-        static let Nib: String = "___VARIABLE_sceneName:identifier___ViewController"
+        static let Nib: String = "UIMockViewController"
     }
 
     private var cancellableBag = Set<AnyCancellable>()
