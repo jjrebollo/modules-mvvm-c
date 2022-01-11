@@ -9,28 +9,30 @@ import BaseModule
 import UIKit
 import Combine
 
-class RootCoordinator: CoordinatorProtocol {
+extension Root {
+    final class Coordinator: CoordinatorProtocol {
 
-    // Coordinators declaration
-    var navigationController: BaseNavigationController
-    
-    var scene: RootScene? = nil
-    
-    let moduleWithUIButtonSubject = PassthroughSubject<Void, Never>()
-    
-    init(navigationController: BaseNavigationController) {
-        self.navigationController = navigationController
+        // Coordinators declaration
+        var navigationController: BaseNavigationController
         
-        configureObservables()
-    }
-    
-    func start() {
-        guard let scene = RootScene.makeScene(coordinator: self) else { return }
-        self.scene = scene
-        navigationController.pushViewController(scene.viewController, animated: true)
-    }
+        var scene: Scene<RootViewController>? = nil
+        
+        let moduleWithUIButtonSubject = PassthroughSubject<Void, Never>()
+        
+        init(navigationController: BaseNavigationController) {
+            self.navigationController = navigationController
+            
+            configureObservables()
+        }
+        
+        func start() {
+            guard let scene = Root.makeScene(coordinator: self) else { return }
+            self.scene = scene
+            navigationController.pushViewController(scene.viewController, animated: true)
+        }
 
-    func configureObservables() {
-        // observe moduleWithUIButtonSubject and create the new coordinator + start it
+        func configureObservables() {
+            // observe moduleWithUIButtonSubject and create the new coordinator + start it
+        }
     }
 }

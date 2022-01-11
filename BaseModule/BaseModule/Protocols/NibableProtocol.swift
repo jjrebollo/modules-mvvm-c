@@ -9,12 +9,11 @@ import Foundation
 import UIKit
 
 public protocol NibableProtocol {
-    static func instantiate() -> Self
+    static func instantiate(nibName: String) -> Self
 }
 
 extension NibableProtocol where Self: UIViewController {
-    public static func instantiate() -> Self {
-        let nibName = String(describing: self)
+    public static func instantiate(nibName: String) -> Self {
         
         if let viewController = Bundle.main.loadNibNamed(nibName, owner: nil, options: nil)?.first as? Self {
             return viewController

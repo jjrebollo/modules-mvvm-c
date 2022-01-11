@@ -8,26 +8,24 @@
 import Foundation
 import BaseModule
 
-struct RootScene: ScenableProtocol {
-    static func makeScene(coordinator: CoordinatorProtocol) -> RootScene? {
-        
-        guard let coordinator = coordinator as? RootCoordinator else { return nil }
-        
-        let service = RootService()
-        let repository = RootRepository(service: service)
-        let useCase = RootUseCase(collaborator: repository)
-        let viewModel = RootViewModel(coordinator: coordinator, rootUseCase: useCase)
-        let viewController = RootViewController.instantiate()
-        viewController.setViewModel(viewModel: viewModel)
-        
-        return Self(viewModel: viewModel, viewController: viewController)
-    }
+struct Root {}
 
-    let viewModel: RootViewModel
-    let viewController: RootViewController
-
-    init(viewModel: RootViewModel, viewController: RootViewController) {
-        self.viewModel = viewModel
-        self.viewController = viewController
+extension Root: ScenableProtocol {
+    
+    typealias ViewControllerType = RootViewController
+    
+    static func makeScene(coordinator: CoordinatorProtocol) -> Scene<RootViewController>? {
+        
+        guard let coordinator = coordinator as? Coordinator else { return nil }
+        
+        let service = Service()
+        let repository = Repository(service: service)
+        let useCase = UseCase1(collaborator: repository)
+        let viewModel = ViewModel(coordinator: coordinator, rootUseCase: useCase)
+        let nibName = RootViewController.Constants.Nib
+        let viewController = RootViewController.instantiate(nibName: nibName)
+        viewModel.setViewController(viewController: viewController)
+        
+        return Scene(viewController: viewController)
     }
 }

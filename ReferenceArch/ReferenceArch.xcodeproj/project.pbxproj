@@ -26,6 +26,7 @@
 		0DD2A91B2775B13F0048782A /* RootService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A91A2775B13F0048782A /* RootService.swift */; };
 		0DE2990F278CA86000FC4793 /* BaseModule.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0D04442D2775F31800684F7A /* BaseModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0DE29913278CADD600FC4793 /* PassthroughSubject+bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29912278CADD600FC4793 /* PassthroughSubject+bind.swift */; };
+		0DE2996F278D84D900FC4793 /* UIModule.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0DE2996C278D84B900FC4793 /* UIModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		19B7B8474FC622C1D4B38422 /* Pods_ReferenceArchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDD7751B3349EDD711CCB68 /* Pods_ReferenceArchUITests.framework */; };
 		5A998E2192C145F0E03F0290 /* Pods_ReferenceArch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BF803107DBF6376D30F53A /* Pods_ReferenceArch.framework */; };
 		AE92A8E0FF664C30BF2757EC /* Pods_ReferenceArchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */; };
@@ -74,6 +75,20 @@
 			remoteGlobalIDString = 0D0444162775F21300684F7A;
 			remoteInfo = BaseModuleTests;
 		};
+		0DE2996B278D84B900FC4793 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DE29962278D84B900FC4793 /* UIModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0DE29946278D83DB00FC4793;
+			remoteInfo = UIModule;
+		};
+		0DE2996D278D84B900FC4793 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DE29962278D84B900FC4793 /* UIModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0DE29950278D83DC00FC4793;
+			remoteInfo = UIModuleTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,6 +98,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0DE2996F278D84D900FC4793 /* UIModule.framework in Copy Modules */,
 				0D0075AB276A09BC00D9D531 /* Module1.framework in Copy Modules */,
 				0DE2990F278CA86000FC4793 /* BaseModule.framework in Copy Modules */,
 			);
@@ -117,6 +133,7 @@
 		0DD2A9182775B1260048782A /* RootRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRepository.swift; sourceTree = "<group>"; };
 		0DD2A91A2775B13F0048782A /* RootService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootService.swift; sourceTree = "<group>"; };
 		0DE29912278CADD600FC4793 /* PassthroughSubject+bind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PassthroughSubject+bind.swift"; sourceTree = "<group>"; };
+		0DE29962278D84B900FC4793 /* UIModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIModule.xcodeproj; path = ../../UIModule/UIModule.xcodeproj; sourceTree = "<group>"; };
 		10EC282335FDD3D219698E68 /* Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArch-ReferenceArchUITests/Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReferenceArchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BD20BA4DE562DD4B585CD9 /* Pods-ReferenceArchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArchUITests.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArchUITests/Pods-ReferenceArchUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +231,7 @@
 		0D0075A1276A094800D9D531 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				0DE29962278D84B900FC4793 /* UIModule.xcodeproj */,
 				0D0444272775F31800684F7A /* BaseModule.xcodeproj */,
 				0D0075A2276A097300D9D531 /* Module1.xcodeproj */,
 			);
@@ -283,6 +301,15 @@
 				0DE29912278CADD600FC4793 /* PassthroughSubject+bind.swift */,
 			);
 			path = Combine;
+			sourceTree = "<group>";
+		};
+		0DE29963278D84B900FC4793 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DE2996C278D84B900FC4793 /* UIModule.framework */,
+				0DE2996E278D84B900FC4793 /* UIModuleTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		8298D6663BA8D9C90B69E21B /* Pods */ = {
@@ -414,6 +441,10 @@
 					ProductGroup = 0D0075A3276A097300D9D531 /* Products */;
 					ProjectRef = 0D0075A2276A097300D9D531 /* Module1.xcodeproj */;
 				},
+				{
+					ProductGroup = 0DE29963278D84B900FC4793 /* Products */;
+					ProjectRef = 0DE29962278D84B900FC4793 /* UIModule.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -451,6 +482,20 @@
 			fileType = wrapper.cfbundle;
 			path = BaseModuleTests.xctest;
 			remoteRef = 0D04442E2775F31800684F7A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0DE2996C278D84B900FC4793 /* UIModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIModule.framework;
+			remoteRef = 0DE2996B278D84B900FC4793 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0DE2996E278D84B900FC4793 /* UIModuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UIModuleTests.xctest;
+			remoteRef = 0DE2996D278D84B900FC4793 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

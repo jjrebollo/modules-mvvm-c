@@ -8,5 +8,14 @@
 import UIKit
 
 public protocol ScenableProtocol {
-    static func makeScene(coordinator: CoordinatorProtocol) -> Self?
+    associatedtype ViewControllerType: BaseViewController
+    static func makeScene(coordinator: CoordinatorProtocol) -> Scene<ViewControllerType>?
+}
+
+public struct Scene<T:BaseViewController> {
+    public let viewController: T
+
+    public init(viewController: T) {
+        self.viewController = viewController
+    }
 }

@@ -11,7 +11,7 @@ import BaseModule
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var coordinator: RootCoordinator?
+    var coordinator: Root.Coordinator?
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().compactAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         
-        let coordinator = RootCoordinator(navigationController: navController)
+        let coordinator = Root.Coordinator(navigationController: navController)
         self.coordinator = coordinator
         self.coordinator?.start()
 

@@ -8,10 +8,12 @@
 import Foundation
 import BaseModule
 
-class RootRepository: CollaboratorProtocol {
-    var service: RootService
-    
-    init(service: RootService) {
-        self.service = service
+extension Root {
+    final class Repository: CollaboratorProtocol {
+        var service: Service
+        
+        init(service: Service) {
+            self.service = service
+        }
     }
 }

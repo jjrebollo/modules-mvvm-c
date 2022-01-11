@@ -1,19 +1,16 @@
 //
-//  ViewController.swift
-//  ReferenceArch
+//  ___FILENAME___
+//  ___PROJECTNAME___
 //
-//  Created by Juan Jose Rebollo on 15/12/2021.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import UIKit
 import Combine
 import BaseModule
 
-final class RootViewController: BaseViewController, NibableProtocol {
-    
-    struct Constants {
-        static let Nib: String = "RootViewController"
-    }
+class RootViewController: BaseViewController<RootViewModel>, NibableProtocol {
     
 //    @IBOutlet weak var goToModuleWithUIButton: UIButton!
     
@@ -25,7 +22,14 @@ final class RootViewController: BaseViewController, NibableProtocol {
         // Do any additional setup after loading the view.
     }
 
+    override func configure(viewModel: RootViewModel) {
+        moduleWithUIButtonTouchedSubject
+            .bind(to: viewModel.moduleWithUIButtonSubject)
+            .store(in: &cancellableBag)
+    }
+
     @IBAction func moduleWithUIButtonTouched(_ sender: Any) {
         moduleWithUIButtonTouchedSubject.send()
     }
 }
+

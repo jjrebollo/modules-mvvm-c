@@ -8,10 +8,12 @@
 import Foundation
 import BaseModule
 
-class RootUseCase {
-    let reposiroty: CollaboratorProtocol
-    
-    init(collaborator: CollaboratorProtocol) {
-        self.reposiroty = collaborator
+extension Root {
+    final class UseCase1 {
+        let reposiroty: CollaboratorProtocol
+        
+        init(collaborator: CollaboratorProtocol) {
+            self.reposiroty = collaborator
+        }
     }
 }

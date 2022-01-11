@@ -7,4 +7,6 @@
 
 import Foundation
 
-class RootService {}
+extension Root {
+    final class Service {}
+}
