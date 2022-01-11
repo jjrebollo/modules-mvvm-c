@@ -18,7 +18,7 @@ extension ___VARIABLE_sceneName:identifier___ {
         }
         
         func start() {
-            guard let scene = Root.makeScene(coordinator: self) else { return }
+            guard let scene = ___VARIABLE_sceneName:identifier___.makeScene(coordinator: self) else { return }
             self.scene = scene
             // Push view controller in container
         }

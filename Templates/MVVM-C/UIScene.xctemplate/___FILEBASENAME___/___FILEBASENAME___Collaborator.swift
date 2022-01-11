@@ -3,14 +3,13 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import Foundation
 import BaseModule
 
 extension ___VARIABLE_sceneName:identifier___ {
-    final class Repository: CollaboratorProtocol {
+    final class Collaborator: CollaboratorProtocol {
         var service: Service
         
         init(service: Service) {

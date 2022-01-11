@@ -23,7 +23,7 @@ extension UIMock {
 
         
         func start() {
-            guard let scene = Root.makeScene(coordinator: self) else { return }
+            guard let scene = UIMock.makeScene(coordinator: self) else { return }
             self.scene = scene
             navigationController.pushViewController(scene.viewController, animated: true)
         }

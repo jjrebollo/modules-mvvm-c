@@ -11,7 +11,6 @@
 		0DE29951278D83DC00FC4793 /* UIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29946278D83DB00FC4793 /* UIModule.framework */; };
 		0DE29956278D83DC00FC4793 /* UIModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29955278D83DC00FC4793 /* UIModuleTests.swift */; };
 		0DE29957278D83DC00FC4793 /* UIModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE29949278D83DB00FC4793 /* UIModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DE29976278DD70400FC4793 /* UIMock in Resources */ = {isa = PBXBuildFile; fileRef = 0DE29975278DD70400FC4793 /* UIMock */; };
 		7DE7430721059BFC38A2EC04 /* Pods_UIModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152FB4031EBF3B80AE9F2AB7 /* Pods_UIModuleTests.framework */; };
 		B9E61BA4C1BD05FFE5893979 /* Pods_UIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588171813AAFBCB107CDEA9 /* Pods_UIModule.framework */; };
 /* End PBXBuildFile section */
@@ -215,7 +214,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DE29976278DD70400FC4793 /* UIMock in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
