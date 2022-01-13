@@ -12,7 +12,7 @@ struct ___VARIABLE_sceneName:identifier___ {}
 
 extension ___VARIABLE_sceneName:identifier___: ScenableProtocol {
     
-    static public func makeScene(coordinator: CoordinatorProtocol) -> Scene<___VARIABLE_sceneName:identifier___ViewController, ViewModel>? {
+    static func makeScene(coordinator: CoordinatorProtocol) -> SceneNoUI<ViewModel>? {
         
         guard let coordinator = coordinator as? Coordinator else { return nil }
         
@@ -20,10 +20,7 @@ extension ___VARIABLE_sceneName:identifier___: ScenableProtocol {
         let collaborator = Collaborator(service: service)
         let useCase = UseCase1(collaborator: collaborator)
         let viewModel = ViewModel(coordinator: coordinator, rootUseCase: useCase)
-        let nibName = ___VARIABLE_sceneName:identifier___ViewController.Constants.Nib
-        let viewController = ___VARIABLE_sceneName:identifier___ViewController.instantiate(nibName: nibName)
-        viewModel.viewController = viewController
         
-        return Scene(viewController: viewController, viewModel: viewModel)
+        return SceneNoUI(viewModel: viewModel)
     }
 }

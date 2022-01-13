@@ -19,6 +19,9 @@
 		0D04445E278CA26800684F7A /* CollaboratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044456278CA26800684F7A /* CollaboratorProtocol.swift */; };
 		0D04445F278CA26800684F7A /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044457278CA26800684F7A /* CoordinatorProtocol.swift */; };
 		0D044460278CA26800684F7A /* ScenableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044458278CA26800684F7A /* ScenableProtocol.swift */; };
+		0DE299A22790A62900FC4793 /* SceneProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299A12790A62800FC4793 /* SceneProtocol.swift */; };
+		0DE299A42790A64100FC4793 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299A32790A64100FC4793 /* Scene.swift */; };
+		0DE299A62790A66D00FC4793 /* SceneNoUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299A52790A66D00FC4793 /* SceneNoUI.swift */; };
 		1435A42B1E0BC3221DE30181 /* Pods_BaseModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E286C98FBB0236E1834418E8 /* Pods_BaseModuleTests.framework */; };
 		9C0919CC71767409ACC485C9 /* Pods_BaseModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EABC42B1460CCA99B1E703 /* Pods_BaseModule.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +50,9 @@
 		0D044456278CA26800684F7A /* CollaboratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollaboratorProtocol.swift; sourceTree = "<group>"; };
 		0D044457278CA26800684F7A /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		0D044458278CA26800684F7A /* ScenableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScenableProtocol.swift; sourceTree = "<group>"; };
+		0DE299A12790A62800FC4793 /* SceneProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneProtocol.swift; sourceTree = "<group>"; };
+		0DE299A32790A64100FC4793 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		0DE299A52790A66D00FC4793 /* SceneNoUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneNoUI.swift; sourceTree = "<group>"; };
 		23A2F85CEC88B07501A9C3E0 /* Pods-BaseModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseModule.release.xcconfig"; path = "Target Support Files/Pods-BaseModule/Pods-BaseModule.release.xcconfig"; sourceTree = "<group>"; };
 		5F53CD8D9A8E24E232424C78 /* Pods-BaseModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-BaseModuleTests/Pods-BaseModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6875B224463C15E8E153F28E /* Pods-BaseModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseModule.debug.xcconfig"; path = "Target Support Files/Pods-BaseModule/Pods-BaseModule.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 		0D04444F278CA26800684F7A /* BaseClasses */ = {
 			isa = PBXGroup;
 			children = (
+				0DE299A02790A5E300FC4793 /* Scenes */,
 				0D044450278CA26800684F7A /* BaseViewController.swift */,
 				0D044451278CA26800684F7A /* BaseViewModel.swift */,
 				0D044452278CA26800684F7A /* BaseNavigationController.swift */,
@@ -133,8 +140,18 @@
 				0D044456278CA26800684F7A /* CollaboratorProtocol.swift */,
 				0D044457278CA26800684F7A /* CoordinatorProtocol.swift */,
 				0D044458278CA26800684F7A /* ScenableProtocol.swift */,
+				0DE299A12790A62800FC4793 /* SceneProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0DE299A02790A5E300FC4793 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0DE299A32790A64100FC4793 /* Scene.swift */,
+				0DE299A52790A66D00FC4793 /* SceneNoUI.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		1ABD537ECBC386E18719D66E /* Pods */ = {
@@ -318,13 +335,16 @@
 			files = (
 				0D04445C278CA26800684F7A /* BaseNavigationCoordinator.swift in Sources */,
 				0D044460278CA26800684F7A /* ScenableProtocol.swift in Sources */,
+				0DE299A22790A62900FC4793 /* SceneProtocol.swift in Sources */,
 				0D04445B278CA26800684F7A /* BaseNavigationController.swift in Sources */,
 				0D04445F278CA26800684F7A /* CoordinatorProtocol.swift in Sources */,
 				0D04445E278CA26800684F7A /* CollaboratorProtocol.swift in Sources */,
 				0D0444112775F21200684F7A /* BaseModule.docc in Sources */,
+				0DE299A62790A66D00FC4793 /* SceneNoUI.swift in Sources */,
 				0D044459278CA26800684F7A /* BaseViewController.swift in Sources */,
 				0D04445A278CA26800684F7A /* BaseViewModel.swift in Sources */,
 				0D04445D278CA26800684F7A /* NibableProtocol.swift in Sources */,
+				0DE299A42790A64100FC4793 /* Scene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

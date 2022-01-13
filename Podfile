@@ -30,25 +30,6 @@ target 'ReferenceArch' do
 end
 
 
-# Module 1
-
-def module1_pods
-  pod 'RxSwift'
-end
-
-target 'Module1' do
-  
-  project 'Module1/Module1.xcodeproj'
-  module1_pods
-
-  target 'Module1Tests' do
-    inherit! :search_paths
-    
-  end
-
-end
-
-
 # Base Module
 
 def baseModule_pods
