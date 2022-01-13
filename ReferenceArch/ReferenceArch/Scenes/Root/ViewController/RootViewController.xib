@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController" customModule="ReferenceArch" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <viewController nibName="ViewController1" id="GC7-DG-FuR" customClass="RootViewController" customModule="ReferenceArch" customModuleProvider="target">
             <view key="view" contentMode="scaleToFill" id="44l-Wr-hdn">
@@ -36,13 +36,31 @@
                             <action selector="moduleWithUIButtonTouched:" destination="-1" eventType="touchUpInside" id="oLy-kg-ZOo"/>
                         </connections>
                     </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qyo-8G-Mrc">
+                        <rect key="frame" x="107" y="635" width="200" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="ERK-FT-C22"/>
+                            <constraint firstAttribute="height" constant="31" id="enf-Xe-NBv"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Go to module with NO UI">
+                            <backgroundConfiguration key="background">
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </backgroundConfiguration>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="moduleWithNoUIButtonTouched:" destination="GC7-DG-FuR" eventType="touchUpInside" id="iW8-ZB-Wya"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <viewLayoutGuide key="safeArea" id="9wg-iN-Afa"/>
                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                 <constraints>
                     <constraint firstItem="grZ-jI-JWA" firstAttribute="top" secondItem="9wg-iN-Afa" secondAttribute="top" constant="50" id="BvH-D6-1Qm"/>
+                    <constraint firstItem="qyo-8G-Mrc" firstAttribute="centerX" secondItem="44l-Wr-hdn" secondAttribute="centerX" id="GPH-7N-hCV"/>
                     <constraint firstItem="F4A-29-eWE" firstAttribute="centerX" secondItem="44l-Wr-hdn" secondAttribute="centerX" id="VvL-fE-Xxh"/>
                     <constraint firstItem="F4A-29-eWE" firstAttribute="centerY" secondItem="44l-Wr-hdn" secondAttribute="centerY" id="cyO-oo-D7x"/>
+                    <constraint firstItem="9wg-iN-Afa" firstAttribute="bottom" secondItem="qyo-8G-Mrc" secondAttribute="bottom" constant="196" id="sWt-XJ-0LE"/>
                     <constraint firstItem="grZ-jI-JWA" firstAttribute="centerX" secondItem="44l-Wr-hdn" secondAttribute="centerX" id="zxt-SG-BLL"/>
                 </constraints>
             </view>

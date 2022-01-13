@@ -19,7 +19,7 @@ extension ___VARIABLE_sceneName:identifier___: ScenableProtocol {
         let service = Service()
         let collaborator = Collaborator(service: service)
         let useCase = UseCase1(collaborator: collaborator)
-        let viewModel = ViewModel(coordinator: coordinator, rootUseCase: useCase)
+        let viewModel = ViewModel(coordinator: coordinator, useCase1: useCase)
         let nibName = ___VARIABLE_sceneName:identifier___ViewController.Constants.Nib
         let viewController = ___VARIABLE_sceneName:identifier___ViewController.instantiate(nibName: nibName)
         viewModel.viewController = viewController

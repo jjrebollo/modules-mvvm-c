@@ -8,18 +8,18 @@
 import Foundation
 import BaseModule
 
-struct NoUIMock {}
+public struct NoUIMock {}
 
 extension NoUIMock: ScenableProtocol {
     
-    static func makeScene(coordinator: CoordinatorProtocol) -> SceneNoUI<ViewModel>? {
+    public static func makeScene(coordinator: CoordinatorProtocol) -> SceneNoUI<ViewModel>? {
         
         guard let coordinator = coordinator as? Coordinator else { return nil }
         
         let service = Service()
         let collaborator = Collaborator(service: service)
         let useCase = UseCase1(collaborator: collaborator)
-        let viewModel = ViewModel(coordinator: coordinator, rootUseCase: useCase)
+        let viewModel = ViewModel(coordinator: coordinator, useCase1: useCase)
         
         return SceneNoUI(viewModel: viewModel)
     }

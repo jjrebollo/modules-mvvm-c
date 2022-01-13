@@ -36,11 +36,19 @@ extension Root {
             moduleWithUIButtonSubject
                 .bind(to: coordinator.launchUISceneSubject)
                 .store(in: &cancellableBag)
+            
+            moduleWithoutUIButtonSubject
+                .bind(to: coordinator.launchNoUISceneSubject)
+                .store(in: &cancellableBag)
         }
 
         private func setupViewControllerObservers(for viewController: RootViewController) {
             viewController.moduleWithUIButtonTouchedSubject
                 .bind(to: self.moduleWithUIButtonSubject)
+                .store(in: &cancellableBag)
+            
+            viewController.moduleWithNoUIButtonTouchedSubject
+                .bind(to: self.moduleWithoutUIButtonSubject)
                 .store(in: &cancellableBag)
         }
     }

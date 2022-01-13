@@ -10,7 +10,7 @@ import Combine
 import BaseModule
 
 extension NoUIMock {
-    final class ViewModel: BaseViewModel {
+    final public class ViewModel: BaseViewModel {
         let useCase1: UseCase1
         
         private var cancellableBag = Set<AnyCancellable>()

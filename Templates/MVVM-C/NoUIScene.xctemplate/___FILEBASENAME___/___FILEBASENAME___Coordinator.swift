@@ -14,16 +14,19 @@ extension ___VARIABLE_sceneName:identifier___ {
     final public class Coordinator<T:BaseViewController>: CoordinatorProtocol { 
         
         var scene: SceneNoUI<ViewModel>? = nil
+
+        public init() {
+            self.scene = ___VARIABLE_sceneName:identifier___.makeScene(coordinator: self)
+        }
         
         public func start() {
-            guard let scene = ___VARIABLE_sceneName:identifier___.makeScene(coordinator: self) else { return }
-            self.scene = scene
+            guard let scene = self.scene, let viewController = scene.viewController else { return }
+            
             // Push view controller in container
         }
 
         public func setViewController(viewController: T) {
             scene?.viewController = viewController
-            scene?.viewModel = viewController
         }
 
         // Declare public methods that return variables to be observed (from view model mainly)

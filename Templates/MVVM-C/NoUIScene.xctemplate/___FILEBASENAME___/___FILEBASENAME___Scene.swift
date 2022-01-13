@@ -8,7 +8,7 @@
 import Foundation
 import BaseModule
 
-struct ___VARIABLE_sceneName:identifier___ {}
+public struct ___VARIABLE_sceneName:identifier___ {}
 
 extension ___VARIABLE_sceneName:identifier___: ScenableProtocol {
     
@@ -19,7 +19,7 @@ extension ___VARIABLE_sceneName:identifier___: ScenableProtocol {
         let service = Service()
         let collaborator = Collaborator(service: service)
         let useCase = UseCase1(collaborator: collaborator)
-        let viewModel = ViewModel(coordinator: coordinator, rootUseCase: useCase)
+        let viewModel = ViewModel(coordinator: coordinator, useCase1: useCase)
         
         return SceneNoUI(viewModel: viewModel)
     }

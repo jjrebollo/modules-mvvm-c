@@ -11,7 +11,14 @@
 		0DE299BC2790A72700FC4793 /* NoUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE299B12790A72600FC4793 /* NoUIModule.framework */; };
 		0DE299C12790A72700FC4793 /* NoUIModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299C02790A72700FC4793 /* NoUIModuleTests.swift */; };
 		0DE299C22790A72700FC4793 /* NoUIModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE299B42790A72600FC4793 /* NoUIModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DE299E52790A7F600FC4793 /* NoUIMock in Resources */ = {isa = PBXBuildFile; fileRef = 0DE299E42790A7F600FC4793 /* NoUIMock */; };
+		0DE299F22790AC5500FC4793 /* NoUIMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299EC2790AC5500FC4793 /* NoUIMockService.swift */; };
+		0DE299F32790AC5500FC4793 /* NoUIMockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299ED2790AC5500FC4793 /* NoUIMockCoordinator.swift */; };
+		0DE299F42790AC5500FC4793 /* NoUIMockCollaborator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299EE2790AC5500FC4793 /* NoUIMockCollaborator.swift */; };
+		0DE299F52790AC5500FC4793 /* NoUIMockScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299EF2790AC5500FC4793 /* NoUIMockScene.swift */; };
+		0DE299F62790AC5500FC4793 /* NoUIMockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299F02790AC5500FC4793 /* NoUIMockUseCase.swift */; };
+		0DE299F72790AC5500FC4793 /* NoUIMockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299F12790AC5500FC4793 /* NoUIMockViewModel.swift */; };
+		0DE29A152790B12B00FC4793 /* BaseModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29A142790B12B00FC4793 /* BaseModule.framework */; };
+		0DE29A162790B12B00FC4793 /* BaseModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29A142790B12B00FC4793 /* BaseModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24431E86E149411AE715ACB5 /* Pods_NoUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA64AF203FA84ADF0C210BE /* Pods_NoUIModule.framework */; };
 		A511AC38ADD0D4A0426C016B /* Pods_NoUIModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6685BEF7551C922669AC477E /* Pods_NoUIModuleTests.framework */; };
 /* End PBXBuildFile section */
@@ -26,13 +33,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0DE29A172790B12C00FC4793 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0DE29A162790B12B00FC4793 /* BaseModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0DE299B12790A72600FC4793 /* NoUIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoUIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE299B42790A72600FC4793 /* NoUIModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoUIModule.h; sourceTree = "<group>"; };
 		0DE299B52790A72600FC4793 /* NoUIModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NoUIModule.docc; sourceTree = "<group>"; };
 		0DE299BB2790A72700FC4793 /* NoUIModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoUIModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE299C02790A72700FC4793 /* NoUIModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoUIModuleTests.swift; sourceTree = "<group>"; };
-		0DE299E42790A7F600FC4793 /* NoUIMock */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NoUIMock; sourceTree = "<group>"; };
+		0DE299EC2790AC5500FC4793 /* NoUIMockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIMockService.swift; sourceTree = "<group>"; };
+		0DE299ED2790AC5500FC4793 /* NoUIMockCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIMockCoordinator.swift; sourceTree = "<group>"; };
+		0DE299EE2790AC5500FC4793 /* NoUIMockCollaborator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIMockCollaborator.swift; sourceTree = "<group>"; };
+		0DE299EF2790AC5500FC4793 /* NoUIMockScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIMockScene.swift; sourceTree = "<group>"; };
+		0DE299F02790AC5500FC4793 /* NoUIMockUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIMockUseCase.swift; sourceTree = "<group>"; };
+		0DE299F12790AC5500FC4793 /* NoUIMockViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIMockViewModel.swift; sourceTree = "<group>"; };
+		0DE29A142790B12B00FC4793 /* BaseModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE4527D8AE7E1F25ED0EC62 /* Pods-NoUIModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoUIModuleTests.release.xcconfig"; path = "Target Support Files/Pods-NoUIModuleTests/Pods-NoUIModuleTests.release.xcconfig"; sourceTree = "<group>"; };
 		6685BEF7551C922669AC477E /* Pods_NoUIModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoUIModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF947489B2492414CE588CB /* Pods-NoUIModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoUIModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-NoUIModuleTests/Pods-NoUIModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -47,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24431E86E149411AE715ACB5 /* Pods_NoUIModule.framework in Frameworks */,
+				0DE29A152790B12B00FC4793 /* BaseModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +113,9 @@
 		0DE299B32790A72600FC4793 /* NoUIModule */ = {
 			isa = PBXGroup;
 			children = (
+				0DE299EB2790AC5500FC4793 /* NoUIMock */,
 				0DE299B42790A72600FC4793 /* NoUIModule.h */,
 				0DE299B52790A72600FC4793 /* NoUIModule.docc */,
-				0DE299E42790A7F600FC4793 /* NoUIMock */,
 			);
 			path = NoUIModule;
 			sourceTree = "<group>";
@@ -100,9 +128,23 @@
 			path = NoUIModuleTests;
 			sourceTree = "<group>";
 		};
+		0DE299EB2790AC5500FC4793 /* NoUIMock */ = {
+			isa = PBXGroup;
+			children = (
+				0DE299EC2790AC5500FC4793 /* NoUIMockService.swift */,
+				0DE299ED2790AC5500FC4793 /* NoUIMockCoordinator.swift */,
+				0DE299EE2790AC5500FC4793 /* NoUIMockCollaborator.swift */,
+				0DE299EF2790AC5500FC4793 /* NoUIMockScene.swift */,
+				0DE299F02790AC5500FC4793 /* NoUIMockUseCase.swift */,
+				0DE299F12790AC5500FC4793 /* NoUIMockViewModel.swift */,
+			);
+			path = NoUIMock;
+			sourceTree = "<group>";
+		};
 		3F128EB8FFB2AFA150048795 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0DE29A142790B12B00FC4793 /* BaseModule.framework */,
 				BDA64AF203FA84ADF0C210BE /* Pods_NoUIModule.framework */,
 				6685BEF7551C922669AC477E /* Pods_NoUIModuleTests.framework */,
 			);
@@ -144,6 +186,7 @@
 				0DE299AD2790A72600FC4793 /* Sources */,
 				0DE299AE2790A72600FC4793 /* Frameworks */,
 				0DE299AF2790A72600FC4793 /* Resources */,
+				0DE29A172790B12C00FC4793 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,7 +258,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DE299E52790A7F600FC4793 /* NoUIMock in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE299F32790AC5500FC4793 /* NoUIMockCoordinator.swift in Sources */,
+				0DE299F22790AC5500FC4793 /* NoUIMockService.swift in Sources */,
+				0DE299F62790AC5500FC4793 /* NoUIMockUseCase.swift in Sources */,
+				0DE299F42790AC5500FC4793 /* NoUIMockCollaborator.swift in Sources */,
+				0DE299F72790AC5500FC4793 /* NoUIMockViewModel.swift in Sources */,
+				0DE299F52790AC5500FC4793 /* NoUIMockScene.swift in Sources */,
 				0DE299B62790A72600FC4793 /* NoUIModule.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6BF947489B2492414CE588CB /* Pods-NoUIModuleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -506,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1FE4527D8AE7E1F25ED0EC62 /* Pods-NoUIModuleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

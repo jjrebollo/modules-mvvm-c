@@ -14,11 +14,16 @@ extension ___VARIABLE_sceneName:identifier___ {
     final public class Coordinator: CoordinatorProtocol { 
         
         var scene: Scene<___VARIABLE_sceneName:identifier___ViewController, ViewModel>? = nil
+
+        public init() {
+            self.scene = ___VARIABLE_sceneName:identifier___.makeScene(coordinator: self)
+        }
         
         public func start() {
-            guard let scene = ___VARIABLE_sceneName:identifier___.makeScene(coordinator: self) else { return }
-            self.scene = scene
+            guard let scene = self.scene else { return }
+            
             // Push view controller in container
         }
+
     }
 }

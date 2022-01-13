@@ -16,6 +16,7 @@ final class RootViewController: BaseViewController, NibableProtocol {
     }
     
     let moduleWithUIButtonTouchedSubject = PassthroughSubject<Void, Never>()
+    let moduleWithNoUIButtonTouchedSubject = PassthroughSubject<Void, Never>()
 
     private var cancellableBag = Set<AnyCancellable>()
 
@@ -26,5 +27,9 @@ final class RootViewController: BaseViewController, NibableProtocol {
 
     @IBAction func moduleWithUIButtonTouched(_ sender: Any) {
         moduleWithUIButtonTouchedSubject.send()
+    }
+    
+    @IBAction func moduleWithNoUIButtonTouched(_ sender: Any) {
+        moduleWithNoUIButtonTouchedSubject.send()
     }
 }

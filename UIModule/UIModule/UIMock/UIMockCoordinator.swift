@@ -12,17 +12,16 @@ extension UIMock {
     final public class Coordinator: CoordinatorProtocol {
         
         var scene: Scene<UIMockViewController, ViewModel>? = nil
-        
         var navigationController: BaseNavigationController
         
         public init(navigationController: BaseNavigationController) {
             self.navigationController = navigationController
+            self.scene = UIMock.makeScene(coordinator: self)
         }
-
         
         public func start() {
-            guard let scene = UIMock.makeScene(coordinator: self) else { return }
-            self.scene = scene
+            guard let scene = self.scene else { return }
+            
             navigationController.pushViewController(scene.viewController, animated: true)
         }
     }

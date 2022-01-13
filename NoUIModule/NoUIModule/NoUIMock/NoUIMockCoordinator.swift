@@ -11,19 +11,24 @@ import UIKit
 extension NoUIMock {
 
     // Instead of `CoordinatorProtocol`, this class can inherit from one of the specific base coordinator such as `BaseNavigationCoordinator`
-    final public class Coordinator<T:BaseViewController>: CoordinatorProtocol { 
+    final public class Coordinator: CoordinatorProtocol {
         
         var scene: SceneNoUI<ViewModel>? = nil
+        var navigationController: BaseNavigationController
+        
+        public init(navigationController: BaseNavigationController) {
+            self.navigationController = navigationController
+            self.scene = NoUIMock.makeScene(coordinator: self)
+        }
         
         public func start() {
-            guard let scene = NoUIMock.makeScene(coordinator: self) else { return }
-            self.scene = scene
-            // Push view controller in container
+            guard let scene = self.scene, let viewController = scene.viewController else { return }
+            
+            navigationController.pushViewController(viewController, animated: true)
         }
 
-        public func setViewController(viewController: T) {
+        public func setViewController(viewController: BaseViewController) {
             scene?.viewController = viewController
-            scene?.viewModel = viewController
         }
 
         // Declare public methods that return variables to be observed (from view model mainly)
