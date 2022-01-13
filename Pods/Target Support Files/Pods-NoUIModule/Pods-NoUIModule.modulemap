@@ -1,0 +1,6 @@
+framework module Pods_NoUIModule {
+  umbrella header "Pods-NoUIModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

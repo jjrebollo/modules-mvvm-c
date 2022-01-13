@@ -25,6 +25,7 @@
 		0DE2990F278CA86000FC4793 /* BaseModule.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0D04442D2775F31800684F7A /* BaseModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0DE29913278CADD600FC4793 /* PassthroughSubject+bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29912278CADD600FC4793 /* PassthroughSubject+bind.swift */; };
 		0DE2996F278D84D900FC4793 /* UIModule.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0DE2996C278D84B900FC4793 /* UIModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0DE299E32790A7A800FC4793 /* NoUIModule.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0DE299E02790A79D00FC4793 /* NoUIModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		19B7B8474FC622C1D4B38422 /* Pods_ReferenceArchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDD7751B3349EDD711CCB68 /* Pods_ReferenceArchUITests.framework */; };
 		5A998E2192C145F0E03F0290 /* Pods_ReferenceArch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BF803107DBF6376D30F53A /* Pods_ReferenceArch.framework */; };
 		AE92A8E0FF664C30BF2757EC /* Pods_ReferenceArchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */; };
@@ -73,6 +74,20 @@
 			remoteGlobalIDString = 0DE29950278D83DC00FC4793;
 			remoteInfo = UIModuleTests;
 		};
+		0DE299DF2790A79D00FC4793 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DE299DA2790A79D00FC4793 /* NoUIModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0DE299B12790A72600FC4793;
+			remoteInfo = NoUIModule;
+		};
+		0DE299E12790A79D00FC4793 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DE299DA2790A79D00FC4793 /* NoUIModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0DE299BB2790A72700FC4793;
+			remoteInfo = NoUIModuleTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +97,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0DE299E32790A7A800FC4793 /* NoUIModule.framework in Copy Modules */,
 				0DE2996F278D84D900FC4793 /* UIModule.framework in Copy Modules */,
 				0DE2990F278CA86000FC4793 /* BaseModule.framework in Copy Modules */,
 			);
@@ -115,6 +131,7 @@
 		0DD2A91A2775B13F0048782A /* RootService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootService.swift; sourceTree = "<group>"; };
 		0DE29912278CADD600FC4793 /* PassthroughSubject+bind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PassthroughSubject+bind.swift"; sourceTree = "<group>"; };
 		0DE29962278D84B900FC4793 /* UIModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIModule.xcodeproj; path = ../../UIModule/UIModule.xcodeproj; sourceTree = "<group>"; };
+		0DE299DA2790A79D00FC4793 /* NoUIModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NoUIModule.xcodeproj; path = ../../NoUIModule/NoUIModule.xcodeproj; sourceTree = "<group>"; };
 		10EC282335FDD3D219698E68 /* Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArch-ReferenceArchUITests/Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReferenceArchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BD20BA4DE562DD4B585CD9 /* Pods-ReferenceArchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArchUITests.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArchUITests/Pods-ReferenceArchUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +228,7 @@
 		0D0075A1276A094800D9D531 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				0DE299DA2790A79D00FC4793 /* NoUIModule.xcodeproj */,
 				0DE29962278D84B900FC4793 /* UIModule.xcodeproj */,
 				0D0444272775F31800684F7A /* BaseModule.xcodeproj */,
 			);
@@ -278,6 +296,15 @@
 			children = (
 				0DE2996C278D84B900FC4793 /* UIModule.framework */,
 				0DE2996E278D84B900FC4793 /* UIModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DE299DB2790A79D00FC4793 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DE299E02790A79D00FC4793 /* NoUIModule.framework */,
+				0DE299E22790A79D00FC4793 /* NoUIModuleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -408,6 +435,10 @@
 					ProjectRef = 0D0444272775F31800684F7A /* BaseModule.xcodeproj */;
 				},
 				{
+					ProductGroup = 0DE299DB2790A79D00FC4793 /* Products */;
+					ProjectRef = 0DE299DA2790A79D00FC4793 /* NoUIModule.xcodeproj */;
+				},
+				{
 					ProductGroup = 0DE29963278D84B900FC4793 /* Products */;
 					ProjectRef = 0DE29962278D84B900FC4793 /* UIModule.xcodeproj */;
 				},
@@ -448,6 +479,20 @@
 			fileType = wrapper.cfbundle;
 			path = UIModuleTests.xctest;
 			remoteRef = 0DE2996D278D84B900FC4793 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0DE299E02790A79D00FC4793 /* NoUIModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NoUIModule.framework;
+			remoteRef = 0DE299DF2790A79D00FC4793 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0DE299E22790A79D00FC4793 /* NoUIModuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NoUIModuleTests.xctest;
+			remoteRef = 0DE299E12790A79D00FC4793 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

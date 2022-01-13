@@ -66,3 +66,22 @@ target 'UIModule' do
   end
 
 end
+
+
+# Module with no UI
+
+def noUiModule_pods
+  pod 'RxSwift'
+end
+
+target 'NoUIModule' do
+  
+  project 'NoUIModule/NoUIModule.xcodeproj'
+  noUiModule_pods
+
+  target 'NoUIModuleTests' do
+    inherit! :search_paths
+    
+  end
+
+end
