@@ -45,20 +45,6 @@
 			remoteGlobalIDString = 0D0075202769F8A900D9D531;
 			remoteInfo = ReferenceArch;
 		};
-		0D0075A7276A097300D9D531 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D0075A2276A097300D9D531 /* Module1.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0D007582276A02DE00D9D531;
-			remoteInfo = Module1;
-		};
-		0D0075A9276A097300D9D531 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D0075A2276A097300D9D531 /* Module1.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0D00758C276A02DE00D9D531;
-			remoteInfo = Module1Tests;
-		};
 		0D04442C2775F31800684F7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0D0444272775F31800684F7A /* BaseModule.xcodeproj */;
@@ -119,7 +105,6 @@
 		0D0075412769F8B500D9D531 /* ReferenceArchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReferenceArchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0075452769F8B500D9D531 /* ReferenceArchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceArchUITests.swift; sourceTree = "<group>"; };
 		0D0075472769F8B500D9D531 /* ReferenceArchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceArchUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0D0075A2276A097300D9D531 /* Module1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Module1.xcodeproj; path = ../../Module1/Module1.xcodeproj; sourceTree = "<group>"; };
 		0D0444272775F31800684F7A /* BaseModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaseModule.xcodeproj; path = ../../BaseModule/BaseModule.xcodeproj; sourceTree = "<group>"; };
 		0DD2A904276B62A60048782A /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		0DD2A906276B65FE0048782A /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
@@ -228,18 +213,8 @@
 			children = (
 				0DE29962278D84B900FC4793 /* UIModule.xcodeproj */,
 				0D0444272775F31800684F7A /* BaseModule.xcodeproj */,
-				0D0075A2276A097300D9D531 /* Module1.xcodeproj */,
 			);
 			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		0D0075A3276A097300D9D531 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0D0075A8276A097300D9D531 /* Module1.framework */,
-				0D0075AA276A097300D9D531 /* Module1Tests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		0D0444282775F31800684F7A /* Products */ = {
@@ -433,10 +408,6 @@
 					ProjectRef = 0D0444272775F31800684F7A /* BaseModule.xcodeproj */;
 				},
 				{
-					ProductGroup = 0D0075A3276A097300D9D531 /* Products */;
-					ProjectRef = 0D0075A2276A097300D9D531 /* Module1.xcodeproj */;
-				},
-				{
 					ProductGroup = 0DE29963278D84B900FC4793 /* Products */;
 					ProjectRef = 0DE29962278D84B900FC4793 /* UIModule.xcodeproj */;
 				},
@@ -451,20 +422,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		0D0075A8276A097300D9D531 /* Module1.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Module1.framework;
-			remoteRef = 0D0075A7276A097300D9D531 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0D0075AA276A097300D9D531 /* Module1Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = Module1Tests.xctest;
-			remoteRef = 0D0075A9276A097300D9D531 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		0D04442D2775F31800684F7A /* BaseModule.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
