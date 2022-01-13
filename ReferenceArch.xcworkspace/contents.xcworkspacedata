@@ -11,9 +11,6 @@
       location = "group:UIModule/UIModule.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Module1/Module1.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

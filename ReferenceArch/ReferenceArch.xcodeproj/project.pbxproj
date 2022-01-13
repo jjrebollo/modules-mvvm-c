@@ -15,8 +15,6 @@
 		0D00753C2769F8B500D9D531 /* ReferenceArchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D00753B2769F8B500D9D531 /* ReferenceArchTests.swift */; };
 		0D0075462769F8B500D9D531 /* ReferenceArchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0075452769F8B500D9D531 /* ReferenceArchUITests.swift */; };
 		0D0075482769F8B500D9D531 /* ReferenceArchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0075472769F8B500D9D531 /* ReferenceArchUITestsLaunchTests.swift */; };
-		0D00759F276A080D00D9D531 /* ReferenceArchDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D00759E276A080D00D9D531 /* ReferenceArchDummy.swift */; };
-		0D0075AB276A09BC00D9D531 /* Module1.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0D0075A8276A097300D9D531 /* Module1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0DD2A905276B62A60048782A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2A904276B62A60048782A /* RootViewController.xib */; };
 		0DD2A907276B65FE0048782A /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A906276B65FE0048782A /* RootCoordinator.swift */; };
 		0DD2A90D27749E1D0048782A /* RootScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A90C27749E1D0048782A /* RootScene.swift */; };
@@ -99,7 +97,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0DE2996F278D84D900FC4793 /* UIModule.framework in Copy Modules */,
-				0D0075AB276A09BC00D9D531 /* Module1.framework in Copy Modules */,
 				0DE2990F278CA86000FC4793 /* BaseModule.framework in Copy Modules */,
 			);
 			name = "Copy Modules";
@@ -122,7 +119,6 @@
 		0D0075412769F8B500D9D531 /* ReferenceArchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReferenceArchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0075452769F8B500D9D531 /* ReferenceArchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceArchUITests.swift; sourceTree = "<group>"; };
 		0D0075472769F8B500D9D531 /* ReferenceArchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceArchUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0D00759E276A080D00D9D531 /* ReferenceArchDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceArchDummy.swift; sourceTree = "<group>"; };
 		0D0075A2276A097300D9D531 /* Module1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Module1.xcodeproj; path = ../../Module1/Module1.xcodeproj; sourceTree = "<group>"; };
 		0D0444272775F31800684F7A /* BaseModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaseModule.xcodeproj; path = ../../BaseModule/BaseModule.xcodeproj; sourceTree = "<group>"; };
 		0DD2A904276B62A60048782A /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
@@ -202,7 +198,6 @@
 				0DE29910278CADB000FC4793 /* Extensions */,
 				0DD2A91D2775B19E0048782A /* Scenes */,
 				0D0075242769F8A900D9D531 /* AppDelegate.swift */,
-				0D00759E276A080D00D9D531 /* ReferenceArchDummy.swift */,
 				0D00752A2769F8A900D9D531 /* Main.storyboard */,
 				0D00752D2769F8B300D9D531 /* Assets.xcassets */,
 				0D00752F2769F8B300D9D531 /* LaunchScreen.storyboard */,
@@ -621,7 +616,6 @@
 			files = (
 				0DD2A91B2775B13F0048782A /* RootService.swift in Sources */,
 				0DD2A9192775B1260048782A /* RootRepository.swift in Sources */,
-				0D00759F276A080D00D9D531 /* ReferenceArchDummy.swift in Sources */,
 				0DD2A907276B65FE0048782A /* RootCoordinator.swift in Sources */,
 				0DE29913278CADD600FC4793 /* PassthroughSubject+bind.swift in Sources */,
 				0D0075292769F8A900D9D531 /* RootViewController.swift in Sources */,
