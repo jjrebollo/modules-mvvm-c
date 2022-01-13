@@ -9,13 +9,17 @@ import UIKit
 
 public protocol ScenableProtocol {
     associatedtype ViewControllerType: BaseViewController
-    static func makeScene(coordinator: CoordinatorProtocol) -> Scene<ViewControllerType>?
+    associatedtype ViewModelType: BaseViewModel
+    static func makeScene(coordinator: CoordinatorProtocol) -> Scene<ViewControllerType, ViewModelType>?
 }
 
-public struct Scene<T:BaseViewController> {
-    public let viewController: T
 
-    public init(viewController: T) {
+public struct Scene<T:BaseViewController, R:BaseViewModel> {
+    public let viewController: T
+    public let viewModel: R
+
+    public init(viewController: T, viewModel: R) {
         self.viewController = viewController
+        self.viewModel = viewModel
     }
 }

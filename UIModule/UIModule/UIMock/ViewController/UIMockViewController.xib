@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <viewController id="hGG-8p-3lX" customClass="UIMockViewController">
+        <viewController id="hGG-8p-3lX" customClass="UIMockViewController" customModule="UIModule" customModuleProvider="target">
             <view key="view" contentMode="scaleToFill" id="7ya-G2-cKO">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

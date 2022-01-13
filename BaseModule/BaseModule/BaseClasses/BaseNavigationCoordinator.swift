@@ -7,14 +7,14 @@
 
 import Foundation
 
-open class BaseCoordinator<T:BaseNavigationController>: CoordinatorProtocol {
+open class BaseNavigationCoordinator<T:BaseNavigationController>: CoordinatorProtocol {
     
-    var navigationController: T
+    public var navigationController: T
     
-    init(navigationController: T) {
+    public init(navigationController: T) {
         self.navigationController = navigationController
     }
     
-    public func start() {}
+    open func start() {}
 
 }

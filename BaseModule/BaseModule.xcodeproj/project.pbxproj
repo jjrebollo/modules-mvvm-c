@@ -14,7 +14,7 @@
 		0D044459278CA26800684F7A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044450278CA26800684F7A /* BaseViewController.swift */; };
 		0D04445A278CA26800684F7A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044451278CA26800684F7A /* BaseViewModel.swift */; };
 		0D04445B278CA26800684F7A /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044452278CA26800684F7A /* BaseNavigationController.swift */; };
-		0D04445C278CA26800684F7A /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044453278CA26800684F7A /* BaseCoordinator.swift */; };
+		0D04445C278CA26800684F7A /* BaseNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044453278CA26800684F7A /* BaseNavigationCoordinator.swift */; };
 		0D04445D278CA26800684F7A /* NibableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044455278CA26800684F7A /* NibableProtocol.swift */; };
 		0D04445E278CA26800684F7A /* CollaboratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044456278CA26800684F7A /* CollaboratorProtocol.swift */; };
 		0D04445F278CA26800684F7A /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D044457278CA26800684F7A /* CoordinatorProtocol.swift */; };
@@ -42,7 +42,7 @@
 		0D044450278CA26800684F7A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0D044451278CA26800684F7A /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		0D044452278CA26800684F7A /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		0D044453278CA26800684F7A /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		0D044453278CA26800684F7A /* BaseNavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationCoordinator.swift; sourceTree = "<group>"; };
 		0D044455278CA26800684F7A /* NibableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibableProtocol.swift; sourceTree = "<group>"; };
 		0D044456278CA26800684F7A /* CollaboratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollaboratorProtocol.swift; sourceTree = "<group>"; };
 		0D044457278CA26800684F7A /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				0D044450278CA26800684F7A /* BaseViewController.swift */,
 				0D044451278CA26800684F7A /* BaseViewModel.swift */,
 				0D044452278CA26800684F7A /* BaseNavigationController.swift */,
-				0D044453278CA26800684F7A /* BaseCoordinator.swift */,
+				0D044453278CA26800684F7A /* BaseNavigationCoordinator.swift */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D04445C278CA26800684F7A /* BaseCoordinator.swift in Sources */,
+				0D04445C278CA26800684F7A /* BaseNavigationCoordinator.swift in Sources */,
 				0D044460278CA26800684F7A /* ScenableProtocol.swift in Sources */,
 				0D04445B278CA26800684F7A /* BaseNavigationController.swift in Sources */,
 				0D04445F278CA26800684F7A /* CoordinatorProtocol.swift in Sources */,

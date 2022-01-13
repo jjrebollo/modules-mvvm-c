@@ -5,13 +5,13 @@
       location = "group:ReferenceArch/ReferenceArch.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:BaseModule/BaseModule.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UIModule/UIModule.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Module1/Module1.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:BaseModule/BaseModule.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

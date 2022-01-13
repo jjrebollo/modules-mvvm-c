@@ -9,7 +9,7 @@ import UIKit
 import Combine
 import BaseModule
 
-final class UIMockViewController: BaseViewController, NibableProtocol {
+final public class UIMockViewController: BaseViewController, NibableProtocol {
     
     struct Constants {
         static let Nib: String = "UIMockViewController"
@@ -17,7 +17,7 @@ final class UIMockViewController: BaseViewController, NibableProtocol {
 
     private var cancellableBag = Set<AnyCancellable>()
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }

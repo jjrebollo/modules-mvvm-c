@@ -9,7 +9,7 @@ import UIKit
 import Combine
 import BaseModule
 
-final class ___VARIABLE_sceneName:identifier___ViewController: BaseViewController, NibableProtocol {
+final public class ___VARIABLE_sceneName:identifier___ViewController: BaseViewController, NibableProtocol {
     
     struct Constants {
         static let Nib: String = "___VARIABLE_sceneName:identifier___ViewController"
@@ -17,7 +17,7 @@ final class ___VARIABLE_sceneName:identifier___ViewController: BaseViewControlle
 
     private var cancellableBag = Set<AnyCancellable>()
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }

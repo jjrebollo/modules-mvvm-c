@@ -15,9 +15,8 @@ final class RootViewController: BaseViewController, NibableProtocol {
         static let Nib: String = "RootViewController"
     }
     
-//    @IBOutlet weak var goToModuleWithUIButton: UIButton!
-    
     let moduleWithUIButtonTouchedSubject = PassthroughSubject<Void, Never>()
+
     private var cancellableBag = Set<AnyCancellable>()
 
     override func viewDidLoad() {

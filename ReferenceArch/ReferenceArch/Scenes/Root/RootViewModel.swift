@@ -10,13 +10,12 @@ import Combine
 import BaseModule
 
 extension Root {
-    final class ViewModel: BaseViewModel<RootViewController> {
+    final class ViewModel: BaseViewModel {
         let rootUseCase: UseCase1
         
         let moduleWithUIButtonSubject = PassthroughSubject<Void, Never>()
         let moduleWithoutUIButtonSubject = PassthroughSubject<Void, Never>()
         private var cancellableBag = Set<AnyCancellable>()
-
         
         weak var viewController: RootViewController? {
             didSet {
@@ -29,20 +28,21 @@ extension Root {
             self.rootUseCase = rootUseCase
             
             super.init(coordinator: coordinator)
+            
+            self.setupCoordinatorObservers(for: coordinator)
         }
         
         func setupCoordinatorObservers(for coordinator: Coordinator) {
             moduleWithUIButtonSubject
-                .bind(to: coordinator.moduleWithUIButtonSubject)
+                .bind(to: coordinator.launchUISceneSubject)
                 .store(in: &cancellableBag)
         }
-        
-        override func setupViewControllerObservers(for viewController: RootViewController) {
+
+        private func setupViewControllerObservers(for viewController: RootViewController) {
             viewController.moduleWithUIButtonTouchedSubject
                 .bind(to: self.moduleWithUIButtonSubject)
                 .store(in: &cancellableBag)
         }
-        
     }
 
     // viewmodel should observe viewcontroller events

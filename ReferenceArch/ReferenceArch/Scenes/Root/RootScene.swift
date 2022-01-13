@@ -12,7 +12,7 @@ struct Root {}
 
 extension Root: ScenableProtocol {
     
-    static func makeScene(coordinator: CoordinatorProtocol) -> Scene<RootViewController>? {
+    static func makeScene(coordinator: CoordinatorProtocol) -> Scene<RootViewController, ViewModel>? {
         
         guard let coordinator = coordinator as? Coordinator else { return nil }
         
@@ -22,8 +22,8 @@ extension Root: ScenableProtocol {
         let viewModel = ViewModel(coordinator: coordinator, rootUseCase: useCase)
         let nibName = RootViewController.Constants.Nib
         let viewController = RootViewController.instantiate(nibName: nibName)
-        viewModel.setViewController(viewController: viewController)
+        viewModel.viewController = viewController
         
-        return Scene(viewController: viewController)
+        return Scene(viewController: viewController, viewModel: viewModel)
     }
 }

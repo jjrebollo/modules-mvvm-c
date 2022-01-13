@@ -9,7 +9,9 @@ import BaseModule
 import UIKit
 
 extension ___VARIABLE_sceneName:identifier___ {
-    final class Coordinator: CoordinatorProtocol {
+
+    // Instead of `CoordinatorProtocol`, this class can inherit from one of the specific base coordinator such as `BaseNavigationCoordinator`
+    final class Coordinator: CoordinatorProtocol { 
         
         var scene: Scene<___VARIABLE_sceneName:identifier___ViewController>? = nil
         

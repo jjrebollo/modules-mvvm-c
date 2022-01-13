@@ -11,37 +11,41 @@ import Combine
 import UIModule
 
 extension Root {
-    final class Coordinator: CoordinatorProtocol {
+    final class Coordinator: BaseNavigationCoordinator<BaseNavigationController> {
 
-        // Coordinators declaration
-//        var uiMockCoordinator: UIMock
+        var uiMockCoordinator: UIMock.Coordinator
         
-        var navigationController: BaseNavigationController
+        var scene: Scene<RootViewController, ViewModel>? = nil
         
-        var scene: Scene<RootViewController>? = nil
+        let launchUISceneSubject = PassthroughSubject<Void, Never>()
+        private var cancellables = Set<AnyCancellable>()
         
-        let moduleWithUIButtonSubject = PassthroughSubject<Void, Never>()
-        
-        init(navigationController: BaseNavigationController) {
-            self.navigationController = navigationController
+        override init(navigationController: BaseNavigationController) {
+            self.uiMockCoordinator = UIMock.Coordinator(navigationController: navigationController)
+            
+            super.init(navigationController: navigationController)
             
             configureObservables()
         }
         
-        func start() {
+        override func start() {
             guard let scene = Root.makeScene(coordinator: self) else { return }
             self.scene = scene
             navigationController.pushViewController(scene.viewController, animated: true)
         }
 
         func configureObservables() {
-            // observe moduleWithUIButtonSubject and create the new coordinator + start it
-            
-//            let coordinator = UIMock.Coordinator(navigationController: navigationController)
-//            self.coordinator = coordinator
-//            self.coordinator?.start()
-            
-            
+            self.launchUISceneSubject
+                .sink { _ in
+                    self.uiMockCoordinator.start()
+                }
+                .store(in: &cancellables)
+        }
+        
+        func launchModuleWithUI() {
+            let coordinator = UIMock.Coordinator(navigationController: navigationController)
+            self.uiMockCoordinator = coordinator
+            self.uiMockCoordinator.start()
         }
     }
 }

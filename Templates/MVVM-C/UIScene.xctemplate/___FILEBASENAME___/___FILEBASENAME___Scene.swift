@@ -17,13 +17,13 @@ extension ___VARIABLE_sceneName:identifier___: ScenableProtocol {
         guard let coordinator = coordinator as? Coordinator else { return nil }
         
         let service = Service()
-        let repository = Repository(service: service)
-        let useCase = UseCase1(collaborator: repository)
+        let collaborator = Collaborator(service: service)
+        let useCase = UseCase1(collaborator: collaborator)
         let viewModel = ViewModel(coordinator: coordinator, rootUseCase: useCase)
         let nibName = ___VARIABLE_sceneName:identifier___ViewController.Constants.Nib
         let viewController = ___VARIABLE_sceneName:identifier___ViewController.instantiate(nibName: nibName)
-        viewModel.setViewController(viewController: viewController)
+        viewModel.viewController = viewController
         
-        return Scene(viewController: viewController)
+        return Scene(viewController: viewController, viewModel: viewModel)
     }
 }

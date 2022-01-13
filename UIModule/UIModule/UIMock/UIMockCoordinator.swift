@@ -9,20 +9,20 @@ import BaseModule
 import UIKit
 
 extension UIMock {
-    final class Coordinator: CoordinatorProtocol {
+    final public class Coordinator: CoordinatorProtocol {
         
-        var scene: Scene<UIMockViewController>? = nil
+        var scene: Scene<UIMockViewController, ViewModel>? = nil
         
         var navigationController: BaseNavigationController
         
-        init(navigationController: BaseNavigationController) {
+        public init(navigationController: BaseNavigationController) {
             self.navigationController = navigationController
             
             configureObservables()
         }
 
         
-        func start() {
+        public func start() {
             guard let scene = UIMock.makeScene(coordinator: self) else { return }
             self.scene = scene
             navigationController.pushViewController(scene.viewController, animated: true)

@@ -11,6 +11,14 @@
 		0DE29951278D83DC00FC4793 /* UIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29946278D83DB00FC4793 /* UIModule.framework */; };
 		0DE29956278D83DC00FC4793 /* UIModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29955278D83DC00FC4793 /* UIModuleTests.swift */; };
 		0DE29957278D83DC00FC4793 /* UIModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE29949278D83DB00FC4793 /* UIModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DE29984278EFDF800FC4793 /* UIMockScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997B278EFDF800FC4793 /* UIMockScene.swift */; };
+		0DE29985278EFDF800FC4793 /* UIMockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997C278EFDF800FC4793 /* UIMockUseCase.swift */; };
+		0DE29986278EFDF800FC4793 /* UIMockCollaborator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997D278EFDF800FC4793 /* UIMockCollaborator.swift */; };
+		0DE29987278EFDF800FC4793 /* UIMockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997E278EFDF800FC4793 /* UIMockViewModel.swift */; };
+		0DE29988278EFDF800FC4793 /* UIMockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DE29980278EFDF800FC4793 /* UIMockViewController.xib */; };
+		0DE29989278EFDF800FC4793 /* UIMockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29981278EFDF800FC4793 /* UIMockViewController.swift */; };
+		0DE2998A278EFDF800FC4793 /* UIMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29982278EFDF800FC4793 /* UIMockService.swift */; };
+		0DE2998B278EFDF800FC4793 /* UIMockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29983278EFDF800FC4793 /* UIMockCoordinator.swift */; };
 		7DE7430721059BFC38A2EC04 /* Pods_UIModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152FB4031EBF3B80AE9F2AB7 /* Pods_UIModuleTests.framework */; };
 		B9E61BA4C1BD05FFE5893979 /* Pods_UIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588171813AAFBCB107CDEA9 /* Pods_UIModule.framework */; };
 /* End PBXBuildFile section */
@@ -32,7 +40,14 @@
 		0DE2994A278D83DB00FC4793 /* UIModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UIModule.docc; sourceTree = "<group>"; };
 		0DE29950278D83DC00FC4793 /* UIModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE29955278D83DC00FC4793 /* UIModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModuleTests.swift; sourceTree = "<group>"; };
-		0DE29975278DD70400FC4793 /* UIMock */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIMock; sourceTree = "<group>"; };
+		0DE2997B278EFDF800FC4793 /* UIMockScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockScene.swift; sourceTree = "<group>"; };
+		0DE2997C278EFDF800FC4793 /* UIMockUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockUseCase.swift; sourceTree = "<group>"; };
+		0DE2997D278EFDF800FC4793 /* UIMockCollaborator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockCollaborator.swift; sourceTree = "<group>"; };
+		0DE2997E278EFDF800FC4793 /* UIMockViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockViewModel.swift; sourceTree = "<group>"; };
+		0DE29980278EFDF800FC4793 /* UIMockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIMockViewController.xib; sourceTree = "<group>"; };
+		0DE29981278EFDF800FC4793 /* UIMockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockViewController.swift; sourceTree = "<group>"; };
+		0DE29982278EFDF800FC4793 /* UIMockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockService.swift; sourceTree = "<group>"; };
+		0DE29983278EFDF800FC4793 /* UIMockCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockCoordinator.swift; sourceTree = "<group>"; };
 		152FB4031EBF3B80AE9F2AB7 /* Pods_UIModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		380E077041DB89B2DB893289 /* Pods-UIModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIModule.release.xcconfig"; path = "Target Support Files/Pods-UIModule/Pods-UIModule.release.xcconfig"; sourceTree = "<group>"; };
 		7F1C1184ECDFEB3B04804B6A /* Pods-UIModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIModuleTests.release.xcconfig"; path = "Target Support Files/Pods-UIModuleTests/Pods-UIModuleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,9 +99,9 @@
 		0DE29948278D83DB00FC4793 /* UIModule */ = {
 			isa = PBXGroup;
 			children = (
+				0DE2997A278EFDF800FC4793 /* UIMock */,
 				0DE29949278D83DB00FC4793 /* UIModule.h */,
 				0DE2994A278D83DB00FC4793 /* UIModule.docc */,
-				0DE29975278DD70400FC4793 /* UIMock */,
 			);
 			path = UIModule;
 			sourceTree = "<group>";
@@ -97,6 +112,29 @@
 				0DE29955278D83DC00FC4793 /* UIModuleTests.swift */,
 			);
 			path = UIModuleTests;
+			sourceTree = "<group>";
+		};
+		0DE2997A278EFDF800FC4793 /* UIMock */ = {
+			isa = PBXGroup;
+			children = (
+				0DE2997B278EFDF800FC4793 /* UIMockScene.swift */,
+				0DE2997C278EFDF800FC4793 /* UIMockUseCase.swift */,
+				0DE2997D278EFDF800FC4793 /* UIMockCollaborator.swift */,
+				0DE2997E278EFDF800FC4793 /* UIMockViewModel.swift */,
+				0DE2997F278EFDF800FC4793 /* ViewController */,
+				0DE29982278EFDF800FC4793 /* UIMockService.swift */,
+				0DE29983278EFDF800FC4793 /* UIMockCoordinator.swift */,
+			);
+			path = UIMock;
+			sourceTree = "<group>";
+		};
+		0DE2997F278EFDF800FC4793 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0DE29980278EFDF800FC4793 /* UIMockViewController.xib */,
+				0DE29981278EFDF800FC4793 /* UIMockViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		5E8959FAD004A5D4BD85E722 /* Pods */ = {
@@ -214,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE29988278EFDF800FC4793 /* UIMockViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE29989278EFDF800FC4793 /* UIMockViewController.swift in Sources */,
+				0DE29987278EFDF800FC4793 /* UIMockViewModel.swift in Sources */,
+				0DE29984278EFDF800FC4793 /* UIMockScene.swift in Sources */,
 				0DE2994B278D83DB00FC4793 /* UIModule.docc in Sources */,
+				0DE2998A278EFDF800FC4793 /* UIMockService.swift in Sources */,
+				0DE29985278EFDF800FC4793 /* UIMockUseCase.swift in Sources */,
+				0DE2998B278EFDF800FC4793 /* UIMockCoordinator.swift in Sources */,
+				0DE29986278EFDF800FC4793 /* UIMockCollaborator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 07BFF00A7A6B0034322C1CC2 /* Pods-UIModuleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -506,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F1C1184ECDFEB3B04804B6A /* Pods-UIModuleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

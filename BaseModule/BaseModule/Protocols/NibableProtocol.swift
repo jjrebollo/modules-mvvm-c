@@ -5,7 +5,6 @@
 //  Created by Juan Jose Rebollo on 16/12/2021.
 //
 
-import Foundation
 import UIKit
 
 public protocol NibableProtocol {
@@ -15,7 +14,9 @@ public protocol NibableProtocol {
 extension NibableProtocol where Self: UIViewController {
     public static func instantiate(nibName: String) -> Self {
         
-        if let viewController = Bundle.main.loadNibNamed(nibName, owner: nil, options: nil)?.first as? Self {
+        let bundle = Bundle(for: Self.self)
+
+        if let viewController = bundle.loadNibNamed(nibName, owner: nil, options: nil)?.first as? Self {
             return viewController
         } else {
             return Self()

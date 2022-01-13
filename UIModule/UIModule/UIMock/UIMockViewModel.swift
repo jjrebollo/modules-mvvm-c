@@ -9,12 +9,11 @@ import Foundation
 import Combine
 import BaseModule
 
-extension Root {
-    final class ViewModel: BaseViewModel<UIMockViewController> {
+extension UIMock {
+    final public class ViewModel: BaseViewModel {
         let rootUseCase: UseCase1
         
         private var cancellableBag = Set<AnyCancellable>()
-
         
         weak var viewController: UIMockViewController? {
             didSet {
@@ -33,7 +32,7 @@ extension Root {
             // Bind subjects from this class to subjects in the coordinator class
         }
         
-        override func setupViewControllerObservers(for viewController: RootViewController) {
+        func setupViewControllerObservers(for viewController: UIMockViewController) {
             // Bind subjects from the view controller class to subjects in this class
         }
         

@@ -10,6 +10,6 @@ import Module1
 
 class ASDF {
     public init() {
-        let asd = ModuleDummy()
+//        let asd = ModuleDummy()
     }
 }
