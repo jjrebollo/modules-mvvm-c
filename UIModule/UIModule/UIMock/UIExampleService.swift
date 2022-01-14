@@ -7,6 +7,6 @@
 
 import Foundation
 
-extension UIMock {
+extension UIExample {
     final class Service {}
 }

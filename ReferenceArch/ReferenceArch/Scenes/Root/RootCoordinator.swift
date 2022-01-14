@@ -14,7 +14,7 @@ import NoUIModule
 extension Root {
     final class Coordinator: BaseNavigationCoordinator<BaseNavigationController> {
 
-        var uiMockCoordinator: UIMock.Coordinator
+        var uiMockCoordinator: UIExample.Coordinator
         var noUiMockCoordinator: NoUIExample.Coordinator
         
         var scene: Scene<RootViewController, ViewModel>? = nil
@@ -24,7 +24,7 @@ extension Root {
         private var cancellables = Set<AnyCancellable>()
         
         override init(navigationController: BaseNavigationController) {
-            self.uiMockCoordinator = UIMock.Coordinator(navigationController: navigationController)
+            self.uiMockCoordinator = UIExample.Coordinator(navigationController: navigationController)
             self.noUiMockCoordinator = NoUIExample.Coordinator(navigationController: navigationController)
             
             super.init(navigationController: navigationController)

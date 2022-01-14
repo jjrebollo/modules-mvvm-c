@@ -8,11 +8,11 @@
 import Foundation
 import BaseModule
 
-public struct UIMock {}
+public struct UIExample {}
 
-extension UIMock: ScenableProtocol {
+extension UIExample: ScenableProtocol {
     
-    public static func makeScene(coordinator: CoordinatorProtocol) -> Scene<UIMockViewController, ViewModel>? {
+    public static func makeScene(coordinator: CoordinatorProtocol) -> Scene<UIExampleViewController, ViewModel>? {
         
         guard let coordinator = coordinator as? Coordinator else { return nil }
         
@@ -20,8 +20,8 @@ extension UIMock: ScenableProtocol {
         let repository = Collaborator(service: service)
         let useCase = UseCase1(collaborator: repository)
         let viewModel = ViewModel(coordinator: coordinator, rootUseCase: useCase)
-        let nibName = UIMockViewController.Constants.Nib
-        let viewController = UIMockViewController.instantiate(nibName: nibName)
+        let nibName = UIExampleViewController.Constants.Nib
+        let viewController = UIExampleViewController.instantiate(nibName: nibName)
         viewModel.viewController = viewController
         
         return Scene(viewController: viewController, viewModel: viewModel)

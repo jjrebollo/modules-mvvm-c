@@ -11,14 +11,14 @@
 		0DE29951278D83DC00FC4793 /* UIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29946278D83DB00FC4793 /* UIModule.framework */; };
 		0DE29956278D83DC00FC4793 /* UIModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29955278D83DC00FC4793 /* UIModuleTests.swift */; };
 		0DE29957278D83DC00FC4793 /* UIModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE29949278D83DB00FC4793 /* UIModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DE29984278EFDF800FC4793 /* UIMockScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997B278EFDF800FC4793 /* UIMockScene.swift */; };
-		0DE29985278EFDF800FC4793 /* UIMockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997C278EFDF800FC4793 /* UIMockUseCase.swift */; };
-		0DE29986278EFDF800FC4793 /* UIMockCollaborator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997D278EFDF800FC4793 /* UIMockCollaborator.swift */; };
-		0DE29987278EFDF800FC4793 /* UIMockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997E278EFDF800FC4793 /* UIMockViewModel.swift */; };
-		0DE29988278EFDF800FC4793 /* UIMockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DE29980278EFDF800FC4793 /* UIMockViewController.xib */; };
-		0DE29989278EFDF800FC4793 /* UIMockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29981278EFDF800FC4793 /* UIMockViewController.swift */; };
-		0DE2998A278EFDF800FC4793 /* UIMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29982278EFDF800FC4793 /* UIMockService.swift */; };
-		0DE2998B278EFDF800FC4793 /* UIMockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29983278EFDF800FC4793 /* UIMockCoordinator.swift */; };
+		0DE29984278EFDF800FC4793 /* UIExampleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997B278EFDF800FC4793 /* UIExampleScene.swift */; };
+		0DE29985278EFDF800FC4793 /* UIExampleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997C278EFDF800FC4793 /* UIExampleUseCase.swift */; };
+		0DE29986278EFDF800FC4793 /* UIExampleCollaborator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997D278EFDF800FC4793 /* UIExampleCollaborator.swift */; };
+		0DE29987278EFDF800FC4793 /* UIExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997E278EFDF800FC4793 /* UIExampleViewModel.swift */; };
+		0DE29988278EFDF800FC4793 /* UIExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DE29980278EFDF800FC4793 /* UIExampleViewController.xib */; };
+		0DE29989278EFDF800FC4793 /* UIExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29981278EFDF800FC4793 /* UIExampleViewController.swift */; };
+		0DE2998A278EFDF800FC4793 /* UIExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29982278EFDF800FC4793 /* UIExampleService.swift */; };
+		0DE2998B278EFDF800FC4793 /* UIExampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29983278EFDF800FC4793 /* UIExampleCoordinator.swift */; };
 		0DE29A0E2790B0B700FC4793 /* BaseModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29A0D2790B0B700FC4793 /* BaseModule.framework */; };
 		0DE29A0F2790B0B700FC4793 /* BaseModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29A0D2790B0B700FC4793 /* BaseModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7DE7430721059BFC38A2EC04 /* Pods_UIModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152FB4031EBF3B80AE9F2AB7 /* Pods_UIModuleTests.framework */; };
@@ -56,14 +56,14 @@
 		0DE2994A278D83DB00FC4793 /* UIModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UIModule.docc; sourceTree = "<group>"; };
 		0DE29950278D83DC00FC4793 /* UIModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE29955278D83DC00FC4793 /* UIModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModuleTests.swift; sourceTree = "<group>"; };
-		0DE2997B278EFDF800FC4793 /* UIMockScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockScene.swift; sourceTree = "<group>"; };
-		0DE2997C278EFDF800FC4793 /* UIMockUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockUseCase.swift; sourceTree = "<group>"; };
-		0DE2997D278EFDF800FC4793 /* UIMockCollaborator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockCollaborator.swift; sourceTree = "<group>"; };
-		0DE2997E278EFDF800FC4793 /* UIMockViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockViewModel.swift; sourceTree = "<group>"; };
-		0DE29980278EFDF800FC4793 /* UIMockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIMockViewController.xib; sourceTree = "<group>"; };
-		0DE29981278EFDF800FC4793 /* UIMockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockViewController.swift; sourceTree = "<group>"; };
-		0DE29982278EFDF800FC4793 /* UIMockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockService.swift; sourceTree = "<group>"; };
-		0DE29983278EFDF800FC4793 /* UIMockCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMockCoordinator.swift; sourceTree = "<group>"; };
+		0DE2997B278EFDF800FC4793 /* UIExampleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExampleScene.swift; sourceTree = "<group>"; };
+		0DE2997C278EFDF800FC4793 /* UIExampleUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExampleUseCase.swift; sourceTree = "<group>"; };
+		0DE2997D278EFDF800FC4793 /* UIExampleCollaborator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExampleCollaborator.swift; sourceTree = "<group>"; };
+		0DE2997E278EFDF800FC4793 /* UIExampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExampleViewModel.swift; sourceTree = "<group>"; };
+		0DE29980278EFDF800FC4793 /* UIExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIExampleViewController.xib; sourceTree = "<group>"; };
+		0DE29981278EFDF800FC4793 /* UIExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExampleViewController.swift; sourceTree = "<group>"; };
+		0DE29982278EFDF800FC4793 /* UIExampleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExampleService.swift; sourceTree = "<group>"; };
+		0DE29983278EFDF800FC4793 /* UIExampleCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExampleCoordinator.swift; sourceTree = "<group>"; };
 		0DE29A0D2790B0B700FC4793 /* BaseModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		152FB4031EBF3B80AE9F2AB7 /* Pods_UIModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		380E077041DB89B2DB893289 /* Pods-UIModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIModule.release.xcconfig"; path = "Target Support Files/Pods-UIModule/Pods-UIModule.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,13 +135,13 @@
 		0DE2997A278EFDF800FC4793 /* UIMock */ = {
 			isa = PBXGroup;
 			children = (
-				0DE2997B278EFDF800FC4793 /* UIMockScene.swift */,
-				0DE2997C278EFDF800FC4793 /* UIMockUseCase.swift */,
-				0DE2997D278EFDF800FC4793 /* UIMockCollaborator.swift */,
-				0DE2997E278EFDF800FC4793 /* UIMockViewModel.swift */,
+				0DE2997B278EFDF800FC4793 /* UIExampleScene.swift */,
+				0DE2997C278EFDF800FC4793 /* UIExampleUseCase.swift */,
+				0DE2997D278EFDF800FC4793 /* UIExampleCollaborator.swift */,
+				0DE2997E278EFDF800FC4793 /* UIExampleViewModel.swift */,
 				0DE2997F278EFDF800FC4793 /* ViewController */,
-				0DE29982278EFDF800FC4793 /* UIMockService.swift */,
-				0DE29983278EFDF800FC4793 /* UIMockCoordinator.swift */,
+				0DE29982278EFDF800FC4793 /* UIExampleService.swift */,
+				0DE29983278EFDF800FC4793 /* UIExampleCoordinator.swift */,
 			);
 			path = UIMock;
 			sourceTree = "<group>";
@@ -149,8 +149,8 @@
 		0DE2997F278EFDF800FC4793 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0DE29980278EFDF800FC4793 /* UIMockViewController.xib */,
-				0DE29981278EFDF800FC4793 /* UIMockViewController.swift */,
+				0DE29980278EFDF800FC4793 /* UIExampleViewController.xib */,
+				0DE29981278EFDF800FC4793 /* UIExampleViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DE29988278EFDF800FC4793 /* UIMockViewController.xib in Resources */,
+				0DE29988278EFDF800FC4793 /* UIExampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,14 +337,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DE29989278EFDF800FC4793 /* UIMockViewController.swift in Sources */,
-				0DE29987278EFDF800FC4793 /* UIMockViewModel.swift in Sources */,
-				0DE29984278EFDF800FC4793 /* UIMockScene.swift in Sources */,
+				0DE29989278EFDF800FC4793 /* UIExampleViewController.swift in Sources */,
+				0DE29987278EFDF800FC4793 /* UIExampleViewModel.swift in Sources */,
+				0DE29984278EFDF800FC4793 /* UIExampleScene.swift in Sources */,
 				0DE2994B278D83DB00FC4793 /* UIModule.docc in Sources */,
-				0DE2998A278EFDF800FC4793 /* UIMockService.swift in Sources */,
-				0DE29985278EFDF800FC4793 /* UIMockUseCase.swift in Sources */,
-				0DE2998B278EFDF800FC4793 /* UIMockCoordinator.swift in Sources */,
-				0DE29986278EFDF800FC4793 /* UIMockCollaborator.swift in Sources */,
+				0DE2998A278EFDF800FC4793 /* UIExampleService.swift in Sources */,
+				0DE29985278EFDF800FC4793 /* UIExampleUseCase.swift in Sources */,
+				0DE2998B278EFDF800FC4793 /* UIExampleCoordinator.swift in Sources */,
+				0DE29986278EFDF800FC4793 /* UIExampleCollaborator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

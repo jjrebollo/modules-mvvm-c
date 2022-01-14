@@ -8,15 +8,15 @@
 import BaseModule
 import UIKit
 
-extension UIMock {
+extension UIExample {
     final public class Coordinator: CoordinatorProtocol {
         
-        var scene: Scene<UIMockViewController, ViewModel>? = nil
+        var scene: Scene<UIExampleViewController, ViewModel>? = nil
         var navigationController: BaseNavigationController
         
         public init(navigationController: BaseNavigationController) {
             self.navigationController = navigationController
-            self.scene = UIMock.makeScene(coordinator: self)
+            self.scene = UIExample.makeScene(coordinator: self)
         }
         
         public func start() {

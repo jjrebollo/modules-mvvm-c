@@ -9,10 +9,10 @@ import UIKit
 import Combine
 import BaseModule
 
-final public class UIMockViewController: BaseViewController, NibableProtocol {
+final public class UIExampleViewController: BaseViewController, NibableProtocol {
     
     struct Constants {
-        static let Nib: String = "UIMockViewController"
+        static let Nib: String = "UIExampleViewController"
     }
 
     private var cancellableBag = Set<AnyCancellable>()

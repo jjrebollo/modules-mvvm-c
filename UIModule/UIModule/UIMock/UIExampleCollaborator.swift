@@ -8,7 +8,7 @@
 import Foundation
 import BaseModule
 
-extension UIMock {
+extension UIExample {
     final class Collaborator: CollaboratorProtocol {
         var service: Service
         
