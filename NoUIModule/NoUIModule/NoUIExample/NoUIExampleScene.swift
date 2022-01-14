@@ -8,9 +8,9 @@
 import Foundation
 import BaseModule
 
-public struct NoUIMock {}
+public struct NoUIExample {}
 
-extension NoUIMock: ScenableProtocol {
+extension NoUIExample: ScenableProtocol {
     
     public static func makeScene(coordinator: CoordinatorProtocol) -> SceneNoUI<ViewModel>? {
         

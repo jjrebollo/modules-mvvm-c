@@ -11,12 +11,12 @@
 		0DE299BC2790A72700FC4793 /* NoUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE299B12790A72600FC4793 /* NoUIModule.framework */; };
 		0DE299C12790A72700FC4793 /* NoUIModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299C02790A72700FC4793 /* NoUIModuleTests.swift */; };
 		0DE299C22790A72700FC4793 /* NoUIModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE299B42790A72600FC4793 /* NoUIModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DE299F22790AC5500FC4793 /* NoUIMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299EC2790AC5500FC4793 /* NoUIMockService.swift */; };
-		0DE299F32790AC5500FC4793 /* NoUIMockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299ED2790AC5500FC4793 /* NoUIMockCoordinator.swift */; };
-		0DE299F42790AC5500FC4793 /* NoUIMockCollaborator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299EE2790AC5500FC4793 /* NoUIMockCollaborator.swift */; };
-		0DE299F52790AC5500FC4793 /* NoUIMockScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299EF2790AC5500FC4793 /* NoUIMockScene.swift */; };
-		0DE299F62790AC5500FC4793 /* NoUIMockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299F02790AC5500FC4793 /* NoUIMockUseCase.swift */; };
-		0DE299F72790AC5500FC4793 /* NoUIMockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299F12790AC5500FC4793 /* NoUIMockViewModel.swift */; };
+		0DE299F22790AC5500FC4793 /* NoUIExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299EC2790AC5500FC4793 /* NoUIExampleService.swift */; };
+		0DE299F32790AC5500FC4793 /* NoUIExampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299ED2790AC5500FC4793 /* NoUIExampleCoordinator.swift */; };
+		0DE299F42790AC5500FC4793 /* NoUIExampleCollaborator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299EE2790AC5500FC4793 /* NoUIExampleCollaborator.swift */; };
+		0DE299F52790AC5500FC4793 /* NoUIExampleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299EF2790AC5500FC4793 /* NoUIExampleScene.swift */; };
+		0DE299F62790AC5500FC4793 /* NoUIExampleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299F02790AC5500FC4793 /* NoUIExampleUseCase.swift */; };
+		0DE299F72790AC5500FC4793 /* NoUIExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299F12790AC5500FC4793 /* NoUIExampleViewModel.swift */; };
 		0DE29A152790B12B00FC4793 /* BaseModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29A142790B12B00FC4793 /* BaseModule.framework */; };
 		0DE29A162790B12B00FC4793 /* BaseModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29A142790B12B00FC4793 /* BaseModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24431E86E149411AE715ACB5 /* Pods_NoUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA64AF203FA84ADF0C210BE /* Pods_NoUIModule.framework */; };
@@ -53,12 +53,12 @@
 		0DE299B52790A72600FC4793 /* NoUIModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NoUIModule.docc; sourceTree = "<group>"; };
 		0DE299BB2790A72700FC4793 /* NoUIModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoUIModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE299C02790A72700FC4793 /* NoUIModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoUIModuleTests.swift; sourceTree = "<group>"; };
-		0DE299EC2790AC5500FC4793 /* NoUIMockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIMockService.swift; sourceTree = "<group>"; };
-		0DE299ED2790AC5500FC4793 /* NoUIMockCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIMockCoordinator.swift; sourceTree = "<group>"; };
-		0DE299EE2790AC5500FC4793 /* NoUIMockCollaborator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIMockCollaborator.swift; sourceTree = "<group>"; };
-		0DE299EF2790AC5500FC4793 /* NoUIMockScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIMockScene.swift; sourceTree = "<group>"; };
-		0DE299F02790AC5500FC4793 /* NoUIMockUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIMockUseCase.swift; sourceTree = "<group>"; };
-		0DE299F12790AC5500FC4793 /* NoUIMockViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIMockViewModel.swift; sourceTree = "<group>"; };
+		0DE299EC2790AC5500FC4793 /* NoUIExampleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleService.swift; sourceTree = "<group>"; };
+		0DE299ED2790AC5500FC4793 /* NoUIExampleCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleCoordinator.swift; sourceTree = "<group>"; };
+		0DE299EE2790AC5500FC4793 /* NoUIExampleCollaborator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleCollaborator.swift; sourceTree = "<group>"; };
+		0DE299EF2790AC5500FC4793 /* NoUIExampleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleScene.swift; sourceTree = "<group>"; };
+		0DE299F02790AC5500FC4793 /* NoUIExampleUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleUseCase.swift; sourceTree = "<group>"; };
+		0DE299F12790AC5500FC4793 /* NoUIExampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleViewModel.swift; sourceTree = "<group>"; };
 		0DE29A142790B12B00FC4793 /* BaseModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE4527D8AE7E1F25ED0EC62 /* Pods-NoUIModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoUIModuleTests.release.xcconfig"; path = "Target Support Files/Pods-NoUIModuleTests/Pods-NoUIModuleTests.release.xcconfig"; sourceTree = "<group>"; };
 		6685BEF7551C922669AC477E /* Pods_NoUIModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoUIModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +113,7 @@
 		0DE299B32790A72600FC4793 /* NoUIModule */ = {
 			isa = PBXGroup;
 			children = (
-				0DE299EB2790AC5500FC4793 /* NoUIMock */,
+				0DE299EB2790AC5500FC4793 /* NoUIExample */,
 				0DE299B42790A72600FC4793 /* NoUIModule.h */,
 				0DE299B52790A72600FC4793 /* NoUIModule.docc */,
 			);
@@ -128,17 +128,17 @@
 			path = NoUIModuleTests;
 			sourceTree = "<group>";
 		};
-		0DE299EB2790AC5500FC4793 /* NoUIMock */ = {
+		0DE299EB2790AC5500FC4793 /* NoUIExample */ = {
 			isa = PBXGroup;
 			children = (
-				0DE299EC2790AC5500FC4793 /* NoUIMockService.swift */,
-				0DE299ED2790AC5500FC4793 /* NoUIMockCoordinator.swift */,
-				0DE299EE2790AC5500FC4793 /* NoUIMockCollaborator.swift */,
-				0DE299EF2790AC5500FC4793 /* NoUIMockScene.swift */,
-				0DE299F02790AC5500FC4793 /* NoUIMockUseCase.swift */,
-				0DE299F12790AC5500FC4793 /* NoUIMockViewModel.swift */,
+				0DE299EC2790AC5500FC4793 /* NoUIExampleService.swift */,
+				0DE299ED2790AC5500FC4793 /* NoUIExampleCoordinator.swift */,
+				0DE299EE2790AC5500FC4793 /* NoUIExampleCollaborator.swift */,
+				0DE299EF2790AC5500FC4793 /* NoUIExampleScene.swift */,
+				0DE299F02790AC5500FC4793 /* NoUIExampleUseCase.swift */,
+				0DE299F12790AC5500FC4793 /* NoUIExampleViewModel.swift */,
 			);
-			path = NoUIMock;
+			path = NoUIExample;
 			sourceTree = "<group>";
 		};
 		3F128EB8FFB2AFA150048795 /* Frameworks */ = {
@@ -322,12 +322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DE299F32790AC5500FC4793 /* NoUIMockCoordinator.swift in Sources */,
-				0DE299F22790AC5500FC4793 /* NoUIMockService.swift in Sources */,
-				0DE299F62790AC5500FC4793 /* NoUIMockUseCase.swift in Sources */,
-				0DE299F42790AC5500FC4793 /* NoUIMockCollaborator.swift in Sources */,
-				0DE299F72790AC5500FC4793 /* NoUIMockViewModel.swift in Sources */,
-				0DE299F52790AC5500FC4793 /* NoUIMockScene.swift in Sources */,
+				0DE299F32790AC5500FC4793 /* NoUIExampleCoordinator.swift in Sources */,
+				0DE299F22790AC5500FC4793 /* NoUIExampleService.swift in Sources */,
+				0DE299F62790AC5500FC4793 /* NoUIExampleUseCase.swift in Sources */,
+				0DE299F42790AC5500FC4793 /* NoUIExampleCollaborator.swift in Sources */,
+				0DE299F72790AC5500FC4793 /* NoUIExampleViewModel.swift in Sources */,
+				0DE299F52790AC5500FC4793 /* NoUIExampleScene.swift in Sources */,
 				0DE299B62790A72600FC4793 /* NoUIModule.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

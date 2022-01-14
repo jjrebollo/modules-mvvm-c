@@ -8,7 +8,7 @@
 import BaseModule
 import UIKit
 
-extension NoUIMock {
+extension NoUIExample {
 
     // Instead of `CoordinatorProtocol`, this class can inherit from one of the specific base coordinator such as `BaseNavigationCoordinator`
     final public class Coordinator: CoordinatorProtocol {
@@ -18,7 +18,7 @@ extension NoUIMock {
         
         public init(navigationController: BaseNavigationController) {
             self.navigationController = navigationController
-            self.scene = NoUIMock.makeScene(coordinator: self)
+            self.scene = NoUIExample.makeScene(coordinator: self)
         }
         
         public func start() {

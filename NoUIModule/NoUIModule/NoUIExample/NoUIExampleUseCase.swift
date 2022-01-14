@@ -8,7 +8,7 @@
 import Foundation
 import BaseModule
 
-extension NoUIMock {
+extension NoUIExample {
 
     // UseCase1 class name should be renamed to a proper name
     final class UseCase1 {

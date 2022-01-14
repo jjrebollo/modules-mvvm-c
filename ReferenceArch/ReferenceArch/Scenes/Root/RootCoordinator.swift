@@ -15,7 +15,7 @@ extension Root {
     final class Coordinator: BaseNavigationCoordinator<BaseNavigationController> {
 
         var uiMockCoordinator: UIMock.Coordinator
-        var noUiMockCoordinator: NoUIMock.Coordinator
+        var noUiMockCoordinator: NoUIExample.Coordinator
         
         var scene: Scene<RootViewController, ViewModel>? = nil
         
@@ -25,7 +25,7 @@ extension Root {
         
         override init(navigationController: BaseNavigationController) {
             self.uiMockCoordinator = UIMock.Coordinator(navigationController: navigationController)
-            self.noUiMockCoordinator = NoUIMock.Coordinator(navigationController: navigationController)
+            self.noUiMockCoordinator = NoUIExample.Coordinator(navigationController: navigationController)
             
             super.init(navigationController: navigationController)
             
@@ -57,8 +57,8 @@ extension Root {
         }
         
         private func launchModuleWithNoUI() {
-            let nibName = NoUIViewController.Constants.Nib
-            let viewController = NoUIViewController.instantiate(nibName: nibName)
+            let nibName = NoUIExampleViewController.Constants.Nib
+            let viewController = NoUIExampleViewController.instantiate(nibName: nibName)
             self.noUiMockCoordinator.setViewController(viewController: viewController)
             self.noUiMockCoordinator.start()
         }

@@ -26,8 +26,8 @@
 		0DE29913278CADD600FC4793 /* PassthroughSubject+bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29912278CADD600FC4793 /* PassthroughSubject+bind.swift */; };
 		0DE2996F278D84D900FC4793 /* UIModule.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0DE2996C278D84B900FC4793 /* UIModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0DE299E32790A7A800FC4793 /* NoUIModule.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0DE299E02790A79D00FC4793 /* NoUIModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0DE299E82790A93B00FC4793 /* NoUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299E72790A93B00FC4793 /* NoUIViewController.swift */; };
-		0DE299EA2790A94F00FC4793 /* NoUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DE299E92790A94F00FC4793 /* NoUIViewController.xib */; };
+		0DE299E82790A93B00FC4793 /* NoUIExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299E72790A93B00FC4793 /* NoUIExampleViewController.swift */; };
+		0DE299EA2790A94F00FC4793 /* NoUIExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DE299E92790A94F00FC4793 /* NoUIExampleViewController.xib */; };
 		19B7B8474FC622C1D4B38422 /* Pods_ReferenceArchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDD7751B3349EDD711CCB68 /* Pods_ReferenceArchUITests.framework */; };
 		5A998E2192C145F0E03F0290 /* Pods_ReferenceArch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BF803107DBF6376D30F53A /* Pods_ReferenceArch.framework */; };
 		AE92A8E0FF664C30BF2757EC /* Pods_ReferenceArchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */; };
@@ -134,8 +134,8 @@
 		0DE29912278CADD600FC4793 /* PassthroughSubject+bind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PassthroughSubject+bind.swift"; sourceTree = "<group>"; };
 		0DE29962278D84B900FC4793 /* UIModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIModule.xcodeproj; path = ../../UIModule/UIModule.xcodeproj; sourceTree = "<group>"; };
 		0DE299DA2790A79D00FC4793 /* NoUIModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NoUIModule.xcodeproj; path = ../../NoUIModule/NoUIModule.xcodeproj; sourceTree = "<group>"; };
-		0DE299E72790A93B00FC4793 /* NoUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoUIViewController.swift; sourceTree = "<group>"; };
-		0DE299E92790A94F00FC4793 /* NoUIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoUIViewController.xib; sourceTree = "<group>"; };
+		0DE299E72790A93B00FC4793 /* NoUIExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoUIExampleViewController.swift; sourceTree = "<group>"; };
+		0DE299E92790A94F00FC4793 /* NoUIExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoUIExampleViewController.xib; sourceTree = "<group>"; };
 		10EC282335FDD3D219698E68 /* Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArch-ReferenceArchUITests/Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReferenceArchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BD20BA4DE562DD4B585CD9 /* Pods-ReferenceArchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArchUITests.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArchUITests/Pods-ReferenceArchUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -251,7 +251,7 @@
 		0DD2A91D2775B19E0048782A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				0DE299E62790A91200FC4793 /* NoUI */,
+				0DE299E62790A91200FC4793 /* NoUIExample */,
 				0DD2A91E2775B1A70048782A /* Root */,
 			);
 			path = Scenes;
@@ -314,13 +314,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0DE299E62790A91200FC4793 /* NoUI */ = {
+		0DE299E62790A91200FC4793 /* NoUIExample */ = {
 			isa = PBXGroup;
 			children = (
-				0DE299E72790A93B00FC4793 /* NoUIViewController.swift */,
-				0DE299E92790A94F00FC4793 /* NoUIViewController.xib */,
+				0DE299E72790A93B00FC4793 /* NoUIExampleViewController.swift */,
+				0DE299E92790A94F00FC4793 /* NoUIExampleViewController.xib */,
 			);
-			path = NoUI;
+			path = NoUIExample;
 			sourceTree = "<group>";
 		};
 		8298D6663BA8D9C90B69E21B /* Pods */ = {
@@ -520,7 +520,7 @@
 				0DD2A905276B62A60048782A /* RootViewController.xib in Resources */,
 				0D00752E2769F8B300D9D531 /* Assets.xcassets in Resources */,
 				0D00752C2769F8A900D9D531 /* Main.storyboard in Resources */,
-				0DE299EA2790A94F00FC4793 /* NoUIViewController.xib in Resources */,
+				0DE299EA2790A94F00FC4793 /* NoUIExampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,7 +632,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DD2A91B2775B13F0048782A /* RootService.swift in Sources */,
-				0DE299E82790A93B00FC4793 /* NoUIViewController.swift in Sources */,
+				0DE299E82790A93B00FC4793 /* NoUIExampleViewController.swift in Sources */,
 				0DD2A9192775B1260048782A /* RootRepository.swift in Sources */,
 				0DD2A907276B65FE0048782A /* RootCoordinator.swift in Sources */,
 				0DE29913278CADD600FC4793 /* PassthroughSubject+bind.swift in Sources */,

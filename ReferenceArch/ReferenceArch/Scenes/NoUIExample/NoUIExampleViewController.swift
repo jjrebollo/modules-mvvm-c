@@ -1,5 +1,5 @@
 //
-//  NoUIViewController.swift
+//  NoUIExampleViewController.swift
 //  ReferenceArch
 //
 //  Created by Juan Jose Rebollo on 13/01/2022.
@@ -9,10 +9,10 @@ import UIKit
 import Combine
 import BaseModule
 
-final class NoUIViewController: BaseViewController, NibableProtocol {
+final class NoUIExampleViewController: BaseViewController, NibableProtocol {
     
     struct Constants {
-        static let Nib: String = "NoUIViewController"
+        static let Nib: String = "NoUIExampleViewController"
     }
     
 //    let switchColorButtonTouchedSubject = PassthroughSubject<Void, Never>()

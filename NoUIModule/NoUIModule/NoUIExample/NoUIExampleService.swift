@@ -7,6 +7,6 @@
 
 import Foundation
 
-extension NoUIMock {
+extension NoUIExample {
     final class Service {}
 }

@@ -9,7 +9,7 @@ import Foundation
 import Combine
 import BaseModule
 
-extension NoUIMock {
+extension NoUIExample {
     final public class ViewModel: BaseViewModel {
         let useCase1: UseCase1
         
