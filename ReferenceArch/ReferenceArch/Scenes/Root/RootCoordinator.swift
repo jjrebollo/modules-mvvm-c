@@ -14,8 +14,8 @@ import NoUIModule
 extension Root {
     final class Coordinator: BaseNavigationCoordinator<BaseNavigationController> {
 
-        var uiMockCoordinator: UIExample.Coordinator
-        var noUiMockCoordinator: NoUIExample.Coordinator
+        var uiExampleCoordinator: UIExample.Coordinator
+        var noUiExampleCoordinator: NoUIExample.Coordinator
         
         var scene: Scene<RootViewController, ViewModel>? = nil
         
@@ -24,8 +24,8 @@ extension Root {
         private var cancellables = Set<AnyCancellable>()
         
         override init(navigationController: BaseNavigationController) {
-            self.uiMockCoordinator = UIExample.Coordinator(navigationController: navigationController)
-            self.noUiMockCoordinator = NoUIExample.Coordinator(navigationController: navigationController)
+            self.uiExampleCoordinator = UIExample.Coordinator(navigationController: navigationController)
+            self.noUiExampleCoordinator = NoUIExample.Coordinator(navigationController: navigationController)
             
             super.init(navigationController: navigationController)
             
@@ -53,14 +53,14 @@ extension Root {
         }
         
         private func launchModuleWithUI() {
-            self.uiMockCoordinator.start()
+            self.uiExampleCoordinator.start()
         }
         
         private func launchModuleWithNoUI() {
             let nibName = NoUIExampleViewController.Constants.Nib
             let viewController = NoUIExampleViewController.instantiate(nibName: nibName)
-            self.noUiMockCoordinator.setViewController(viewController: viewController)
-            self.noUiMockCoordinator.start()
+            self.noUiExampleCoordinator.setViewController(viewController: viewController)
+            self.noUiExampleCoordinator.start()
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  UIMockCollaborator.swift
+//  UIExampleCollaborator.swift
 //  UIModule
 //
 //  Created by Juan Jose Rebollo on 11/01/2022.
