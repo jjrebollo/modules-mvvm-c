@@ -59,6 +59,7 @@ extension Root {
         private func launchModuleWithNoUI() {
             let nibName = NoUIExampleViewController.Constants.Nib
             let viewController = NoUIExampleViewController.instantiate(nibName: nibName)
+            viewController.setNoUiExampleCoordinator(coordinator: noUiExampleCoordinator)
             self.noUiExampleCoordinator.setViewController(viewController: viewController)
             self.noUiExampleCoordinator.start()
         }

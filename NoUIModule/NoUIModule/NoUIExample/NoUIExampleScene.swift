@@ -17,9 +17,9 @@ extension NoUIExample: ScenableProtocol {
         guard let coordinator = coordinator as? Coordinator else { return nil }
         
         let service = Service()
-        let collaborator = Collaborator(service: service)
-        let useCase = UseCase1(collaborator: collaborator)
-        let viewModel = ViewModel(coordinator: coordinator, useCase1: useCase)
+        let collaborator = Repository(service: service)
+        let useCase = BankNameUseCase(collaborator: collaborator)
+        let viewModel = ViewModel(coordinator: coordinator, bankUseCase: useCase)
         
         return SceneNoUI(viewModel: viewModel)
     }

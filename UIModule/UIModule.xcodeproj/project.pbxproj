@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D460EEC2795FC940076A027 /* BankData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460EEB2795FC940076A027 /* BankData.swift */; };
 		0DE2994B278D83DB00FC4793 /* UIModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2994A278D83DB00FC4793 /* UIModule.docc */; };
 		0DE29951278D83DC00FC4793 /* UIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29946278D83DB00FC4793 /* UIModule.framework */; };
 		0DE29956278D83DC00FC4793 /* UIModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29955278D83DC00FC4793 /* UIModuleTests.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		07BFF00A7A6B0034322C1CC2 /* Pods-UIModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-UIModuleTests/Pods-UIModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D460EEB2795FC940076A027 /* BankData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankData.swift; sourceTree = "<group>"; };
 		0DE29946278D83DB00FC4793 /* UIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE29949278D83DB00FC4793 /* UIModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModule.h; sourceTree = "<group>"; };
 		0DE2994A278D83DB00FC4793 /* UIModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UIModule.docc; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D460EEA2795FC740076A027 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D460EEB2795FC940076A027 /* BankData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0DE2993C278D83DB00FC4793 = {
 			isa = PBXGroup;
 			children = (
@@ -117,7 +127,7 @@
 		0DE29948278D83DB00FC4793 /* UIModule */ = {
 			isa = PBXGroup;
 			children = (
-				0DE2997A278EFDF800FC4793 /* UIMock */,
+				0DE2997A278EFDF800FC4793 /* UIExample */,
 				0DE29949278D83DB00FC4793 /* UIModule.h */,
 				0DE2994A278D83DB00FC4793 /* UIModule.docc */,
 			);
@@ -132,9 +142,10 @@
 			path = UIModuleTests;
 			sourceTree = "<group>";
 		};
-		0DE2997A278EFDF800FC4793 /* UIMock */ = {
+		0DE2997A278EFDF800FC4793 /* UIExample */ = {
 			isa = PBXGroup;
 			children = (
+				0D460EEA2795FC740076A027 /* Models */,
 				0DE2997B278EFDF800FC4793 /* UIExampleScene.swift */,
 				0DE2997C278EFDF800FC4793 /* UIExampleUseCase.swift */,
 				0DE2997D278EFDF800FC4793 /* UIExampleCollaborator.swift */,
@@ -143,7 +154,7 @@
 				0DE29982278EFDF800FC4793 /* UIExampleService.swift */,
 				0DE29983278EFDF800FC4793 /* UIExampleCoordinator.swift */,
 			);
-			path = UIMock;
+			path = UIExample;
 			sourceTree = "<group>";
 		};
 		0DE2997F278EFDF800FC4793 /* ViewController */ = {
@@ -339,6 +350,7 @@
 			files = (
 				0DE29989278EFDF800FC4793 /* UIExampleViewController.swift in Sources */,
 				0DE29987278EFDF800FC4793 /* UIExampleViewModel.swift in Sources */,
+				0D460EEC2795FC940076A027 /* BankData.swift in Sources */,
 				0DE29984278EFDF800FC4793 /* UIExampleScene.swift in Sources */,
 				0DE2994B278D83DB00FC4793 /* UIModule.docc in Sources */,
 				0DE2998A278EFDF800FC4793 /* UIExampleService.swift in Sources */,

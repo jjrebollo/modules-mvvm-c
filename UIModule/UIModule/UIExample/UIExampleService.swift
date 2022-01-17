@@ -1,14 +1,14 @@
 //
-//  NoUIExampleService.swift
-//  NoUIModule
+//  UIExampleService.swift
+//  UIModule
 //
-//  Created by Juan Jose Rebollo on 13/01/2022.
+//  Created by Juan Jose Rebollo on 11/01/2022.
 //
 
 import Foundation
 import Combine
 
-extension NoUIExample {
+extension UIExample {
     final class Service {
         func retrieveBankInfo() -> Future<Bank?, Error> {
             Future { promise in

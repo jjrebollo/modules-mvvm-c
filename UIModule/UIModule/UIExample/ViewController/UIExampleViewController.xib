@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIExampleViewController" customModule="UIModule" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <viewController id="hGG-8p-3lX" customClass="UIExampleViewController" customModule="UIModule" customModuleProvider="target">
             <view key="view" contentMode="scaleToFill" id="7ya-G2-cKO">
@@ -21,12 +21,35 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bank Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFp-g5-vzS">
+                        <rect key="frame" x="150" y="652" width="114" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="D4K-Na-JlO"/>
+                            <constraint firstAttribute="width" constant="114" id="W4D-Ik-bSO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRc-Cn-yWU">
+                        <rect key="frame" x="107" y="183" width="200" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="mT5-xV-5Sc"/>
+                            <constraint firstAttribute="width" constant="200" id="nCA-XU-cne"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Get Bank Name"/>
+                    </button>
                 </subviews>
                 <viewLayoutGuide key="safeArea" id="rKG-H4-cbM"/>
                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 <constraints>
+                    <constraint firstItem="wFp-g5-vzS" firstAttribute="centerX" secondItem="7ya-G2-cKO" secondAttribute="centerX" id="8pn-WK-XwD"/>
+                    <constraint firstItem="rKG-H4-cbM" firstAttribute="bottom" secondItem="wFp-g5-vzS" secondAttribute="bottom" constant="189" id="9oM-nL-NBn"/>
                     <constraint firstItem="fTa-nN-TEV" firstAttribute="centerY" secondItem="7ya-G2-cKO" secondAttribute="centerY" id="SCk-Je-FTl"/>
+                    <constraint firstItem="yRc-Cn-yWU" firstAttribute="centerX" secondItem="7ya-G2-cKO" secondAttribute="centerX" id="X9Y-Zf-p1Z"/>
                     <constraint firstItem="fTa-nN-TEV" firstAttribute="centerX" secondItem="7ya-G2-cKO" secondAttribute="centerX" id="YBP-iF-0EB"/>
+                    <constraint firstItem="yRc-Cn-yWU" firstAttribute="top" secondItem="rKG-H4-cbM" secondAttribute="top" constant="139" id="i7i-1t-Aha"/>
                 </constraints>
             </view>
             <point key="canvasLocation" x="-364" y="-184"/>

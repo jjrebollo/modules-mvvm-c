@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D460EE92791C89C0076A027 /* BankData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460EE82791C89C0076A027 /* BankData.swift */; };
 		0DE299B62790A72600FC4793 /* NoUIModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299B52790A72600FC4793 /* NoUIModule.docc */; };
 		0DE299BC2790A72700FC4793 /* NoUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE299B12790A72600FC4793 /* NoUIModule.framework */; };
 		0DE299C12790A72700FC4793 /* NoUIModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299C02790A72700FC4793 /* NoUIModuleTests.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D460EE82791C89C0076A027 /* BankData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankData.swift; sourceTree = "<group>"; };
 		0DE299B12790A72600FC4793 /* NoUIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoUIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE299B42790A72600FC4793 /* NoUIModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoUIModule.h; sourceTree = "<group>"; };
 		0DE299B52790A72600FC4793 /* NoUIModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NoUIModule.docc; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D460EE72791C8670076A027 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D460EE82791C89C0076A027 /* BankData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0DE299A72790A72600FC4793 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 		0DE299EB2790AC5500FC4793 /* NoUIExample */ = {
 			isa = PBXGroup;
 			children = (
+				0D460EE72791C8670076A027 /* Models */,
 				0DE299EC2790AC5500FC4793 /* NoUIExampleService.swift */,
 				0DE299ED2790AC5500FC4793 /* NoUIExampleCoordinator.swift */,
 				0DE299EE2790AC5500FC4793 /* NoUIExampleCollaborator.swift */,
@@ -322,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D460EE92791C89C0076A027 /* BankData.swift in Sources */,
 				0DE299F32790AC5500FC4793 /* NoUIExampleCoordinator.swift in Sources */,
 				0DE299F22790AC5500FC4793 /* NoUIExampleService.swift in Sources */,
 				0DE299F62790AC5500FC4793 /* NoUIExampleUseCase.swift in Sources */,

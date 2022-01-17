@@ -11,12 +11,12 @@ import BaseModule
 
 extension NoUIExample {
     final public class ViewModel: BaseViewModel {
-        let useCase1: UseCase1
+        let bankUseCase: BankNameUseCase
         
         private var cancellableBag = Set<AnyCancellable>()
         
-        init(coordinator: Coordinator, useCase1: UseCase1) {
-            self.useCase1 = useCase1
+        init(coordinator: Coordinator, bankUseCase: BankNameUseCase) {
+            self.bankUseCase = bankUseCase
 
             super.init(coordinator: coordinator)
 
@@ -25,6 +25,14 @@ extension NoUIExample {
         
         func setupCoordinatorObservers(for coordinator: Coordinator) {
             // Bind subjects from this class to subjects in the coordinator class
+        }
+        
+        func getBankName() {
+            self.bankUseCase.getBankName()
+        }
+        
+        func bankNameSubject() -> PassthroughSubject<String?, Never> {
+            return bankUseCase.getBankNameSubject()
         }
         
     }

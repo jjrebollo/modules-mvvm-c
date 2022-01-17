@@ -7,15 +7,23 @@
 
 import Foundation
 import BaseModule
+import Combine
 
 extension NoUIExample {
 
-    // UseCase1 class name should be renamed to a proper name
-    final class UseCase1 {
-        let collaborator: CollaboratorProtocol // Can be renamed to `repository``
+    final class BankNameUseCase {
+        let repository: NoUIExampleRepositoryProtocol
         
-        init(collaborator: CollaboratorProtocol) {
-            self.collaborator = collaborator
+        init(collaborator: NoUIExampleRepositoryProtocol) {
+            self.repository = collaborator
+        }
+        
+        func getBankNameSubject() -> PassthroughSubject<String?, Never> {
+            return repository.bankNameSubject
+        }
+        
+        func getBankName() {
+            return repository.getBankName()
         }
     }
 }
