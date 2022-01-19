@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Bank {
-    let name = "HSBC"
+struct Company {
+    let name = "Wayne B Enterprises"
     let headquartersCity = "London"
 }

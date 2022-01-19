@@ -14,7 +14,7 @@ extension NoUIExample {
     // Instead of `CoordinatorProtocol`, this class can inherit from one of the specific base coordinator such as `BaseNavigationCoordinator`
     final public class Coordinator: CoordinatorProtocol {
         
-        @Published public var bankName: String
+        @Published public var companyName: String
         
         var scene: SceneNoUI<ViewModel>? = nil
         var navigationController: BaseNavigationController
@@ -23,7 +23,7 @@ extension NoUIExample {
         
         public init(navigationController: BaseNavigationController) {
             self.navigationController = navigationController
-            self.bankName = "No Bank Name"
+            self.companyName = "No Company Name"
             self.scene = NoUIExample.makeScene(coordinator: self)
             bind()
         }
@@ -39,8 +39,8 @@ extension NoUIExample {
         }
 
         // Declare public methods that return variables to be observed (from view model mainly)
-        public func getBankName() {
-            scene?.viewModel.getBankName()
+        public func getCompanyName() {
+            scene?.viewModel.getCompanyName()
         }
 
     }
@@ -49,11 +49,11 @@ extension NoUIExample {
 private extension NoUIExample.Coordinator {
     
     func bind() {
-        scene?.viewModel.bankNameSubject()
+        scene?.viewModel.companyNameSubject()
             .sink(receiveValue: { [weak self] newBankName in
                 guard let newBankName = newBankName else { return }
                 
-                self?.bankName = newBankName
+                self?.companyName = newBankName
             })
             .store(in: &cancellableBag)
     }

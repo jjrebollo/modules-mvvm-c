@@ -16,7 +16,7 @@ final class NoUIExampleViewController: BaseViewController, NibableProtocol {
         static let Nib: String = "NoUIExampleViewController"
     }
     
-    @IBOutlet weak var bankNameLabel: UILabel!
+    @IBOutlet weak var companyNameLabel: UILabel!
     
     weak var noUiExampleCoordinator: NoUIExample.Coordinator? = nil
     
@@ -31,7 +31,7 @@ final class NoUIExampleViewController: BaseViewController, NibableProtocol {
     @IBAction func getBankNameButtonTouched(_ sender: Any) {
         guard let coordinator = self.noUiExampleCoordinator else { return }
 
-        coordinator.getBankName()
+        coordinator.getCompanyName()
     }
     
     func setNoUiExampleCoordinator(coordinator: NoUIExample.Coordinator) {
@@ -42,8 +42,8 @@ final class NoUIExampleViewController: BaseViewController, NibableProtocol {
     private func setupCoordinator() {
         guard let coordinator = self.noUiExampleCoordinator else { return }
         
-        coordinator.$bankName
-            .assign(to: \.text!, on: bankNameLabel)
+        coordinator.$companyName
+            .assign(to: \.text!, on: companyNameLabel)
             .store(in: &cancellableBag)
         
     }

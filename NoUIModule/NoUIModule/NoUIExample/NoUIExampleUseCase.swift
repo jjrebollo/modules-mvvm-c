@@ -11,19 +11,19 @@ import Combine
 
 extension NoUIExample {
 
-    final class BankNameUseCase {
+    final class CompanyNameUseCase {
         let repository: NoUIExampleRepositoryProtocol
         
         init(collaborator: NoUIExampleRepositoryProtocol) {
             self.repository = collaborator
         }
         
-        func getBankNameSubject() -> PassthroughSubject<String?, Never> {
-            return repository.bankNameSubject
+        func getCompanyNameSubject() -> PassthroughSubject<String?, Never> {
+            return repository.companyNameSubject
         }
         
-        func getBankName() {
-            repository.getBankName()
+        func getCompanyName() {
+            repository.getCompanyName()
         }
     }
 }

@@ -11,7 +11,7 @@ import BaseModule
 
 extension UIExample {
     final public class ViewModel: BaseViewModel {
-        let bankUseCase: BankUseCase
+        let companyUseCase: CompanyUseCase
         
         weak var viewController: UIExampleViewController? {
             didSet {
@@ -22,8 +22,8 @@ extension UIExample {
         
         private var cancellableBag = Set<AnyCancellable>()
         
-        init(coordinator: Coordinator, bankUseCase: BankUseCase) {
-            self.bankUseCase = bankUseCase
+        init(coordinator: Coordinator, companyUseCase: CompanyUseCase) {
+            self.companyUseCase = companyUseCase
             
             super.init(coordinator: coordinator)
         }
@@ -34,21 +34,21 @@ extension UIExample {
         
         func setupViewControllerObservers(for viewController: UIExampleViewController) {
             // Bind subjects from the view controller class to subjects in this class
-            viewController.bankNameSubject
+            viewController.companyNameSubject
                 .flatMap({ _ in
-                    self.bankUseCase.getBankName()
+                    self.getCompanyName()
                 })
                 .compactMap { $0 }
                 .sink(
                     receiveCompletion: { _ in },
                     receiveValue: { name in
-                        viewController.bankNameLabel.text = name
+                        viewController.companyNameLabel.text = name
                     })
                 .store(in: &cancellableBag)
         }
         
-        func getBankName() -> AnyPublisher<String?, Error> {
-            return bankUseCase.getBankName()
+        func getCompanyName() -> AnyPublisher<String?, Error> {
+            return companyUseCase.getCompanyName()
         }
         
     }

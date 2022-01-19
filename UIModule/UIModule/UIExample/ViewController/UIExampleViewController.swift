@@ -15,9 +15,9 @@ final public class UIExampleViewController: BaseViewController, NibableProtocol 
         static let Nib: String = "UIExampleViewController"
     }
 
-    @IBOutlet weak var bankNameLabel: UILabel!
+    @IBOutlet weak var companyNameLabel: UILabel!
 
-    let bankNameSubject = PassthroughSubject<Void, Never>()
+    let companyNameSubject = PassthroughSubject<Void, Never>()
     private var cancellableBag = Set<AnyCancellable>()
 
     public override func viewDidLoad() {
@@ -25,7 +25,7 @@ final public class UIExampleViewController: BaseViewController, NibableProtocol 
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func getBankNameButtonTouched(_ sender: Any) {
-        self.bankNameSubject.send()
+    @IBAction func getCompanyNameButtonTouched(_ sender: Any) {
+        self.companyNameSubject.send()
     }
 }

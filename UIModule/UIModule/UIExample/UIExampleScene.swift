@@ -18,8 +18,8 @@ extension UIExample: ScenableProtocol {
         
         let service = Service()
         let repository = Repository(service: service)
-        let bankUseCase = BankUseCase(repository: repository)
-        let viewModel = ViewModel(coordinator: coordinator, bankUseCase: bankUseCase)
+        let bankUseCase = CompanyUseCase(repository: repository)
+        let viewModel = ViewModel(coordinator: coordinator, companyUseCase: bankUseCase)
         let nibName = UIExampleViewController.Constants.Nib
         let viewController = UIExampleViewController.instantiate(nibName: nibName)
         viewModel.viewController = viewController

@@ -10,8 +10,8 @@ import BaseModule
 import Combine
 
 protocol NoUIExampleRepositoryProtocol: CollaboratorProtocol {
-    var bankNameSubject: PassthroughSubject<String?, Never> { get }
-    func getBankName()
+    var companyNameSubject: PassthroughSubject<String?, Never> { get }
+    func getCompanyName()
 }
 
 extension NoUIExample {
@@ -19,19 +19,19 @@ extension NoUIExample {
         
         var service: Service
         
-        let bankNameSubject = PassthroughSubject<String?, Never>()
+        let companyNameSubject = PassthroughSubject<String?, Never>()
         private var cancellableBag = Set<AnyCancellable>()
         
         init(service: Service) {
             self.service = service
         }
         
-        func getBankName() {
-            service.retrieveBankInfo()
+        func getCompanyName() {
+            service.retrieveCompanyInfo()
                 .sink (
                     receiveCompletion: { _ in },
                     receiveValue: { [weak self] bank in
-                        self?.bankNameSubject.send(bank?.name)
+                        self?.companyNameSubject.send(bank?.name)
                     }
                 )
                 .store(in:&cancellableBag)

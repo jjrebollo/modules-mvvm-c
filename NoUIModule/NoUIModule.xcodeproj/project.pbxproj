@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D460EE92791C89C0076A027 /* BankData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460EE82791C89C0076A027 /* BankData.swift */; };
+		0D460EE92791C89C0076A027 /* CompanyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460EE82791C89C0076A027 /* CompanyData.swift */; };
 		0DE299B62790A72600FC4793 /* NoUIModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299B52790A72600FC4793 /* NoUIModule.docc */; };
 		0DE299BC2790A72700FC4793 /* NoUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE299B12790A72600FC4793 /* NoUIModule.framework */; };
 		0DE299C12790A72700FC4793 /* NoUIModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299C02790A72700FC4793 /* NoUIModuleTests.swift */; };
@@ -49,7 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0D460EE82791C89C0076A027 /* BankData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankData.swift; sourceTree = "<group>"; };
+		0D460EE82791C89C0076A027 /* CompanyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyData.swift; sourceTree = "<group>"; };
 		0DE299B12790A72600FC4793 /* NoUIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoUIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE299B42790A72600FC4793 /* NoUIModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoUIModule.h; sourceTree = "<group>"; };
 		0DE299B52790A72600FC4793 /* NoUIModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NoUIModule.docc; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		0D460EE72791C8670076A027 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0D460EE82791C89C0076A027 /* BankData.swift */,
+				0D460EE82791C89C0076A027 /* CompanyData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -333,7 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D460EE92791C89C0076A027 /* BankData.swift in Sources */,
+				0D460EE92791C89C0076A027 /* CompanyData.swift in Sources */,
 				0DE299F32790AC5500FC4793 /* NoUIExampleCoordinator.swift in Sources */,
 				0DE299F22790AC5500FC4793 /* NoUIExampleService.swift in Sources */,
 				0DE299F62790AC5500FC4793 /* NoUIExampleUseCase.swift in Sources */,
@@ -415,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -473,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

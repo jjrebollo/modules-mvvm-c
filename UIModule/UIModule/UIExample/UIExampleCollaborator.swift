@@ -10,8 +10,8 @@ import BaseModule
 import Combine
 
 protocol UIExampleRepositoryProtocol: CollaboratorProtocol {
-    var bankSubject: PassthroughSubject<Bank?, Never> { get }
-    func getBankName() -> AnyPublisher<String?, Error>
+    var companySubject: PassthroughSubject<Company?, Never> { get }
+    func getCompanyName() -> AnyPublisher<String?, Error>
 }
 
 extension UIExample {
@@ -19,17 +19,17 @@ extension UIExample {
         
         var service: Service
         
-        let bankSubject = PassthroughSubject<Bank?, Never>()
+        let companySubject = PassthroughSubject<Company?, Never>()
         private var cancellableBag = Set<AnyCancellable>()
         
         init(service: Service) {
             self.service = service
         }
         
-        func getBankName() -> AnyPublisher<String?, Error> {
-            return service.retrieveBankInfo()
+        func getCompanyName() -> AnyPublisher<String?, Error> {
+            return service.retrieveCompanyInfo()
                 .handleEvents(receiveOutput: { [weak self] bank in
-                    self?.bankSubject.send(bank)
+                    self?.companySubject.send(bank)
                 })
                 .map({ bank in
                     bank?.name

@@ -11,10 +11,10 @@ import BaseModule
 
 extension NoUIExample {
     final public class ViewModel: BaseViewModel {
-        let bankUseCase: BankNameUseCase
+        let companyUseCase: CompanyNameUseCase
         
-        init(coordinator: Coordinator, bankUseCase: BankNameUseCase) {
-            self.bankUseCase = bankUseCase
+        init(coordinator: Coordinator, companyUseCase: CompanyNameUseCase) {
+            self.companyUseCase = companyUseCase
 
             super.init(coordinator: coordinator)
 
@@ -25,12 +25,12 @@ extension NoUIExample {
             // Bind subjects from this class to subjects in the coordinator class
         }
         
-        func getBankName() {
-            self.bankUseCase.getBankName()
+        func getCompanyName() {
+            self.companyUseCase.getCompanyName()
         }
         
-        func bankNameSubject() -> PassthroughSubject<String?, Never> {
-            return bankUseCase.getBankNameSubject()
+        func companyNameSubject() -> PassthroughSubject<String?, Never> {
+            return companyUseCase.getCompanyNameSubject()
         }
         
     }

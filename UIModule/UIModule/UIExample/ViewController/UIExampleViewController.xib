@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -21,11 +22,11 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bank Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFp-g5-vzS">
-                        <rect key="frame" x="150" y="652" width="114" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Company Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFp-g5-vzS">
+                        <rect key="frame" x="107" y="652" width="200" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="D4K-Na-JlO"/>
-                            <constraint firstAttribute="width" constant="114" id="W4D-Ik-bSO"/>
+                            <constraint firstAttribute="width" constant="200" id="W4D-Ik-bSO"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -38,9 +39,9 @@
                             <constraint firstAttribute="width" constant="200" id="nCA-XU-cne"/>
                         </constraints>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="filled" title="Get Bank Name"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Get Company Name"/>
                         <connections>
-                            <action selector="getBankNameButtonTouched:" destination="hGG-8p-3lX" eventType="touchUpInside" id="0DG-jN-hIc"/>
+                            <action selector="getCompanyNameButtonTouched:" destination="hGG-8p-3lX" eventType="touchUpInside" id="qch-ol-f6N"/>
                         </connections>
                     </button>
                 </subviews>
@@ -56,7 +57,7 @@
                 </constraints>
             </view>
             <connections>
-                <outlet property="bankNameLabel" destination="wFp-g5-vzS" id="6ob-Nc-1dT"/>
+                <outlet property="companyNameLabel" destination="wFp-g5-vzS" id="6ob-Nc-1dT"/>
             </connections>
             <point key="canvasLocation" x="-364" y="-184"/>
         </viewController>
