@@ -21,7 +21,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bank Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFp-g5-vzS">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bank Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFp-g5-vzS">
                         <rect key="frame" x="150" y="652" width="114" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="D4K-Na-JlO"/>
@@ -39,6 +39,9 @@
                         </constraints>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="filled" title="Get Bank Name"/>
+                        <connections>
+                            <action selector="getBankNameButtonTouched:" destination="hGG-8p-3lX" eventType="touchUpInside" id="0DG-jN-hIc"/>
+                        </connections>
                     </button>
                 </subviews>
                 <viewLayoutGuide key="safeArea" id="rKG-H4-cbM"/>
@@ -52,6 +55,9 @@
                     <constraint firstItem="yRc-Cn-yWU" firstAttribute="top" secondItem="rKG-H4-cbM" secondAttribute="top" constant="139" id="i7i-1t-Aha"/>
                 </constraints>
             </view>
+            <connections>
+                <outlet property="bankNameLabel" destination="wFp-g5-vzS" id="6ob-Nc-1dT"/>
+            </connections>
             <point key="canvasLocation" x="-364" y="-184"/>
         </viewController>
     </objects>

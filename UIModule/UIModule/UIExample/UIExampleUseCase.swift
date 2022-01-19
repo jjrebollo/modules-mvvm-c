@@ -7,15 +7,20 @@
 
 import Foundation
 import BaseModule
+import Combine
 
 extension UIExample {
 
     // UseCase1 class name should be renamed to a proper name
-    final class UseCase1 {
-        let collaborator: CollaboratorProtocol // Can be renamed to `repository``
+    final class BankUseCase {
+        let repository: Repository
         
-        init(collaborator: CollaboratorProtocol) {
-            self.collaborator = collaborator
+        init(repository: Repository) {
+            self.repository = repository
+        }
+        
+        func getBankName() -> AnyPublisher<String?, Error> {
+            return repository.getBankName()
         }
     }
 }

@@ -23,7 +23,7 @@ extension NoUIExample {
         }
         
         func getBankName() {
-            return repository.getBankName()
+            repository.getBankName()
         }
     }
 }

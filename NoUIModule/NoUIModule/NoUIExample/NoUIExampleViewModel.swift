@@ -13,8 +13,6 @@ extension NoUIExample {
     final public class ViewModel: BaseViewModel {
         let bankUseCase: BankNameUseCase
         
-        private var cancellableBag = Set<AnyCancellable>()
-        
         init(coordinator: Coordinator, bankUseCase: BankNameUseCase) {
             self.bankUseCase = bankUseCase
 
