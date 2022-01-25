@@ -9,11 +9,6 @@ import Foundation
 import BaseModule
 import Combine
 
-protocol UIExampleRepositoryProtocol: CollaboratorProtocol {
-    var companySubject: PassthroughSubject<Company?, Never> { get }
-    func getCompanyName() -> AnyPublisher<String?, Error>
-}
-
 extension UIExample {
     final class Repository: UIExampleRepositoryProtocol {
         

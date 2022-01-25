@@ -11,9 +11,9 @@ import BaseModule
 
 extension UIExample {
     final public class ViewModel: BaseViewModel {
-        let companyUseCase: CompanyUseCase
+        let companyUseCase: CompanyUseCaseProtocol
         
-        weak var viewController: UIExampleViewController? {
+        weak var viewController: UIExampleViewControllerProtocol? {
             didSet {
                 guard let viewController = viewController else { return }
                 setupViewControllerObservers(for: viewController)
@@ -22,7 +22,7 @@ extension UIExample {
         
         private var cancellableBag = Set<AnyCancellable>()
         
-        init(coordinator: Coordinator, companyUseCase: CompanyUseCase) {
+        init(coordinator: CoordinatorProtocol, companyUseCase: CompanyUseCaseProtocol) {
             self.companyUseCase = companyUseCase
             
             super.init(coordinator: coordinator)
@@ -32,17 +32,17 @@ extension UIExample {
             // Bind subjects from this class to subjects in the coordinator class
         }
         
-        func setupViewControllerObservers(for viewController: UIExampleViewController) {
+        func setupViewControllerObservers(for viewController: UIExampleViewControllerProtocol) {
             // Bind subjects from the view controller class to subjects in this class
-            viewController.companyNameSubject
+            viewController.getCompanyNameObservable()
                 .flatMap({ _ in
                     self.getCompanyName()
                 })
                 .compactMap { $0 }
                 .sink(
                     receiveCompletion: { _ in },
-                    receiveValue: { name in
-                        viewController.companyNameLabel.text = name
+                    receiveValue: { [viewController] name in
+                        viewController.setCompanyName(name: name)
                     })
                 .store(in: &cancellableBag)
         }

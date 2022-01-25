@@ -9,7 +9,7 @@ import UIKit
 import Combine
 import BaseModule
 
-final public class UIExampleViewController: BaseViewController, NibableProtocol {
+final public class UIExampleViewController: BaseViewController, UIExampleViewControllerProtocol, NibableProtocol {
     
     struct Constants {
         static let Nib: String = "UIExampleViewController"
@@ -17,7 +17,7 @@ final public class UIExampleViewController: BaseViewController, NibableProtocol 
 
     @IBOutlet weak var companyNameLabel: UILabel!
 
-    let companyNameSubject = PassthroughSubject<Void, Never>()
+    private let companyNameSubject = PassthroughSubject<Void, Never>()
     private var cancellableBag = Set<AnyCancellable>()
 
     public override func viewDidLoad() {
@@ -27,5 +27,13 @@ final public class UIExampleViewController: BaseViewController, NibableProtocol 
 
     @IBAction func getCompanyNameButtonTouched(_ sender: Any) {
         self.companyNameSubject.send()
+    }
+    
+    func setCompanyName(name: String) {
+        companyNameLabel.text = name
+    }
+    
+    func getCompanyNameObservable() -> PassthroughSubject<Void, Never> {
+        return companyNameSubject
     }
 }

@@ -61,7 +61,6 @@ target 'UIModule' do
   uiModule_pods
 
   target 'UIModuleTests' do
-    inherit! :search_paths
     
   end
 
