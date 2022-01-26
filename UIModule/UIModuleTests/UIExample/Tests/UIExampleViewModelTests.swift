@@ -9,7 +9,7 @@ import XCTest
 import Combine
 @testable import UIModule
 
-class UIExmapleTests: XCTestCase {
+class UIExampleViewModelTests: XCTestCase {
     
     private var mockCoordinator: MockUIExampleCoordinator!
     private var mockCompanyUseCase: MockUIExampleCompanyUseCase!

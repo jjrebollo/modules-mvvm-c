@@ -26,7 +26,7 @@ final public class UIExampleViewController: BaseViewController, UIExampleViewCon
     }
 
     @IBAction func getCompanyNameButtonTouched(_ sender: Any) {
-        self.companyNameSubject.send()
+        companyNameSubject.send()
     }
     
     func setCompanyName(name: String) {
@@ -34,6 +34,6 @@ final public class UIExampleViewController: BaseViewController, UIExampleViewCon
     }
     
     func getCompanyNameObservable() -> PassthroughSubject<Void, Never> {
-        return companyNameSubject
+        companyNameSubject
     }
 }

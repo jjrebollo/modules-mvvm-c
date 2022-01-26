@@ -11,11 +11,10 @@ import Combine
 
 extension UIExample {
 
-    // UseCase1 class name should be renamed to a proper name
     final class CompanyUseCase: CompanyUseCaseProtocol {
-        let repository: Repository
+        let repository: UIExampleRepositoryProtocol
         
-        init(repository: Repository) {
+        init(repository: UIExampleRepositoryProtocol) {
             self.repository = repository
         }
         

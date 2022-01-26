@@ -9,6 +9,5 @@ import Combine
 import BaseModule
 
 protocol UIExampleRepositoryProtocol: CollaboratorProtocol, AnyObject {
-    var companySubject: PassthroughSubject<Company?, Never> { get }
     func getCompanyName() -> AnyPublisher<String?, Error>
 }

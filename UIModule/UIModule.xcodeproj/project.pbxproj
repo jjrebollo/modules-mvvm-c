@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2FB50927A1544B006391FF /* MockUIExampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2FB50827A1544B006391FF /* MockUIExampleRepository.swift */; };
+		0D2FB50B27A1550C006391FF /* UIExampleUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2FB50A27A1550C006391FF /* UIExampleUseCaseTests.swift */; };
 		0D460EEC2795FC940076A027 /* CompanyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460EEB2795FC940076A027 /* CompanyData.swift */; };
 		0D460EFB279987270076A027 /* UIExampleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460EFA279987270076A027 /* UIExampleViewModelTests.swift */; };
 		0D460EFE279987C60076A027 /* UIExampleRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460EFD279987C60076A027 /* UIExampleRepositoryProtocol.swift */; };
@@ -59,6 +61,8 @@
 
 /* Begin PBXFileReference section */
 		07BFF00A7A6B0034322C1CC2 /* Pods-UIModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-UIModuleTests/Pods-UIModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D2FB50827A1544B006391FF /* MockUIExampleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUIExampleRepository.swift; sourceTree = "<group>"; };
+		0D2FB50A27A1550C006391FF /* UIExampleUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExampleUseCaseTests.swift; sourceTree = "<group>"; };
 		0D460EEB2795FC940076A027 /* CompanyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyData.swift; sourceTree = "<group>"; };
 		0D460EFA279987270076A027 /* UIExampleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExampleViewModelTests.swift; sourceTree = "<group>"; };
 		0D460EFD279987C60076A027 /* UIExampleRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExampleRepositoryProtocol.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				0D460F032799D1A40076A027 /* MockUIExampleCoordinator.swift */,
 				0D460F052799D1DB0076A027 /* MockUIExampleCompanyUseCase.swift */,
 				0D460F072799D24A0076A027 /* MockUIExampleViewController.swift */,
+				0D2FB50827A1544B006391FF /* MockUIExampleRepository.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				0D460EFA279987270076A027 /* UIExampleViewModelTests.swift */,
+				0D2FB50A27A1550C006391FF /* UIExampleUseCaseTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -444,6 +450,8 @@
 			files = (
 				0D460F062799D1DB0076A027 /* MockUIExampleCompanyUseCase.swift in Sources */,
 				0DE29956278D83DC00FC4793 /* UIModuleTests.swift in Sources */,
+				0D2FB50B27A1550C006391FF /* UIExampleUseCaseTests.swift in Sources */,
+				0D2FB50927A1544B006391FF /* MockUIExampleRepository.swift in Sources */,
 				0D460EFB279987270076A027 /* UIExampleViewModelTests.swift in Sources */,
 				0D460F082799D24A0076A027 /* MockUIExampleViewController.swift in Sources */,
 				0D460F042799D1A40076A027 /* MockUIExampleCoordinator.swift in Sources */,
