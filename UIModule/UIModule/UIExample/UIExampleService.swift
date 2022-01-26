@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 extension UIExample {
-    final class Service {
+    final class Service: UIExampleServiceProtocol {
         func retrieveCompanyInfo() -> Future<Company?, Error> {
             Future { promise in
                 promise(.success(Company()))

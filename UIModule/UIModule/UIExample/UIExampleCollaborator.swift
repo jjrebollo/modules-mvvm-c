@@ -12,12 +12,12 @@ import Combine
 extension UIExample {
     final class Repository: UIExampleRepositoryProtocol {
         
-        var service: Service
+        var service: UIExampleServiceProtocol
         
         let companySubject = PassthroughSubject<Company?, Never>()
         private var cancellableBag = Set<AnyCancellable>()
         
-        init(service: Service) {
+        init(service: UIExampleServiceProtocol) {
             self.service = service
         }
         

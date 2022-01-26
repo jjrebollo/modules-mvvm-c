@@ -1,5 +1,5 @@
 //
-//  UIExampleUseCaseTest.swift
+//  UIExampleRepositoryTests.swift
 //  UIModuleTests
 //
 //  Created by Juan Jose Rebollo on 26/01/2022.
@@ -9,10 +9,11 @@ import XCTest
 import Combine
 @testable import UIModule
 
-class UIExampleCompanyUseCaseTests: XCTestCase {
+
+class UIExampleRepositoryTests: XCTestCase {
     
-    private var mockRepository: MockUIExampleRepository!
-    private var companyUseCase: UIExample.CompanyUseCase!
+    private var mockService: MockUIExampleService!
+    private var uiExampleRepository: UIExample.Repository!
     
     private var cancellableBag = Set<AnyCancellable>()
 
@@ -20,26 +21,27 @@ class UIExampleCompanyUseCaseTests: XCTestCase {
 
         super.setUp()
 
-        mockRepository = MockUIExampleRepository()
+        mockService = MockUIExampleService()
         
-        companyUseCase = UIExample.CompanyUseCase(repository: mockRepository)
+        uiExampleRepository = UIExample.Repository(service: mockService)
     }
 
     override func tearDown() {
         super.tearDown()
-        mockRepository = nil
-        companyUseCase = nil
+        mockService = nil
+        uiExampleRepository = nil
     }
 
     func testGetCompanyName() {
         let newName = "New NAME"
+        let newHeadquarters = "Madrid"
         let errorName = "-1"
-        mockRepository.spyCompanyName = newName
+        mockService.spyRetrieveCompanyInfo = Company(name: newName, headquartersCity: newHeadquarters)
         
         var nameReceived = ""
         let expectation = XCTestExpectation(description: "Name received")
         
-        companyUseCase.getCompanyName()
+        uiExampleRepository.getCompanyName()
             .sink (
                 receiveCompletion: { _ in },
                 receiveValue: { name in
@@ -48,8 +50,8 @@ class UIExampleCompanyUseCaseTests: XCTestCase {
                 })
             .store(in: &cancellableBag)
 
-        XCTAssertTrue(mockRepository.spyGetCompanyNameCalled, "Repository - getCompanyName method was not called")
-        XCTAssertEqual(nameReceived, newName, "CompanyUseCase - name in setCompanyName method not correct")
+        XCTAssertTrue(mockService.spyRetrieveCompanyInfoCalled, "Service - retrieveCompanyInfo method was not called")
+        XCTAssertEqual(nameReceived, newName, "Repository - name in setCompanyName method not correct")
         wait(for: [expectation], timeout: 1.0)
     }
 

@@ -13,7 +13,6 @@ final class MockUIExampleRepository: UIExampleRepositoryProtocol {
     
     var spyCompanyName = ""
     var spyGetCompanyNameCalled = false
-    
     func getCompanyName() -> AnyPublisher<String?, Error> {
         spyGetCompanyNameCalled = true
         

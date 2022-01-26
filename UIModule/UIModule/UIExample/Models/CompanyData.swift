@@ -8,6 +8,16 @@
 import Foundation
 
 struct Company {
-    let name = "Wayne B Enterprises"
-    let headquartersCity = "London"
+    var name: String
+    var headquartersCity: String
+    
+    init() {
+        self.name = "Wayne B Enterprises"
+        self.headquartersCity = "London"
+    }
+    
+    init(name: String, headquartersCity: String) {
+        self.name = name
+        self.headquartersCity = headquartersCity
+    }
 }
