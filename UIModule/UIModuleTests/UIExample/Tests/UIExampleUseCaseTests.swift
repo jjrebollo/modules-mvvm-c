@@ -49,7 +49,7 @@ class UIExampleCompanyUseCaseTests: XCTestCase {
             .store(in: &cancellableBag)
 
         XCTAssertTrue(mockRepository.spyGetCompanyNameCalled, "Repository - getCompanyName method was not called")
-        XCTAssertEqual(nameReceived, newName, "CompanyUseCase - name in setCompanyName method not correct")
+        XCTAssertEqual(nameReceived, newName, "CompanyUseCase - name in getCompanyName method not correct")
         wait(for: [expectation], timeout: 1.0)
     }
 

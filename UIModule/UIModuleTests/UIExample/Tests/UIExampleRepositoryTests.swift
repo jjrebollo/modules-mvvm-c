@@ -51,7 +51,7 @@ class UIExampleRepositoryTests: XCTestCase {
             .store(in: &cancellableBag)
 
         XCTAssertTrue(mockService.spyRetrieveCompanyInfoCalled, "Service - retrieveCompanyInfo method was not called")
-        XCTAssertEqual(nameReceived, newName, "Repository - name in setCompanyName method not correct")
+        XCTAssertEqual(nameReceived, newName, "Repository - name in getCompanyName method not correct")
         wait(for: [expectation], timeout: 1.0)
     }
 
