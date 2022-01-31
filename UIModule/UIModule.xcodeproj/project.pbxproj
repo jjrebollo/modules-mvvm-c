@@ -14,7 +14,7 @@
 		0D2FB51527A16E68006391FF /* UIExampleRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2FB51427A16E68006391FF /* UIExampleRepositoryTests.swift */; };
 		0D460EEC2795FC940076A027 /* CompanyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460EEB2795FC940076A027 /* CompanyData.swift */; };
 		0D460EFB279987270076A027 /* UIExampleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460EFA279987270076A027 /* UIExampleViewModelTests.swift */; };
-		0D460EFE279987C60076A027 /* UIExampleRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460EFD279987C60076A027 /* UIExampleRepositoryProtocol.swift */; };
+		0D460EFE279987C60076A027 /* UIExampleCollaboratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460EFD279987C60076A027 /* UIExampleCollaboratorProtocol.swift */; };
 		0D460F002799882E0076A027 /* UIExampleUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460EFF2799882E0076A027 /* UIExampleUseCaseProtocol.swift */; };
 		0D460F022799888D0076A027 /* UIExampleViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460F012799888D0076A027 /* UIExampleViewControllerProtocol.swift */; };
 		0D460F042799D1A40076A027 /* MockUIExampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460F032799D1A40076A027 /* MockUIExampleCoordinator.swift */; };
@@ -22,7 +22,6 @@
 		0D460F082799D24A0076A027 /* MockUIExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460F072799D24A0076A027 /* MockUIExampleViewController.swift */; };
 		0DE2994B278D83DB00FC4793 /* UIModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2994A278D83DB00FC4793 /* UIModule.docc */; };
 		0DE29951278D83DC00FC4793 /* UIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29946278D83DB00FC4793 /* UIModule.framework */; };
-		0DE29956278D83DC00FC4793 /* UIModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29955278D83DC00FC4793 /* UIModuleTests.swift */; };
 		0DE29957278D83DC00FC4793 /* UIModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE29949278D83DB00FC4793 /* UIModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DE29984278EFDF800FC4793 /* UIExampleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997B278EFDF800FC4793 /* UIExampleScene.swift */; };
 		0DE29985278EFDF800FC4793 /* UIExampleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2997C278EFDF800FC4793 /* UIExampleUseCase.swift */; };
@@ -71,7 +70,7 @@
 		0D2FB51427A16E68006391FF /* UIExampleRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExampleRepositoryTests.swift; sourceTree = "<group>"; };
 		0D460EEB2795FC940076A027 /* CompanyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyData.swift; sourceTree = "<group>"; };
 		0D460EFA279987270076A027 /* UIExampleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExampleViewModelTests.swift; sourceTree = "<group>"; };
-		0D460EFD279987C60076A027 /* UIExampleRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExampleRepositoryProtocol.swift; sourceTree = "<group>"; };
+		0D460EFD279987C60076A027 /* UIExampleCollaboratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExampleCollaboratorProtocol.swift; sourceTree = "<group>"; };
 		0D460EFF2799882E0076A027 /* UIExampleUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExampleUseCaseProtocol.swift; sourceTree = "<group>"; };
 		0D460F012799888D0076A027 /* UIExampleViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExampleViewControllerProtocol.swift; sourceTree = "<group>"; };
 		0D460F032799D1A40076A027 /* MockUIExampleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUIExampleCoordinator.swift; sourceTree = "<group>"; };
@@ -81,7 +80,6 @@
 		0DE29949278D83DB00FC4793 /* UIModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModule.h; sourceTree = "<group>"; };
 		0DE2994A278D83DB00FC4793 /* UIModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UIModule.docc; sourceTree = "<group>"; };
 		0DE29950278D83DC00FC4793 /* UIModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DE29955278D83DC00FC4793 /* UIModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModuleTests.swift; sourceTree = "<group>"; };
 		0DE2997B278EFDF800FC4793 /* UIExampleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExampleScene.swift; sourceTree = "<group>"; };
 		0DE2997C278EFDF800FC4793 /* UIExampleUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExampleUseCase.swift; sourceTree = "<group>"; };
 		0DE2997D278EFDF800FC4793 /* UIExampleCollaborator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExampleCollaborator.swift; sourceTree = "<group>"; };
@@ -122,6 +120,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D2FB51627A174C5006391FF /* Collaborator */ = {
+			isa = PBXGroup;
+			children = (
+				0D460EFD279987C60076A027 /* UIExampleCollaboratorProtocol.swift */,
+				0DE2997D278EFDF800FC4793 /* UIExampleCollaborator.swift */,
+			);
+			path = Collaborator;
+			sourceTree = "<group>";
+		};
+		0D2FB51727A174CE006391FF /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				0D460EFF2799882E0076A027 /* UIExampleUseCaseProtocol.swift */,
+				0DE2997C278EFDF800FC4793 /* UIExampleUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		0D2FB51827A174E8006391FF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0D2FB51027A16C7C006391FF /* UIExampleServiceProtocol.swift */,
+				0DE29982278EFDF800FC4793 /* UIExampleService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0D2FB51927A2FD33006391FF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0DE2997A278EFDF800FC4793 /* UIExample */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		0D460EEA2795FC740076A027 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,17 +194,6 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		0D460EFC279987AB0076A027 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				0D460EFD279987C60076A027 /* UIExampleRepositoryProtocol.swift */,
-				0D460EFF2799882E0076A027 /* UIExampleUseCaseProtocol.swift */,
-				0D460F012799888D0076A027 /* UIExampleViewControllerProtocol.swift */,
-				0D2FB51027A16C7C006391FF /* UIExampleServiceProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		0DE2993C278D83DB00FC4793 = {
 			isa = PBXGroup;
 			children = (
@@ -195,7 +217,7 @@
 		0DE29948278D83DB00FC4793 /* UIModule */ = {
 			isa = PBXGroup;
 			children = (
-				0DE2997A278EFDF800FC4793 /* UIExample */,
+				0D2FB51927A2FD33006391FF /* Scenes */,
 				0DE29949278D83DB00FC4793 /* UIModule.h */,
 				0DE2994A278D83DB00FC4793 /* UIModule.docc */,
 			);
@@ -206,7 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				0D460EF7279986D10076A027 /* UIExample */,
-				0DE29955278D83DC00FC4793 /* UIModuleTests.swift */,
 			);
 			path = UIModuleTests;
 			sourceTree = "<group>";
@@ -214,14 +235,13 @@
 		0DE2997A278EFDF800FC4793 /* UIExample */ = {
 			isa = PBXGroup;
 			children = (
-				0D460EFC279987AB0076A027 /* Protocols */,
+				0D2FB51827A174E8006391FF /* Service */,
+				0D2FB51727A174CE006391FF /* UseCases */,
+				0D2FB51627A174C5006391FF /* Collaborator */,
 				0D460EEA2795FC740076A027 /* Models */,
-				0DE2997B278EFDF800FC4793 /* UIExampleScene.swift */,
-				0DE2997C278EFDF800FC4793 /* UIExampleUseCase.swift */,
-				0DE2997D278EFDF800FC4793 /* UIExampleCollaborator.swift */,
-				0DE2997E278EFDF800FC4793 /* UIExampleViewModel.swift */,
 				0DE2997F278EFDF800FC4793 /* ViewController */,
-				0DE29982278EFDF800FC4793 /* UIExampleService.swift */,
+				0DE2997B278EFDF800FC4793 /* UIExampleScene.swift */,
+				0DE2997E278EFDF800FC4793 /* UIExampleViewModel.swift */,
 				0DE29983278EFDF800FC4793 /* UIExampleCoordinator.swift */,
 			);
 			path = UIExample;
@@ -230,6 +250,7 @@
 		0DE2997F278EFDF800FC4793 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0D460F012799888D0076A027 /* UIExampleViewControllerProtocol.swift */,
 				0DE29980278EFDF800FC4793 /* UIExampleViewController.xib */,
 				0DE29981278EFDF800FC4793 /* UIExampleViewController.swift */,
 			);
@@ -443,7 +464,7 @@
 				0DE29987278EFDF800FC4793 /* UIExampleViewModel.swift in Sources */,
 				0D460EEC2795FC940076A027 /* CompanyData.swift in Sources */,
 				0DE29984278EFDF800FC4793 /* UIExampleScene.swift in Sources */,
-				0D460EFE279987C60076A027 /* UIExampleRepositoryProtocol.swift in Sources */,
+				0D460EFE279987C60076A027 /* UIExampleCollaboratorProtocol.swift in Sources */,
 				0DE2994B278D83DB00FC4793 /* UIModule.docc in Sources */,
 				0DE2998A278EFDF800FC4793 /* UIExampleService.swift in Sources */,
 				0DE29985278EFDF800FC4793 /* UIExampleUseCase.swift in Sources */,
@@ -459,7 +480,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D460F062799D1DB0076A027 /* MockUIExampleCompanyUseCase.swift in Sources */,
-				0DE29956278D83DC00FC4793 /* UIModuleTests.swift in Sources */,
 				0D2FB51327A16D16006391FF /* MockUIExampleService.swift in Sources */,
 				0D2FB50B27A1550C006391FF /* UIExampleUseCaseTests.swift in Sources */,
 				0D2FB50927A1544B006391FF /* MockUIExampleRepository.swift in Sources */,
