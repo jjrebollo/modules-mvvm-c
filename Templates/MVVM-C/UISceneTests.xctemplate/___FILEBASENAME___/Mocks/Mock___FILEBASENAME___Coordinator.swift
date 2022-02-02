@@ -7,4 +7,11 @@
 
 import BaseModule
 
-final class Mock___VARIABLE_sceneName:identifier___Coordinator: CoordinatorProtocol {}
+final class Mock___VARIABLE_sceneName:identifier___Coordinator: CoordinatorProtocol {
+    
+    var startCalledSpy = false
+    func start() {
+        startCalledSpy = true
+    }
+
+}

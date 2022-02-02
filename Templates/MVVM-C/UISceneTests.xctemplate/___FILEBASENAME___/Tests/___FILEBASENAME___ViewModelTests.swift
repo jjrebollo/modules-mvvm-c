@@ -24,7 +24,7 @@ class ___VARIABLE_sceneName:identifier___ViewModelTests: XCTestCase {
         mockUseCase1 = Mock___VARIABLE_sceneName:identifier___UseCase1()
         mockViewController = Mock___VARIABLE_sceneName:identifier___ViewController()
         
-        viewModel = ___VARIABLE_sceneName:identifier___.ViewModel(coordinator: mockCoordinator, companyUseCase: mockUseCase1)
+        viewModel = ___VARIABLE_sceneName:identifier___.ViewModel(coordinator: mockCoordinator, useCase1: mockUseCase1)
         viewModel.viewController = mockViewController
     }
 

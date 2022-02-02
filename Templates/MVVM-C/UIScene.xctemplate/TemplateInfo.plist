@@ -180,6 +180,6 @@
 	<key>SortOrder</key>
 	<string>9</string>
 	<key>Summary</key>
-	<string>This generates a new scene using jlr-ios architecture.</string>
+	<string>This generates a new scene using MVVM-C architecture.</string>
 </dict>
 </plist>
