@@ -12,7 +12,7 @@ public struct ___VARIABLE_sceneName:identifier___ {}
 
 extension ___VARIABLE_sceneName:identifier___: ScenableProtocol {
     
-    static func makeScene(coordinator: CoordinatorProtocol) -> SceneNoUI<ViewModel>? {
+    static public func makeScene(coordinator: CoordinatorProtocol) -> SceneNoUI<ViewModel>? {
         
         guard let coordinator = coordinator as? Coordinator else { return nil }
         

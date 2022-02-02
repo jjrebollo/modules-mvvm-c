@@ -10,12 +10,12 @@ import Combine
 import BaseModule
 
 extension ___VARIABLE_sceneName:identifier___ {
-    final class ViewModel: BaseViewModel {
-        let useCase1: UseCase1
+    final public class ViewModel: BaseViewModel {
+        let useCase1: ___VARIABLE_sceneName:identifier___UseCase1Protocol
         
         private var cancellableBag = Set<AnyCancellable>()
         
-        init(coordinator: CoordinatorProtocol, useCase1: UseCase1) {
+        init(coordinator: CoordinatorProtocol, useCase1: ___VARIABLE_sceneName:identifier___UseCase1Protocol) {
             self.useCase1 = useCase1
 
             super.init(coordinator: coordinator)

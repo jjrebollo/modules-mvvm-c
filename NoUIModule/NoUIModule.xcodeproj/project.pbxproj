@@ -177,6 +177,14 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		0DB26C7727AAFCD50013F673 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0DE299EB2790AC5500FC4793 /* NoUIExample */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		0DE299A72790A72600FC4793 = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +208,7 @@
 		0DE299B32790A72600FC4793 /* NoUIModule */ = {
 			isa = PBXGroup;
 			children = (
-				0DE299EB2790AC5500FC4793 /* NoUIExample */,
+				0DB26C7727AAFCD50013F673 /* Scenes */,
 				0DE299B42790A72600FC4793 /* NoUIModule.h */,
 				0DE299B52790A72600FC4793 /* NoUIModule.docc */,
 			);

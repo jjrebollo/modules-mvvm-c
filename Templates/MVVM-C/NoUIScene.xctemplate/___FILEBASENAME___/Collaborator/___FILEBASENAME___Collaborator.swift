@@ -9,10 +9,10 @@ import Foundation
 import BaseModule
 
 extension ___VARIABLE_sceneName:identifier___ {
-    final class Collaborator: CollaboratorProtocol {
-        var service: Service
+    final class Collaborator: ___VARIABLE_sceneName:identifier___CollaboratorProtocol {
+        var service: ___VARIABLE_sceneName:identifier___ServiceProtocol
         
-        init(service: Service) {
+        init(service: ___VARIABLE_sceneName:identifier___ServiceProtocol) {
             self.service = service
         }
     }
