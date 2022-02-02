@@ -62,6 +62,20 @@
 		</dict>
 		<dict>
 			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___UseCaseProtocol</string>
+			<key>Description</key>
+			<string>The use case protocol name</string>
+			<key>Identifier</key>
+			<string>useCaseProtocolName</string>
+			<key>Name</key>
+			<string>Use case Protocol Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
 			<string>___VARIABLE_sceneName:identifier___Collaborator</string>
 			<key>Description</key>
 			<string>The Collaborator name</string>
@@ -76,6 +90,20 @@
 		</dict>
 		<dict>
 			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___CollaboratorProtocol</string>
+			<key>Description</key>
+			<string>The Collaborator Protocol name</string>
+			<key>Identifier</key>
+			<string>collaboratorProtocolName</string>
+			<key>Name</key>
+			<string>Collaborator Protocol Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
 			<string>___VARIABLE_sceneName:identifier___Service</string>
 			<key>Description</key>
 			<string>The Service name</string>
@@ -83,6 +111,20 @@
 			<string>serviceName</string>
 			<key>Name</key>
 			<string>Service Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___ServiceProtocol</string>
+			<key>Description</key>
+			<string>The Service Protocol name</string>
+			<key>Identifier</key>
+			<string>serviceProtocolName</string>
+			<key>Name</key>
+			<string>Service Protocol Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -111,6 +153,20 @@
 			<string>viewControllerName</string>
 			<key>Name</key>
 			<string>View Controller Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___ViewControllerProtocol</string>
+			<key>Description</key>
+			<string>The view controller protocol name</string>
+			<key>Identifier</key>
+			<string>viewControllerProtocolName</string>
+			<key>Name</key>
+			<string>View Controller Protocol Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
