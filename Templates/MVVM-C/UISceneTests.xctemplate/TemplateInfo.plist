@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>UIScene</string>
+	<key>Description</key>
+	<string>This generates mock and test classes conforming MVVM-C architecture, incorporating UI elements</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>Mock___VARIABLE_sceneName:identifier___ViewController</string>
+			<key>Description</key>
+			<string>The mock view controller name</string>
+			<key>Identifier</key>
+			<string>mockViewControllerName</string>
+			<key>Name</key>
+			<string>Mock View Controller Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Mock___VARIABLE_sceneName:identifier___Coordinator</string>
+			<key>Description</key>
+			<string>The Mock Coordinator name</string>
+			<key>Identifier</key>
+			<string>mockCoordinatorName</string>
+			<key>Name</key>
+			<string>Mock Coordinator Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Mock___VARIABLE_sceneName:identifier___Service</string>
+			<key>Description</key>
+			<string>The Mock Service name</string>
+			<key>Identifier</key>
+			<string>mockServiceName</string>
+			<key>Name</key>
+			<string>Mock Service Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Mock___VARIABLE_sceneName:identifier___Collaborator</string>
+			<key>Description</key>
+			<string>The Mock Collaborator name</string>
+			<key>Identifier</key>
+			<string>mockCollaboratorName</string>
+			<key>Name</key>
+			<string>Mock Collaborator Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Mock___VARIABLE_sceneName:identifier___UseCase1</string>
+			<key>Description</key>
+			<string>The mock use case name</string>
+			<key>Identifier</key>
+			<string>mockUseCaseName</string>
+			<key>Name</key>
+			<string>Mock Use case Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___CollaboratorTests</string>
+			<key>Description</key>
+			<string>The Collaborator Tests name</string>
+			<key>Identifier</key>
+			<string>collaboratorTestsName</string>
+			<key>Name</key>
+			<string>Collaborator Tests Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___UseCase1Tests</string>
+			<key>Description</key>
+			<string>The Use Case 1 Tests name</string>
+			<key>Identifier</key>
+			<string>useCase1TestsName</string>
+			<key>Name</key>
+			<string>Use case 1 Tests Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___ViewModelTests</string>
+			<key>Description</key>
+			<string>The View Model Tests name</string>
+			<key>Identifier</key>
+			<string>viewModelTestsName</string>
+			<key>Name</key>
+			<string>View Model Tests Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>SortOrder</key>
+	<string>9</string>
+	<key>Summary</key>
+	<string>This generates a new scene using jlr-ios architecture.</string>
+</dict>
+</plist>
