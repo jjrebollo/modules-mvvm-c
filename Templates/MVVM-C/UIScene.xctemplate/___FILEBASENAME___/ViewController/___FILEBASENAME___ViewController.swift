@@ -9,7 +9,7 @@ import UIKit
 import Combine
 import BaseModule
 
-final public class ___VARIABLE_sceneName:identifier___ViewController: BaseViewController, NibableProtocol {
+final public class ___VARIABLE_sceneName:identifier___ViewController: BaseViewController, ___VARIABLE_sceneName:identifier___ViewControllerProtocol, NibableProtocol {
     
     struct Constants {
         static let Nib: String = "___VARIABLE_sceneName:identifier___ViewController"

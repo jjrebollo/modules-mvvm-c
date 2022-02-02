@@ -7,6 +7,4 @@
 
 import Foundation
 
-extension ___VARIABLE_sceneName:identifier___ {
-    final class Service {}
-}
+protocol ___VARIABLE_sceneName:identifier___ViewControllerProtocol: AnyObject {}
