@@ -1,0 +1,6 @@
+framework module Pods_NoUIModule_NoUIModuleTests {
+  umbrella header "Pods-NoUIModule-NoUIModuleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

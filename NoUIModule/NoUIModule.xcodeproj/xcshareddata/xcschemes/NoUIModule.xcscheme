@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0D0075202769F8A900D9D531"
-               BuildableName = "ReferenceArch.app"
-               BlueprintName = "ReferenceArch"
-               ReferencedContainer = "container:ReferenceArch.xcodeproj">
+               BlueprintIdentifier = "0DE299B02790A72600FC4793"
+               BuildableName = "NoUIModule.framework"
+               BlueprintName = "NoUIModule"
+               ReferencedContainer = "container:NoUIModule.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,20 +33,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0D0075362769F8B500D9D531"
-               BuildableName = "ReferenceArchTests.xctest"
-               BlueprintName = "ReferenceArchTests"
-               ReferencedContainer = "container:ReferenceArch.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0D0075402769F8B500D9D531"
-               BuildableName = "ReferenceArchUITests.xctest"
-               BlueprintName = "ReferenceArchUITests"
-               ReferencedContainer = "container:ReferenceArch.xcodeproj">
+               BlueprintIdentifier = "0DE299BA2790A72700FC4793"
+               BuildableName = "NoUIModuleTests.xctest"
+               BlueprintName = "NoUIModuleTests"
+               ReferencedContainer = "container:NoUIModule.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -61,16 +51,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0D0075202769F8A900D9D531"
-            BuildableName = "ReferenceArch.app"
-            BlueprintName = "ReferenceArch"
-            ReferencedContainer = "container:ReferenceArch.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -78,16 +58,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0D0075202769F8A900D9D531"
-            BuildableName = "ReferenceArch.app"
-            BlueprintName = "ReferenceArch"
-            ReferencedContainer = "container:ReferenceArch.xcodeproj">
+            BlueprintIdentifier = "0DE299B02790A72600FC4793"
+            BuildableName = "NoUIModule.framework"
+            BlueprintName = "NoUIModule"
+            ReferencedContainer = "container:NoUIModule.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

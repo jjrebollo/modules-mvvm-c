@@ -28,9 +28,9 @@
 		0DE299E32790A7A800FC4793 /* NoUIModule.framework in Copy Modules */ = {isa = PBXBuildFile; fileRef = 0DE299E02790A79D00FC4793 /* NoUIModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0DE299E82790A93B00FC4793 /* NoUIExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299E72790A93B00FC4793 /* NoUIExampleViewController.swift */; };
 		0DE299EA2790A94F00FC4793 /* NoUIExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DE299E92790A94F00FC4793 /* NoUIExampleViewController.xib */; };
-		19B7B8474FC622C1D4B38422 /* Pods_ReferenceArchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDD7751B3349EDD711CCB68 /* Pods_ReferenceArchUITests.framework */; };
 		5A998E2192C145F0E03F0290 /* Pods_ReferenceArch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BF803107DBF6376D30F53A /* Pods_ReferenceArch.framework */; };
 		AE92A8E0FF664C30BF2757EC /* Pods_ReferenceArchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */; };
+		B103C11F464EC04D0F45A27F /* Pods_ReferenceArch_ReferenceArchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD633378E56BDB19A2F4D835 /* Pods_ReferenceArch_ReferenceArchUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,9 +142,9 @@
 		92850E5413EE38D06FA72D3D /* Pods-ReferenceArchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArchTests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArchTests/Pods-ReferenceArchTests.release.xcconfig"; sourceTree = "<group>"; };
 		9C10D274682E144FDC112B19 /* Pods-ReferenceArchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArchUITests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArchUITests/Pods-ReferenceArchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AB7162EAA9506BB89955C8DC /* Pods-ReferenceArch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArch.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArch/Pods-ReferenceArch.debug.xcconfig"; sourceTree = "<group>"; };
+		AD633378E56BDB19A2F4D835 /* Pods_ReferenceArch_ReferenceArchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReferenceArch_ReferenceArchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BF803107DBF6376D30F53A /* Pods_ReferenceArch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReferenceArch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95C4FC9F23FE1878E71404B /* Pods-ReferenceArch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceArch.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ReferenceArch/Pods-ReferenceArch.release.xcconfig"; sourceTree = "<group>"; };
-		FDDD7751B3349EDD711CCB68 /* Pods_ReferenceArchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReferenceArchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19B7B8474FC622C1D4B38422 /* Pods_ReferenceArchUITests.framework in Frameworks */,
+				B103C11F464EC04D0F45A27F /* Pods_ReferenceArch_ReferenceArchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +343,7 @@
 			children = (
 				D5BF803107DBF6376D30F53A /* Pods_ReferenceArch.framework */,
 				1FD0ACF6943EC07F02AE7441 /* Pods_ReferenceArchTests.framework */,
-				FDDD7751B3349EDD711CCB68 /* Pods_ReferenceArchUITests.framework */,
+				AD633378E56BDB19A2F4D835 /* Pods_ReferenceArch_ReferenceArchUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -398,6 +398,7 @@
 				0D00753D2769F8B500D9D531 /* Sources */,
 				0D00753E2769F8B500D9D531 /* Frameworks */,
 				0D00753F2769F8B500D9D531 /* Resources */,
+				6897F573268580C3AF33C0FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -556,7 +557,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReferenceArchUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ReferenceArch-ReferenceArchUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -605,6 +606,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6897F573268580C3AF33C0FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReferenceArch-ReferenceArchUITests/Pods-ReferenceArch-ReferenceArchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReferenceArch-ReferenceArchUITests/Pods-ReferenceArch-ReferenceArchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReferenceArch-ReferenceArchUITests/Pods-ReferenceArch-ReferenceArchUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7ED0E449837CCCBA508019BA /* [CP] Embed Pods Frameworks */ = {
@@ -926,7 +944,7 @@
 		};
 		0D0075522769F8B500D9D531 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71BD20BA4DE562DD4B585CD9 /* Pods-ReferenceArchUITests.debug.xcconfig */;
+			baseConfigurationReference = 05348440D6B8EA325B008868 /* Pods-ReferenceArch-ReferenceArchUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -949,7 +967,7 @@
 		};
 		0D0075532769F8B500D9D531 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C10D274682E144FDC112B19 /* Pods-ReferenceArchUITests.release.xcconfig */;
+			baseConfigurationReference = 10EC282335FDD3D219698E68 /* Pods-ReferenceArch-ReferenceArchUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

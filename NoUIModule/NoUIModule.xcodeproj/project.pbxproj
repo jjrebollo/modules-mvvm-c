@@ -8,20 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		0D460EE92791C89C0076A027 /* CompanyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460EE82791C89C0076A027 /* CompanyData.swift */; };
+		0DB26C5D27AACC080013F673 /* MockNoUIExampleCompanyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C5427AACC080013F673 /* MockNoUIExampleCompanyUseCase.swift */; };
+		0DB26C5E27AACC080013F673 /* MockNoUIExampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C5527AACC080013F673 /* MockNoUIExampleRepository.swift */; };
+		0DB26C5F27AACC080013F673 /* MockNoUIExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C5627AACC080013F673 /* MockNoUIExampleService.swift */; };
+		0DB26C6127AACC080013F673 /* MockNoUIExampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C5827AACC080013F673 /* MockNoUIExampleCoordinator.swift */; };
+		0DB26C6227AACC080013F673 /* NoUIExampleRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C5A27AACC080013F673 /* NoUIExampleRepositoryTests.swift */; };
+		0DB26C6327AACC080013F673 /* NoUIExampleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C5B27AACC080013F673 /* NoUIExampleViewModelTests.swift */; };
+		0DB26C6427AACC080013F673 /* NoUIExampleUseCase1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C5C27AACC080013F673 /* NoUIExampleUseCase1Tests.swift */; };
+		0DB26C6E27AADCDF0013F673 /* NoUIExampleRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C6627AADCDF0013F673 /* NoUIExampleRepositoryProtocol.swift */; };
+		0DB26C6F27AADCDF0013F673 /* NoUIExampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C6727AADCDF0013F673 /* NoUIExampleRepository.swift */; };
+		0DB26C7027AADCDF0013F673 /* NoUIExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C6927AADCDF0013F673 /* NoUIExampleService.swift */; };
+		0DB26C7127AADCDF0013F673 /* NoUIExampleServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C6A27AADCDF0013F673 /* NoUIExampleServiceProtocol.swift */; };
+		0DB26C7227AADCDF0013F673 /* NoUIExampleUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C6C27AADCDF0013F673 /* NoUIExampleUseCaseProtocol.swift */; };
+		0DB26C7327AADCDF0013F673 /* NoUIExampleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C6D27AADCDF0013F673 /* NoUIExampleUseCase.swift */; };
 		0DE299B62790A72600FC4793 /* NoUIModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299B52790A72600FC4793 /* NoUIModule.docc */; };
 		0DE299BC2790A72700FC4793 /* NoUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE299B12790A72600FC4793 /* NoUIModule.framework */; };
-		0DE299C12790A72700FC4793 /* NoUIModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299C02790A72700FC4793 /* NoUIModuleTests.swift */; };
 		0DE299C22790A72700FC4793 /* NoUIModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE299B42790A72600FC4793 /* NoUIModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DE299F22790AC5500FC4793 /* NoUIExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299EC2790AC5500FC4793 /* NoUIExampleService.swift */; };
 		0DE299F32790AC5500FC4793 /* NoUIExampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299ED2790AC5500FC4793 /* NoUIExampleCoordinator.swift */; };
-		0DE299F42790AC5500FC4793 /* NoUIExampleCollaborator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299EE2790AC5500FC4793 /* NoUIExampleCollaborator.swift */; };
 		0DE299F52790AC5500FC4793 /* NoUIExampleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299EF2790AC5500FC4793 /* NoUIExampleScene.swift */; };
-		0DE299F62790AC5500FC4793 /* NoUIExampleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299F02790AC5500FC4793 /* NoUIExampleUseCase.swift */; };
 		0DE299F72790AC5500FC4793 /* NoUIExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299F12790AC5500FC4793 /* NoUIExampleViewModel.swift */; };
 		0DE29A152790B12B00FC4793 /* BaseModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29A142790B12B00FC4793 /* BaseModule.framework */; };
 		0DE29A162790B12B00FC4793 /* BaseModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29A142790B12B00FC4793 /* BaseModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24431E86E149411AE715ACB5 /* Pods_NoUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA64AF203FA84ADF0C210BE /* Pods_NoUIModule.framework */; };
-		A511AC38ADD0D4A0426C016B /* Pods_NoUIModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6685BEF7551C922669AC477E /* Pods_NoUIModuleTests.framework */; };
+		489D1F947360A9CD7751802A /* Pods_NoUIModule_NoUIModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460F36583F8D37B38992F97F /* Pods_NoUIModule_NoUIModuleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,20 +59,31 @@
 
 /* Begin PBXFileReference section */
 		0D460EE82791C89C0076A027 /* CompanyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyData.swift; sourceTree = "<group>"; };
+		0DB26C5427AACC080013F673 /* MockNoUIExampleCompanyUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNoUIExampleCompanyUseCase.swift; sourceTree = "<group>"; };
+		0DB26C5527AACC080013F673 /* MockNoUIExampleRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNoUIExampleRepository.swift; sourceTree = "<group>"; };
+		0DB26C5627AACC080013F673 /* MockNoUIExampleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNoUIExampleService.swift; sourceTree = "<group>"; };
+		0DB26C5827AACC080013F673 /* MockNoUIExampleCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNoUIExampleCoordinator.swift; sourceTree = "<group>"; };
+		0DB26C5A27AACC080013F673 /* NoUIExampleRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleRepositoryTests.swift; sourceTree = "<group>"; };
+		0DB26C5B27AACC080013F673 /* NoUIExampleViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleViewModelTests.swift; sourceTree = "<group>"; };
+		0DB26C5C27AACC080013F673 /* NoUIExampleUseCase1Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleUseCase1Tests.swift; sourceTree = "<group>"; };
+		0DB26C6627AADCDF0013F673 /* NoUIExampleRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleRepositoryProtocol.swift; sourceTree = "<group>"; };
+		0DB26C6727AADCDF0013F673 /* NoUIExampleRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleRepository.swift; sourceTree = "<group>"; };
+		0DB26C6927AADCDF0013F673 /* NoUIExampleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleService.swift; sourceTree = "<group>"; };
+		0DB26C6A27AADCDF0013F673 /* NoUIExampleServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleServiceProtocol.swift; sourceTree = "<group>"; };
+		0DB26C6C27AADCDF0013F673 /* NoUIExampleUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleUseCaseProtocol.swift; sourceTree = "<group>"; };
+		0DB26C6D27AADCDF0013F673 /* NoUIExampleUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleUseCase.swift; sourceTree = "<group>"; };
 		0DE299B12790A72600FC4793 /* NoUIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoUIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE299B42790A72600FC4793 /* NoUIModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoUIModule.h; sourceTree = "<group>"; };
 		0DE299B52790A72600FC4793 /* NoUIModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NoUIModule.docc; sourceTree = "<group>"; };
 		0DE299BB2790A72700FC4793 /* NoUIModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoUIModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DE299C02790A72700FC4793 /* NoUIModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoUIModuleTests.swift; sourceTree = "<group>"; };
-		0DE299EC2790AC5500FC4793 /* NoUIExampleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleService.swift; sourceTree = "<group>"; };
 		0DE299ED2790AC5500FC4793 /* NoUIExampleCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleCoordinator.swift; sourceTree = "<group>"; };
-		0DE299EE2790AC5500FC4793 /* NoUIExampleCollaborator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleCollaborator.swift; sourceTree = "<group>"; };
 		0DE299EF2790AC5500FC4793 /* NoUIExampleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleScene.swift; sourceTree = "<group>"; };
-		0DE299F02790AC5500FC4793 /* NoUIExampleUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleUseCase.swift; sourceTree = "<group>"; };
 		0DE299F12790AC5500FC4793 /* NoUIExampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleViewModel.swift; sourceTree = "<group>"; };
 		0DE29A142790B12B00FC4793 /* BaseModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE4527D8AE7E1F25ED0EC62 /* Pods-NoUIModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoUIModuleTests.release.xcconfig"; path = "Target Support Files/Pods-NoUIModuleTests/Pods-NoUIModuleTests.release.xcconfig"; sourceTree = "<group>"; };
-		6685BEF7551C922669AC477E /* Pods_NoUIModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoUIModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D8C198D0D9B324D3ABE6DD3 /* Pods-NoUIModule-NoUIModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoUIModule-NoUIModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-NoUIModule-NoUIModuleTests/Pods-NoUIModule-NoUIModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		460F36583F8D37B38992F97F /* Pods_NoUIModule_NoUIModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoUIModule_NoUIModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		557BB32BC3390BF78DA5E3BC /* Pods-NoUIModule-NoUIModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoUIModule-NoUIModuleTests.release.xcconfig"; path = "Target Support Files/Pods-NoUIModule-NoUIModuleTests/Pods-NoUIModule-NoUIModuleTests.release.xcconfig"; sourceTree = "<group>"; };
 		6BF947489B2492414CE588CB /* Pods-NoUIModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoUIModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-NoUIModuleTests/Pods-NoUIModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E36A0BAD7119FC5CB37E059 /* Pods-NoUIModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoUIModule.release.xcconfig"; path = "Target Support Files/Pods-NoUIModule/Pods-NoUIModule.release.xcconfig"; sourceTree = "<group>"; };
 		AC548FE564453B00A3ACA45D /* Pods-NoUIModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoUIModule.debug.xcconfig"; path = "Target Support Files/Pods-NoUIModule/Pods-NoUIModule.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,7 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DE299BC2790A72700FC4793 /* NoUIModule.framework in Frameworks */,
-				A511AC38ADD0D4A0426C016B /* Pods_NoUIModuleTests.framework in Frameworks */,
+				489D1F947360A9CD7751802A /* Pods_NoUIModule_NoUIModuleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +118,63 @@
 				0D460EE82791C89C0076A027 /* CompanyData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0DB26C5227AACC080013F673 /* NoUIExample */ = {
+			isa = PBXGroup;
+			children = (
+				0DB26C5327AACC080013F673 /* Mocks */,
+				0DB26C5927AACC080013F673 /* Tests */,
+			);
+			path = NoUIExample;
+			sourceTree = "<group>";
+		};
+		0DB26C5327AACC080013F673 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0DB26C5427AACC080013F673 /* MockNoUIExampleCompanyUseCase.swift */,
+				0DB26C5527AACC080013F673 /* MockNoUIExampleRepository.swift */,
+				0DB26C5627AACC080013F673 /* MockNoUIExampleService.swift */,
+				0DB26C5827AACC080013F673 /* MockNoUIExampleCoordinator.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0DB26C5927AACC080013F673 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0DB26C5A27AACC080013F673 /* NoUIExampleRepositoryTests.swift */,
+				0DB26C5B27AACC080013F673 /* NoUIExampleViewModelTests.swift */,
+				0DB26C5C27AACC080013F673 /* NoUIExampleUseCase1Tests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0DB26C6527AADCDF0013F673 /* Collaborator */ = {
+			isa = PBXGroup;
+			children = (
+				0DB26C6627AADCDF0013F673 /* NoUIExampleRepositoryProtocol.swift */,
+				0DB26C6727AADCDF0013F673 /* NoUIExampleRepository.swift */,
+			);
+			path = Collaborator;
+			sourceTree = "<group>";
+		};
+		0DB26C6827AADCDF0013F673 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0DB26C6927AADCDF0013F673 /* NoUIExampleService.swift */,
+				0DB26C6A27AADCDF0013F673 /* NoUIExampleServiceProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0DB26C6B27AADCDF0013F673 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				0DB26C6C27AADCDF0013F673 /* NoUIExampleUseCaseProtocol.swift */,
+				0DB26C6D27AADCDF0013F673 /* NoUIExampleUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		0DE299A72790A72600FC4793 = {
@@ -133,7 +210,7 @@
 		0DE299BF2790A72700FC4793 /* NoUIModuleTests */ = {
 			isa = PBXGroup;
 			children = (
-				0DE299C02790A72700FC4793 /* NoUIModuleTests.swift */,
+				0DB26C5227AACC080013F673 /* NoUIExample */,
 			);
 			path = NoUIModuleTests;
 			sourceTree = "<group>";
@@ -141,12 +218,12 @@
 		0DE299EB2790AC5500FC4793 /* NoUIExample */ = {
 			isa = PBXGroup;
 			children = (
+				0DB26C6527AADCDF0013F673 /* Collaborator */,
+				0DB26C6827AADCDF0013F673 /* Service */,
+				0DB26C6B27AADCDF0013F673 /* UseCases */,
 				0D460EE72791C8670076A027 /* Models */,
-				0DE299EC2790AC5500FC4793 /* NoUIExampleService.swift */,
 				0DE299ED2790AC5500FC4793 /* NoUIExampleCoordinator.swift */,
-				0DE299EE2790AC5500FC4793 /* NoUIExampleCollaborator.swift */,
 				0DE299EF2790AC5500FC4793 /* NoUIExampleScene.swift */,
-				0DE299F02790AC5500FC4793 /* NoUIExampleUseCase.swift */,
 				0DE299F12790AC5500FC4793 /* NoUIExampleViewModel.swift */,
 			);
 			path = NoUIExample;
@@ -157,7 +234,7 @@
 			children = (
 				0DE29A142790B12B00FC4793 /* BaseModule.framework */,
 				BDA64AF203FA84ADF0C210BE /* Pods_NoUIModule.framework */,
-				6685BEF7551C922669AC477E /* Pods_NoUIModuleTests.framework */,
+				460F36583F8D37B38992F97F /* Pods_NoUIModule_NoUIModuleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +246,8 @@
 				6E36A0BAD7119FC5CB37E059 /* Pods-NoUIModule.release.xcconfig */,
 				6BF947489B2492414CE588CB /* Pods-NoUIModuleTests.debug.xcconfig */,
 				1FE4527D8AE7E1F25ED0EC62 /* Pods-NoUIModuleTests.release.xcconfig */,
+				3D8C198D0D9B324D3ABE6DD3 /* Pods-NoUIModule-NoUIModuleTests.debug.xcconfig */,
+				557BB32BC3390BF78DA5E3BC /* Pods-NoUIModule-NoUIModuleTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -216,6 +295,7 @@
 				0DE299B72790A72700FC4793 /* Sources */,
 				0DE299B82790A72700FC4793 /* Frameworks */,
 				0DE299B92790A72700FC4793 /* Resources */,
+				12058F702F4B4C07F2347BC2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,6 +362,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		12058F702F4B4C07F2347BC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoUIModule-NoUIModuleTests/Pods-NoUIModule-NoUIModuleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoUIModule-NoUIModuleTests/Pods-NoUIModule-NoUIModuleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoUIModule-NoUIModuleTests/Pods-NoUIModule-NoUIModuleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		532B39AB44F3F5E5DAB59576 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,7 +394,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NoUIModuleTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NoUIModule-NoUIModuleTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -335,10 +432,13 @@
 			files = (
 				0D460EE92791C89C0076A027 /* CompanyData.swift in Sources */,
 				0DE299F32790AC5500FC4793 /* NoUIExampleCoordinator.swift in Sources */,
-				0DE299F22790AC5500FC4793 /* NoUIExampleService.swift in Sources */,
-				0DE299F62790AC5500FC4793 /* NoUIExampleUseCase.swift in Sources */,
-				0DE299F42790AC5500FC4793 /* NoUIExampleCollaborator.swift in Sources */,
+				0DB26C6E27AADCDF0013F673 /* NoUIExampleRepositoryProtocol.swift in Sources */,
+				0DB26C6F27AADCDF0013F673 /* NoUIExampleRepository.swift in Sources */,
+				0DB26C7127AADCDF0013F673 /* NoUIExampleServiceProtocol.swift in Sources */,
+				0DB26C7327AADCDF0013F673 /* NoUIExampleUseCase.swift in Sources */,
 				0DE299F72790AC5500FC4793 /* NoUIExampleViewModel.swift in Sources */,
+				0DB26C7027AADCDF0013F673 /* NoUIExampleService.swift in Sources */,
+				0DB26C7227AADCDF0013F673 /* NoUIExampleUseCaseProtocol.swift in Sources */,
 				0DE299F52790AC5500FC4793 /* NoUIExampleScene.swift in Sources */,
 				0DE299B62790A72600FC4793 /* NoUIModule.docc in Sources */,
 			);
@@ -348,7 +448,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DE299C12790A72700FC4793 /* NoUIModuleTests.swift in Sources */,
+				0DB26C6427AACC080013F673 /* NoUIExampleUseCase1Tests.swift in Sources */,
+				0DB26C6327AACC080013F673 /* NoUIExampleViewModelTests.swift in Sources */,
+				0DB26C6127AACC080013F673 /* MockNoUIExampleCoordinator.swift in Sources */,
+				0DB26C6227AACC080013F673 /* NoUIExampleRepositoryTests.swift in Sources */,
+				0DB26C5F27AACC080013F673 /* MockNoUIExampleService.swift in Sources */,
+				0DB26C5D27AACC080013F673 /* MockNoUIExampleCompanyUseCase.swift in Sources */,
+				0DB26C5E27AACC080013F673 /* MockNoUIExampleRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +649,7 @@
 		};
 		0DE299C92790A72700FC4793 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BF947489B2492414CE588CB /* Pods-NoUIModuleTests.debug.xcconfig */;
+			baseConfigurationReference = 3D8C198D0D9B324D3ABE6DD3 /* Pods-NoUIModule-NoUIModuleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -565,7 +671,7 @@
 		};
 		0DE299CA2790A72700FC4793 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FE4527D8AE7E1F25ED0EC62 /* Pods-NoUIModuleTests.release.xcconfig */;
+			baseConfigurationReference = 557BB32BC3390BF78DA5E3BC /* Pods-NoUIModule-NoUIModuleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

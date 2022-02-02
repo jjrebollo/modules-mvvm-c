@@ -26,9 +26,11 @@ extension UIExample {
             self.companyUseCase = companyUseCase
             
             super.init(coordinator: coordinator)
+            
+            self.setupCoordinatorObservers(for: coordinator)
         }
         
-        func setupCoordinatorObservers(for coordinator: Coordinator) {
+        func setupCoordinatorObservers(for coordinator: CoordinatorProtocol) {
             // Bind subjects from this class to subjects in the coordinator class
         }
         

@@ -14,4 +14,8 @@ public struct SceneNoUI<T:BaseViewModel>: SceneProtocol {
     public init(viewModel: T) {
         self.viewModel = viewModel
     }
+    
+    public mutating func setBaseViewController(baseViewController: BaseViewController) {
+        self.viewController = baseViewController
+    }
 }

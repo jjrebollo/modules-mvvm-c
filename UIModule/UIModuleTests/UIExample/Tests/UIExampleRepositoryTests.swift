@@ -13,7 +13,7 @@ import Combine
 class UIExampleRepositoryTests: XCTestCase {
     
     private var mockService: MockUIExampleService!
-    private var uiExampleRepository: UIExample.Repository!
+    private var repository: UIExample.Repository!
     
     private var cancellableBag = Set<AnyCancellable>()
 
@@ -23,13 +23,13 @@ class UIExampleRepositoryTests: XCTestCase {
 
         mockService = MockUIExampleService()
         
-        uiExampleRepository = UIExample.Repository(service: mockService)
+        repository = UIExample.Repository(service: mockService)
     }
 
     override func tearDown() {
         super.tearDown()
         mockService = nil
-        uiExampleRepository = nil
+        repository = nil
     }
 
     func testGetCompanyName() {
@@ -41,7 +41,7 @@ class UIExampleRepositoryTests: XCTestCase {
         var nameReceived = ""
         let expectation = XCTestExpectation(description: "Name received")
         
-        uiExampleRepository.getCompanyName()
+        repository.getCompanyName()
             .sink (
                 receiveCompletion: { _ in },
                 receiveValue: { name in

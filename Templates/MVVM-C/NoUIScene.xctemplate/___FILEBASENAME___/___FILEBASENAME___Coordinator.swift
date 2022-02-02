@@ -15,6 +15,10 @@ extension ___VARIABLE_sceneName:identifier___ {
         
         var scene: SceneNoUI<ViewModel>? = nil
 
+        var viewModel: ViewModel? {
+            scene?.viewModel
+        }
+
         public init() {
             self.scene = ___VARIABLE_sceneName:identifier___.makeScene(coordinator: self)
         }
@@ -26,7 +30,7 @@ extension ___VARIABLE_sceneName:identifier___ {
         }
 
         public func setViewController(viewController: T) {
-            scene?.viewController = viewController
+            scene?.setBaseViewController(baseViewController: viewController)
         }
 
         // Declare public methods that return variables to be observed (from view model mainly)

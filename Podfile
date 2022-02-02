@@ -23,7 +23,6 @@ target 'ReferenceArch' do
   end
 
   target 'ReferenceArchUITests' do
-    inherit! :search_paths
     
   end
 
@@ -42,7 +41,6 @@ target 'BaseModule' do
   baseModule_pods
 
   target 'BaseModuleTests' do
-    inherit! :search_paths
     
   end
 
@@ -79,7 +77,6 @@ target 'NoUIModule' do
   noUiModule_pods
 
   target 'NoUIModuleTests' do
-    inherit! :search_paths
     
   end
 

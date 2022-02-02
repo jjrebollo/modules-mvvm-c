@@ -19,6 +19,10 @@ extension NoUIExample {
         var scene: SceneNoUI<ViewModel>? = nil
         var navigationController: BaseNavigationController
         
+        var viewModel: ViewModel? {
+            scene?.viewModel
+        }
+        
         private var cancellableBag = Set<AnyCancellable>()
         
         public init(navigationController: BaseNavigationController) {
@@ -35,12 +39,12 @@ extension NoUIExample {
         }
 
         public func setViewController(viewController: BaseViewController) {
-            scene?.viewController = viewController
+            scene?.setBaseViewController(baseViewController: viewController)
         }
 
         // Declare public methods that return variables to be observed (from view model mainly)
         public func getCompanyName() {
-            scene?.viewModel.getCompanyName()
+            viewModel?.getCompanyName()
         }
 
     }
@@ -49,7 +53,7 @@ extension NoUIExample {
 private extension NoUIExample.Coordinator {
     
     func bind() {
-        scene?.viewModel.companyNameSubject()
+        viewModel?.companyNameSubject()
             .sink(receiveValue: { [weak self] newBankName in
                 guard let newBankName = newBankName else { return }
                 
