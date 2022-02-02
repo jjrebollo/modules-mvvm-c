@@ -11,10 +11,10 @@ import BaseModule
 extension ___VARIABLE_sceneName:identifier___ {
 
     // UseCase1 class name should be renamed to a proper name
-    final class UseCase1: ___VARIABLE_sceneName:identifier___UseCaseProtocol {
-        let collaborator: CollaboratorProtocol // Can be renamed to `repository``
+    final class UseCase1: ___VARIABLE_sceneName:identifier___UseCase1Protocol {
+        let collaborator: ___VARIABLE_sceneName:identifier___CollaboratorProtocol // Can be renamed to `repository``
         
-        init(collaborator: CollaboratorProtocol) {
+        init(collaborator: ___VARIABLE_sceneName:identifier___CollaboratorProtocol) {
             self.collaborator = collaborator
         }
     }

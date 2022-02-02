@@ -8,4 +8,4 @@
 import Foundation
 import BaseModule
 
-protocol ___VARIABLE_sceneName:identifier___UseCaseProtocol: AnyObject {}
+protocol ___VARIABLE_sceneName:identifier___UseCase1Protocol: AnyObject {}
