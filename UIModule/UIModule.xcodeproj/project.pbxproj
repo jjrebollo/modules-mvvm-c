@@ -20,6 +20,7 @@
 		0D460F042799D1A40076A027 /* MockUIExampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460F032799D1A40076A027 /* MockUIExampleCoordinator.swift */; };
 		0D460F062799D1DB0076A027 /* MockUIExampleCompanyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460F052799D1DB0076A027 /* MockUIExampleCompanyUseCase.swift */; };
 		0D460F082799D24A0076A027 /* MockUIExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D460F072799D24A0076A027 /* MockUIExampleViewController.swift */; };
+		0DB26CD427BBC33D0013F673 /* UIExampleFunctionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26CD327BBC33C0013F673 /* UIExampleFunctionalTests.swift */; };
 		0DE2994B278D83DB00FC4793 /* UIModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2994A278D83DB00FC4793 /* UIModule.docc */; };
 		0DE29951278D83DC00FC4793 /* UIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29946278D83DB00FC4793 /* UIModule.framework */; };
 		0DE29957278D83DC00FC4793 /* UIModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE29949278D83DB00FC4793 /* UIModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,6 +77,7 @@
 		0D460F032799D1A40076A027 /* MockUIExampleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUIExampleCoordinator.swift; sourceTree = "<group>"; };
 		0D460F052799D1DB0076A027 /* MockUIExampleCompanyUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUIExampleCompanyUseCase.swift; sourceTree = "<group>"; };
 		0D460F072799D24A0076A027 /* MockUIExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUIExampleViewController.swift; sourceTree = "<group>"; };
+		0DB26CD327BBC33C0013F673 /* UIExampleFunctionalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExampleFunctionalTests.swift; sourceTree = "<group>"; };
 		0DE29946278D83DB00FC4793 /* UIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE29949278D83DB00FC4793 /* UIModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModule.h; sourceTree = "<group>"; };
 		0DE2994A278D83DB00FC4793 /* UIModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UIModule.docc; sourceTree = "<group>"; };
@@ -166,7 +168,8 @@
 		0D460EF7279986D10076A027 /* UIExample */ = {
 			isa = PBXGroup;
 			children = (
-				0D460EF9279987030076A027 /* Tests */,
+				0DB26CD627BBF4DD0013F673 /* UnitTests */,
+				0D460EF9279987030076A027 /* FunctionalTests */,
 				0D460EF8279986FC0076A027 /* Mocks */,
 			);
 			path = UIExample;
@@ -184,14 +187,22 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		0D460EF9279987030076A027 /* Tests */ = {
+		0D460EF9279987030076A027 /* FunctionalTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DB26CD327BBC33C0013F673 /* UIExampleFunctionalTests.swift */,
+			);
+			path = FunctionalTests;
+			sourceTree = "<group>";
+		};
+		0DB26CD627BBF4DD0013F673 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
 				0D460EFA279987270076A027 /* UIExampleViewModelTests.swift */,
 				0D2FB50A27A1550C006391FF /* UIExampleUseCaseTests.swift */,
 				0D2FB51427A16E68006391FF /* UIExampleRepositoryTests.swift */,
 			);
-			path = Tests;
+			path = UnitTests;
 			sourceTree = "<group>";
 		};
 		0DE2993C278D83DB00FC4793 = {
@@ -481,6 +492,7 @@
 			files = (
 				0D460F062799D1DB0076A027 /* MockUIExampleCompanyUseCase.swift in Sources */,
 				0D2FB51327A16D16006391FF /* MockUIExampleService.swift in Sources */,
+				0DB26CD427BBC33D0013F673 /* UIExampleFunctionalTests.swift in Sources */,
 				0D2FB50B27A1550C006391FF /* UIExampleUseCaseTests.swift in Sources */,
 				0D2FB50927A1544B006391FF /* MockUIExampleRepository.swift in Sources */,
 				0D460EFB279987270076A027 /* UIExampleViewModelTests.swift in Sources */,
