@@ -21,6 +21,7 @@
 		0DB26C7127AADCDF0013F673 /* NoUIExampleServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C6A27AADCDF0013F673 /* NoUIExampleServiceProtocol.swift */; };
 		0DB26C7227AADCDF0013F673 /* NoUIExampleUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C6C27AADCDF0013F673 /* NoUIExampleUseCaseProtocol.swift */; };
 		0DB26C7327AADCDF0013F673 /* NoUIExampleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26C6D27AADCDF0013F673 /* NoUIExampleUseCase.swift */; };
+		0DB26D3D27BBF9BD0013F673 /* NoUIExampleFunctionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB26D3C27BBF9BC0013F673 /* NoUIExampleFunctionalTests.swift */; };
 		0DE299B62790A72600FC4793 /* NoUIModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299B52790A72600FC4793 /* NoUIModule.docc */; };
 		0DE299BC2790A72700FC4793 /* NoUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE299B12790A72600FC4793 /* NoUIModule.framework */; };
 		0DE299C22790A72700FC4793 /* NoUIModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE299B42790A72600FC4793 /* NoUIModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,6 +73,7 @@
 		0DB26C6A27AADCDF0013F673 /* NoUIExampleServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleServiceProtocol.swift; sourceTree = "<group>"; };
 		0DB26C6C27AADCDF0013F673 /* NoUIExampleUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleUseCaseProtocol.swift; sourceTree = "<group>"; };
 		0DB26C6D27AADCDF0013F673 /* NoUIExampleUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUIExampleUseCase.swift; sourceTree = "<group>"; };
+		0DB26D3C27BBF9BC0013F673 /* NoUIExampleFunctionalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoUIExampleFunctionalTests.swift; sourceTree = "<group>"; };
 		0DE299B12790A72600FC4793 /* NoUIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoUIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE299B42790A72600FC4793 /* NoUIModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoUIModule.h; sourceTree = "<group>"; };
 		0DE299B52790A72600FC4793 /* NoUIModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NoUIModule.docc; sourceTree = "<group>"; };
@@ -123,8 +125,9 @@
 		0DB26C5227AACC080013F673 /* NoUIExample */ = {
 			isa = PBXGroup;
 			children = (
+				0DB26D3E27BBFAF90013F673 /* FunctionalTests */,
 				0DB26C5327AACC080013F673 /* Mocks */,
-				0DB26C5927AACC080013F673 /* Tests */,
+				0DB26C5927AACC080013F673 /* UnitTests */,
 			);
 			path = NoUIExample;
 			sourceTree = "<group>";
@@ -140,14 +143,14 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		0DB26C5927AACC080013F673 /* Tests */ = {
+		0DB26C5927AACC080013F673 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
 				0DB26C5A27AACC080013F673 /* NoUIExampleRepositoryTests.swift */,
 				0DB26C5B27AACC080013F673 /* NoUIExampleViewModelTests.swift */,
 				0DB26C5C27AACC080013F673 /* NoUIExampleUseCase1Tests.swift */,
 			);
-			path = Tests;
+			path = UnitTests;
 			sourceTree = "<group>";
 		};
 		0DB26C6527AADCDF0013F673 /* Collaborator */ = {
@@ -183,6 +186,14 @@
 				0DE299EB2790AC5500FC4793 /* NoUIExample */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0DB26D3E27BBFAF90013F673 /* FunctionalTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DB26D3C27BBF9BC0013F673 /* NoUIExampleFunctionalTests.swift */,
+			);
+			path = FunctionalTests;
 			sourceTree = "<group>";
 		};
 		0DE299A72790A72600FC4793 = {
@@ -456,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DB26D3D27BBF9BD0013F673 /* NoUIExampleFunctionalTests.swift in Sources */,
 				0DB26C6427AACC080013F673 /* NoUIExampleUseCase1Tests.swift in Sources */,
 				0DB26C6327AACC080013F673 /* NoUIExampleViewModelTests.swift in Sources */,
 				0DB26C6127AACC080013F673 /* MockNoUIExampleCoordinator.swift in Sources */,
