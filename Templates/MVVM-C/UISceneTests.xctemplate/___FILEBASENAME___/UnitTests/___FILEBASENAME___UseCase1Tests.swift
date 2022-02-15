@@ -12,7 +12,7 @@ import Combine
 class ___VARIABLE_sceneName:identifier___UseCase1Tests: XCTestCase {
     
     private var mockCollaborator: Mock___VARIABLE_sceneName:identifier___Collaborator!
-    private var companyUseCase: ___VARIABLE_sceneName:identifier___.UseCase1!
+    private var useCase1: ___VARIABLE_sceneName:identifier___.UseCase1!
     
     private var cancellableBag = Set<AnyCancellable>()
 
