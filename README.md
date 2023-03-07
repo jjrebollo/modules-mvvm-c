@@ -56,7 +56,7 @@ In this scenario, the UI elements will not be reused so we will not include them
 There are 4 templates in this repository that will simplify the use of different scenarios. They can be found in the _Templates_ folder and installed just by running the _install_templates.sh_, script that can be found in the same folder (permissions might need to be changed in order to execute this script (chmod command)).
 
 The templates are:
-- **NoUIScene.xctemplate**: This template will create all the files and boilerplate code needed to create a new [_Module without UI_](#-module-without-ui).
-- **NoUISceneTests.xctemplate**: This template will create all the files and boilerplate code needed to create a new set of unit and functional tests for an existing [_Module without UI_](#-module-without-ui).
-- **UIScene.xctemplate**: This template will create all the files and boilerplate code needed to create a new [_Module with UI_](#-module-with-ui).
-- **UISceneTests.xctemplate**: This template will create all the files and boilerplate code needed to create a new set of unit and functional tests for an existing [_Module wit UI_](#-module-with-ui).
+- **NoUIScene.xctemplate**: This template will create all the files and boilerplate code needed to create a new [_Module without UI_](#module-without-ui).
+- **NoUISceneTests.xctemplate**: This template will create all the files and boilerplate code needed to create a new set of unit and functional tests for an existing [_Module without UI_](#module-without-ui).
+- **UIScene.xctemplate**: This template will create all the files and boilerplate code needed to create a new [_Module with UI_](#module-with-ui).
+- **UISceneTests.xctemplate**: This template will create all the files and boilerplate code needed to create a new set of unit and functional tests for an existing [_Module wit UI_](#module-with-ui).
