@@ -40,6 +40,8 @@ gestures from him/her.
 
 The elements and interactions listed above will be encapsulated in Modules. This way, we will be able to reuse them.
 
+Below we see how this architecture can be applied in an iOS project on two different scenarios.
+
 #### Module with UI
 
 In this scenario, the UI elements can be reused so we will include them inside the Module.
