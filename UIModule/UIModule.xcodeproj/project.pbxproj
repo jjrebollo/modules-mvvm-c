@@ -33,7 +33,6 @@
 		0DE2998A278EFDF800FC4793 /* UIExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29982278EFDF800FC4793 /* UIExampleService.swift */; };
 		0DE2998B278EFDF800FC4793 /* UIExampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE29983278EFDF800FC4793 /* UIExampleCoordinator.swift */; };
 		0DE29A0E2790B0B700FC4793 /* BaseModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29A0D2790B0B700FC4793 /* BaseModule.framework */; };
-		0DE29A0F2790B0B700FC4793 /* BaseModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29A0D2790B0B700FC4793 /* BaseModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8E8A224113E12973700EEBA9 /* Pods_UIModule_UIModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05078EBC2813EE3705376DD /* Pods_UIModule_UIModuleTests.framework */; };
 		B9E61BA4C1BD05FFE5893979 /* Pods_UIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588171813AAFBCB107CDEA9 /* Pods_UIModule.framework */; };
 /* End PBXBuildFile section */
@@ -47,20 +46,6 @@
 			remoteInfo = UIModule;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		0DE29A102790B0B800FC4793 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0DE29A0F2790B0B700FC4793 /* BaseModule.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		07BFF00A7A6B0034322C1CC2 /* Pods-UIModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-UIModuleTests/Pods-UIModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -315,7 +300,6 @@
 				0DE29942278D83DB00FC4793 /* Sources */,
 				0DE29943278D83DB00FC4793 /* Frameworks */,
 				0DE29944278D83DB00FC4793 /* Resources */,
-				0DE29A102790B0B800FC4793 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

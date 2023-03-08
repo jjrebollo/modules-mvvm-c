@@ -29,7 +29,6 @@
 		0DE299F52790AC5500FC4793 /* NoUIExampleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299EF2790AC5500FC4793 /* NoUIExampleScene.swift */; };
 		0DE299F72790AC5500FC4793 /* NoUIExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE299F12790AC5500FC4793 /* NoUIExampleViewModel.swift */; };
 		0DE29A152790B12B00FC4793 /* BaseModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29A142790B12B00FC4793 /* BaseModule.framework */; };
-		0DE29A162790B12B00FC4793 /* BaseModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE29A142790B12B00FC4793 /* BaseModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24431E86E149411AE715ACB5 /* Pods_NoUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA64AF203FA84ADF0C210BE /* Pods_NoUIModule.framework */; };
 		489D1F947360A9CD7751802A /* Pods_NoUIModule_NoUIModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460F36583F8D37B38992F97F /* Pods_NoUIModule_NoUIModuleTests.framework */; };
 /* End PBXBuildFile section */
@@ -43,20 +42,6 @@
 			remoteInfo = NoUIModule;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		0DE29A172790B12C00FC4793 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0DE29A162790B12B00FC4793 /* BaseModule.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0D460EE82791C89C0076A027 /* CompanyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyData.swift; sourceTree = "<group>"; };
@@ -295,7 +280,6 @@
 				0DE299AD2790A72600FC4793 /* Sources */,
 				0DE299AE2790A72600FC4793 /* Frameworks */,
 				0DE299AF2790A72600FC4793 /* Resources */,
-				0DE29A172790B12C00FC4793 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
